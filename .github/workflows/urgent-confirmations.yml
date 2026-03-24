@@ -1,0 +1,35 @@
+name: Urgent Confirmations Bot
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # every 5 minutes
+  workflow_dispatch:          # manual trigger for testing
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install psycopg2-binary slack_sdk python-dotenv
+
+      # Restore state.json from the most recent cached run
+      - name: Restore state
+        uses: actions/cache@v4
+        with:
+          path: UrgentConfirmations/state.json
+          key: urgent-confirmations-state-${{ github.run_id }}
+          restore-keys: |
+            urgent-confirmations-state-
+
+      - name: Run bot
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        run: python UrgentConfirmations/slack_bot.py

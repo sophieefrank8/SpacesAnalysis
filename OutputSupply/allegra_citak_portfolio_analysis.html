@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Allegra Citak — Supply Portfolio Analysis</title>
+<style>
+  body { font-family: Arial, sans-serif; font-size: 11pt; color: #202124; max-width: 900px; margin: 40px auto; padding: 0 24px; }
+  h1 { font-size: 20pt; color: #1a1a1a; border-bottom: 2px solid #4a86e8; padding-bottom: 8px; margin-bottom: 4px; }
+  h2 { font-size: 14pt; color: #1a1a1a; margin-top: 28px; margin-bottom: 6px; border-left: 4px solid #4a86e8; padding-left: 10px; }
+  h3 { font-size: 11pt; color: #444; margin-top: 16px; margin-bottom: 4px; }
+  .meta { color: #666; font-size: 10pt; margin-bottom: 20px; }
+  .source-box { background: #f8f9fa; border: 1px solid #dadce0; border-radius: 4px; padding: 12px 16px; margin: 8px 0 16px 0; font-size: 10pt; color: #444; }
+  .source-box strong { color: #1a1a1a; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 18px 0; font-size: 10pt; }
+  th { background: #4a86e8; color: white; text-align: left; padding: 7px 10px; font-weight: bold; }
+  td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+  tr:nth-child(even) { background: #f8f9fa; }
+  tr.total-row td { font-weight: bold; background: #e8f0fe; border-top: 2px solid #4a86e8; }
+  .highlight { background: #fff3cd !important; font-weight: bold; }
+  .callout { background: #e8f0fe; border-left: 4px solid #4a86e8; padding: 10px 14px; margin: 12px 0; font-size: 10pt; border-radius: 0 4px 4px 0; }
+  .footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #dadce0; font-size: 9pt; color: #888; }
+  .section-note { font-size: 9.5pt; color: #666; font-style: italic; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Allegra Citak — Supply Portfolio Analysis</h1>
+<p class="meta">
+  Generated: March 12, 2026 &nbsp;|&nbsp;
+  Data source: Tandem Neon Database (Project: <code>sparkling-feather-59720473</code>) &nbsp;|&nbsp;
+  User ID: <code>4f01f3bb-0d50-4ec4-900a-c00403ceeff1</code> &nbsp;|&nbsp;
+  Account created: November 20, 2024
+</p>
+
+<div class="callout">
+  <strong>Scope:</strong> In the New York region, Allegra is responsible for all spaces with <strong>leaseType = D2L</strong> (Direct to Landlord) that have been made PUBLISHED and SEARCHABLE. In all other regions, responsibility is tracked via the opportunity ownership model (opportunities she owns that are linked to spaces).
+</div>
+
+<!-- ============================== -->
+<h2>1. NY D2L Portfolio — Core Supply Responsibility</h2>
+
+<div class="source-box">
+  <strong>Data source:</strong> <code>spaces</code> table joined with <code>space_location</code><br>
+  <strong>Filter:</strong> <code>space_location.state = 'NY'</code> AND <code>spaces.leaseType = 'D2L'</code> AND <code>spaces.firstSearchableDate IS NOT NULL</code><br>
+  <strong>Logic:</strong> <em>firstSearchableDate IS NOT NULL</em> means the space was at some point made public/searchable — this captures the full historical pipeline regardless of current status.
+</div>
+
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Total D2L spaces ever made public (NY)</td><td><strong>556</strong></td></tr>
+  <tr><td>Currently live (Published + Searchable)</td><td><strong>258</strong></td></tr>
+  <tr><td>Currently published (incl. private/non-searchable)</td><td><strong>285</strong></td></tr>
+  <tr><td>Shelved (previously live, now inactive)</td><td><strong>213</strong></td></tr>
+  <tr><td>Total square footage</td><td><strong>2,115,201 sq ft</strong></td></tr>
+  <tr><td>Total max desk capacity</td><td><strong>15,170 desks</strong></td></tr>
+  <tr><td>Portfolio active since</td><td><strong>January 10, 2025</strong></td></tr>
+  <tr><td>Most recent space made live</td><td><strong>March 10, 2026</strong></td></tr>
+</table>
+
+<h3>NY D2L Spaces by Current Status</h3>
+<p class="section-note">Source: <code>spaces.status</code> + <code>spaces.isSearchable</code> flags</p>
+
+<table>
+  <tr><th>Status</th><th>Searchable</th><th>Count</th><th>Sq Ft</th><th>Max Desks</th></tr>
+  <tr><td>PUBLISHED</td><td>Yes</td><td>252</td><td>1,113,875</td><td>8,018</td></tr>
+  <tr><td>PUBLISHED</td><td>No (private)</td><td>27</td><td>98,763</td><td>707</td></tr>
+  <tr><td>SHELVED</td><td>Was Searchable</td><td>130</td><td>479,613</td><td>3,422</td></tr>
+  <tr><td>SHELVED</td><td>Was Private</td><td>82</td><td>227,529</td><td>1,718</td></tr>
+  <tr><td>DRAFT / IN_REVIEW / FLAGGED</td><td>Various</td><td>65</td><td>~173K</td><td>~1,300</td></tr>
+  <tr><td>Brooklyn (Published + Searchable)</td><td>Yes</td><td>5</td><td>10,645</td><td>77</td></tr>
+  <tr class="total-row"><td colspan="2">TOTAL</td><td>556</td><td>~2,115,201</td><td>~15,170</td></tr>
+</table>
+
+<h3>Monthly Cadence — NY D2L Spaces Made Searchable</h3>
+<p class="section-note">Source: <code>spaces.firstSearchableDate</code> truncated to month. Represents new supply published to the public Tandem website each month.</p>
+
+<table>
+  <tr><th>Month</th><th>Spaces Made Live</th><th>Sq Ft Added</th><th>Desks Added</th></tr>
+  <tr><td>Jan 2025</td><td>22</td><td>70,100</td><td>489</td></tr>
+  <tr><td>Feb 2025</td><td>29</td><td>93,317</td><td>635</td></tr>
+  <tr><td>Mar 2025</td><td>16</td><td>62,095</td><td>509</td></tr>
+  <tr><td>Apr 2025</td><td>54</td><td>274,043</td><td>1,879</td></tr>
+  <tr class="highlight"><td>May 2025 (peak)</td><td>124</td><td>397,777</td><td>2,859</td></tr>
+  <tr><td>Jun 2025</td><td>30</td><td>127,947</td><td>903</td></tr>
+  <tr><td>Jul 2025</td><td>6</td><td>24,050</td><td>184</td></tr>
+  <tr><td>Aug 2025</td><td>48</td><td>130,487</td><td>931</td></tr>
+  <tr><td>Sep 2025</td><td>35</td><td>141,595</td><td>991</td></tr>
+  <tr><td>Oct 2025</td><td>37</td><td>98,188</td><td>706</td></tr>
+  <tr><td>Nov 2025</td><td>32</td><td>112,482</td><td>831</td></tr>
+  <tr><td>Dec 2025</td><td>46</td><td>234,088</td><td>1,709</td></tr>
+  <tr><td>Jan 2026</td><td>34</td><td>160,275</td><td>1,184</td></tr>
+  <tr><td>Feb 2026</td><td>26</td><td>129,449</td><td>929</td></tr>
+  <tr><td>Mar 2026 (MTD)</td><td>17</td><td>59,308</td><td>431</td></tr>
+  <tr class="total-row"><td><strong>TOTAL</strong></td><td><strong>556</strong></td><td><strong>2,115,201</strong></td><td><strong>15,170</strong></td></tr>
+</table>
+
+<!-- ============================== -->
+<h2>2. Deal Outcomes on NY D2L Spaces</h2>
+
+<div class="source-box">
+  <strong>Data source:</strong> <code>match</code> → <code>match_activation_info</code> joined to spaces with the NY D2L filter above<br>
+  <strong>Filter:</strong> <code>match_activation_info.contractSignedAt IS NOT NULL</code><br>
+  <strong>Live deal filter:</strong> <code>proposedStartDate &lt;= NOW()</code> AND <code>(moveOutDate IS NULL OR moveOutDate &gt; NOW())</code> AND <code>match.status IN ('MATCH_ACTIVATION','MATCH_LIVE','MATCH_RETIRED','CONTRACT_SIGNED','E_SIGNATURE')</code><br>
+  <strong>Fee normalization:</strong> <code>FEE_ONE_TIME_FOR_TERM</code> fees are divided by <code>term</code> to produce a monthly equivalent. Rent and fee figures use <code>retool_closed_deal_modifications</code> for the latest amendment value.
+</div>
+
+<table>
+  <tr><th>Metric</th><th>Value</th></tr>
+  <tr><td>Total signed deals (all time)</td><td><strong>34</strong></td></tr>
+  <tr><td>Currently live deals</td><td><strong>28</strong></td></tr>
+  <tr><td>Total monthly rent (live deals)</td><td><strong>$342,174 / mo</strong></td></tr>
+  <tr><td>Total monthly fee (live deals, normalized)</td><td><strong>$21,175 / mo</strong></td></tr>
+  <tr><td>Annualized fee</td><td><strong>~$254,100 / yr</strong></td></tr>
+  <tr><td>Total desks leased</td><td><strong>458 desks</strong></td></tr>
+</table>
+
+<!-- ============================== -->
+<h2>3. Full Opportunity Portfolio (All Regions)</h2>
+
+<div class="source-box">
+  <strong>Data source:</strong> <code>opportunities</code> (where <code>owner_id = Allegra's user ID</code>) → <code>opportunity_space</code> → <code>spaces</code> → <code>space_location</code><br>
+  <strong>Logic:</strong> Spaces are linked to Allegra via the opportunity ownership model — each opportunity she owns may have one or more spaces attached via the <code>opportunity_space</code> junction table.
+</div>
+
+<h3>By State</h3>
+<table>
+  <tr><th>State</th><th>Total Spaces</th><th>Currently Live</th><th>Currently Published</th><th>Ever Searchable</th><th>Total Sq Ft</th><th>Max Desks</th></tr>
+  <tr><td>NY (New York)</td><td>1,693</td><td>114</td><td>450</td><td>255</td><td>5,908,758</td><td>28,436</td></tr>
+  <tr><td>MA (Massachusetts)</td><td>7</td><td>5</td><td>5</td><td>5</td><td>21,883</td><td>146</td></tr>
+  <tr><td>CA (California)</td><td>1</td><td>0</td><td>1</td><td>0</td><td>974</td><td>7</td></tr>
+  <tr><td>Unknown / No location</td><td>31</td><td>0</td><td>0</td><td>0</td><td>~213,000</td><td>~506</td></tr>
+  <tr class="total-row"><td>TOTAL</td><td>1,732</td><td>119</td><td>456</td><td>260</td><td>~6,144,615</td><td>~29,095</td></tr>
+</table>
+
+<h3>By Lease Type (Opportunity Portfolio)</h3>
+<p class="section-note">Source: <code>spaces.leaseType</code> enum — values: D2L (Direct to Landlord), T2T (Tenant to Tenant), SUBLEASE, COWORKING</p>
+
+<table>
+  <tr><th>Lease Type</th><th>Total Spaces</th><th>Currently Live</th><th>Ever Searchable</th><th>Total Sq Ft</th><th>Max Desks</th></tr>
+  <tr><td>D2L (Direct to Landlord)</td><td>713</td><td>104</td><td>241</td><td>2,915,246</td><td>20,920</td></tr>
+  <tr><td>None / Unknown</td><td>991</td><td>3</td><td>3</td><td>3,119,933</td><td>7,536</td></tr>
+  <tr><td>T2T (Tenant to Tenant)</td><td>19</td><td>8</td><td>10</td><td>89,317</td><td>383</td></tr>
+  <tr><td>SUBLEASE</td><td>6</td><td>1</td><td>3</td><td>19,850</td><td>157</td></tr>
+  <tr><td>COWORKING</td><td>3</td><td>3</td><td>3</td><td>0</td><td>99</td></tr>
+  <tr class="total-row"><td>TOTAL</td><td>1,732</td><td>119</td><td>260</td><td>~6,144,346</td><td>~29,095</td></tr>
+</table>
+
+<!-- ============================== -->
+<h2>4. Active Opportunity Pipeline</h2>
+
+<div class="source-box">
+  <strong>Data source:</strong> <code>opportunities</code> table, grouped by <code>stage</code><br>
+  <strong>Filter:</strong> <code>opportunities.owner_id = Allegra's user ID</code><br>
+  <strong>Stage definitions:</strong> PRE_CONTACT → OUTREACHED → ENGAGING → CONTRIBUTOR → CHAMPION (active funnel). ON_HOLD and NOT_AVAILABLE are excluded from "active" pipeline counts per standard business logic.
+</div>
+
+<table>
+  <tr><th>Stage</th><th>Opportunities</th><th>Active?</th></tr>
+  <tr><td>ENGAGING</td><td>52</td><td>Yes</td></tr>
+  <tr><td>CONTRIBUTOR</td><td>46</td><td>Yes</td></tr>
+  <tr><td>PRE_CONTACT</td><td>39</td><td>Yes</td></tr>
+  <tr><td>OUTREACHED</td><td>21</td><td>Yes</td></tr>
+  <tr><td>ON_HOLD</td><td>10</td><td>No</td></tr>
+  <tr><td>CHAMPION</td><td>5</td><td>Yes</td></tr>
+  <tr><td>NOT_AVAILABLE</td><td>1</td><td>No</td></tr>
+  <tr class="total-row"><td>Active pipeline total</td><td>163</td><td></td></tr>
+</table>
+
+<!-- ============================== -->
+<h2>5. Supply Outreach Activity (All Time)</h2>
+
+<div class="source-box">
+  <strong>Data source:</strong> <code>opportunity_event</code> table<br>
+  <strong>Filter:</strong> <code>opportunity_event.creator_id = Allegra's user ID</code><br>
+  <strong>Notes:</strong> Events are stored in UTC. Allegra's first logged activity was April 17, 2025 (an in-person visit), though her account was created November 20, 2024. Calls/meetings = CALL + VIDEO_CALL + IN_PERSON_VISIT.
+</div>
+
+<table>
+  <tr><th>Activity Type</th><th>Count</th><th>First Event</th><th>Last Event</th><th>Category</th></tr>
+  <tr><td>EMAIL</td><td>387</td><td>Jul 29, 2025</td><td>Mar 4, 2026</td><td>Outreach</td></tr>
+  <tr><td>CALL</td><td>120</td><td>Jul 30, 2025</td><td>Mar 11, 2026</td><td>Call/Meeting</td></tr>
+  <tr><td>IN_PERSON_VISIT</td><td>55</td><td>Apr 17, 2025</td><td>Mar 12, 2026</td><td>Call/Meeting</td></tr>
+  <tr><td>REQUEST_FOR_INTRODUCTION</td><td>39</td><td>Nov 22, 2025</td><td>Feb 4, 2026</td><td>Outreach</td></tr>
+  <tr><td>TEXT</td><td>26</td><td>Aug 12, 2025</td><td>Feb 2, 2026</td><td>Outreach</td></tr>
+  <tr><td>VIDEO_CALL</td><td>22</td><td>Dec 4, 2025</td><td>Mar 11, 2026</td><td>Call/Meeting</td></tr>
+  <tr class="total-row"><td>TOTAL</td><td>649</td><td>Apr 17, 2025</td><td>Mar 12, 2026</td><td></td></tr>
+</table>
+
+<table>
+  <tr><th>Metric</th><th>Count</th></tr>
+  <tr><td>Total outreach touchpoints (emails + texts + intros)</td><td>452</td></tr>
+  <tr><td>Total calls &amp; meetings (calls + video + in-person)</td><td>197</td></tr>
+  <tr><td>Total activities logged</td><td><strong>649</strong></td></tr>
+</table>
+
+<!-- ============================== -->
+<h2>6. Data Sources &amp; Methodology</h2>
+
+<table>
+  <tr><th>Table</th><th>Purpose in this Report</th><th>Key Column(s)</th></tr>
+  <tr><td><code>users</code></td><td>Identifies Allegra Citak's user record and account creation date</td><td><code>id</code>, <code>name</code>, <code>email</code>, <code>createdAt</code></td></tr>
+  <tr><td><code>spaces</code></td><td>All inventory — status, lease type, size, desk count, live dates</td><td><code>leaseType</code>, <code>status</code>, <code>isSearchable</code>, <code>firstSearchableDate</code>, <code>squareFootage</code>, <code>maxNumberOfDesks</code></td></tr>
+  <tr><td><code>space_location</code></td><td>City/state filtering (joined 1:1 with spaces via <code>locationId</code>)</td><td><code>city</code>, <code>state</code></td></tr>
+  <tr><td><code>opportunities</code></td><td>Allegra's supply pipeline — stage, type, owner</td><td><code>owner_id</code>, <code>stage</code>, <code>type</code></td></tr>
+  <tr><td><code>opportunity_space</code></td><td>Junction table linking opportunities to spaces (Allegra's full portfolio)</td><td><code>opportunityId</code>, <code>spaceId</code></td></tr>
+  <tr><td><code>match</code></td><td>Connects spaces to tenant companies; provides deal status</td><td><code>spaceId</code>, <code>status</code></td></tr>
+  <tr><td><code>match_activation_info</code></td><td>Deal financial details — rent, fee, start/end dates</td><td><code>contractSignedAt</code>, <code>proposedStartDate</code>, <code>moveOutDate</code>, <code>proposedMonthlyPrice</code>, <code>feeAmount</code>, <code>feeType</code>, <code>term</code></td></tr>
+  <tr><td><code>retool_closed_deal_modifications</code></td><td>Deal amendments — overrides original rent/fee with latest values</td><td><code>matchid</code>, <code>new_rent</code>, <code>new_fee</code>, <code>effective_date</code></td></tr>
+  <tr><td><code>opportunity_event</code></td><td>Allegra's logged supply outreach activities</td><td><code>creator_id</code>, <code>type</code>, <code>date</code></td></tr>
+</table>
+
+<h3>Key Definitions</h3>
+<ul>
+  <li><strong>D2L (Direct to Landlord):</strong> Spaces where Tandem is working directly with the building owner/landlord. This is Allegra's primary coverage area in New York.</li>
+  <li><strong>Public / Live space:</strong> <code>status = 'PUBLISHED'</code> AND <code>isSearchable = true</code> — visible on the public Tandem website and map.</li>
+  <li><strong>firstSearchableDate:</strong> The timestamp when a space was first made publicly searchable. Used as the "went live" date throughout this report.</li>
+  <li><strong>Live deal:</strong> <code>contractSignedAt IS NOT NULL</code> AND <code>proposedStartDate &lt;= today</code> AND <code>(moveOutDate IS NULL OR moveOutDate &gt; today)</code> AND match status is active.</li>
+  <li><strong>Fee normalization:</strong> One-time-for-term fees (<code>FEE_ONE_TIME_FOR_TERM</code>) are divided by lease term length to produce a comparable monthly figure.</li>
+  <li><strong>Opportunity portfolio:</strong> All spaces linked to opportunities owned by Allegra in the <code>opportunity_space</code> junction table — represents her full sourcing and outreach coverage beyond just NY D2L.</li>
+</ul>
+
+<div class="footer">
+  Report generated by Claude Code &nbsp;|&nbsp; Database: Tandem Neon (<code>sparkling-feather-59720473</code>, <code>neondb</code>, main branch) &nbsp;|&nbsp; All figures as of March 12, 2026 &nbsp;|&nbsp; Read-only query — no data was modified.
+</div>
+
+</body>
+</html>
