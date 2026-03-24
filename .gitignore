@@ -1,4 +1,5 @@
 .env
 .env.example
+.mcp.json
 UrgentConfirmations/state.json
 UrgentConfirmations/bot.log
