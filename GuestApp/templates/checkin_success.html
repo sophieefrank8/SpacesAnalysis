@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Checked In — Basecamp{% endblock %}
+{% block body_class %}scan-page{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+  <div class="success-icon" style="background:#dcfce7; font-size:2rem;">&#10003;</div>
+  <h1>Checked In</h1>
+  <p class="subtitle">
+    {{ reg.guest_confirmed_name or reg.guest_name }} has been checked in.<br>
+    {{ reg.tenant_name }} has been notified.
+  </p>
+
+  <ul class="detail-list" style="text-align:left; margin-top:16px;">
+    <li><span class="label">Guest</span><span class="value">{{ reg.guest_confirmed_name or reg.guest_name }}</span></li>
+    <li><span class="label">Company</span><span class="value">{{ reg.guest_confirmed_company or reg.guest_company }}</span></li>
+    <li><span class="label">Visiting</span><span class="value">{{ reg.tenant_name }} &middot; {{ reg.tenant_company }}</span></li>
+    <li><span class="label">Time in</span><span class="value">{{ reg.arrived_at | fmt_datetime }}</span></li>
+  </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Guest Check-in — Basecamp{% endblock %}
+{% block body_class %}scan-page{% endblock %}
+
+{% block content %}
+<div class="card">
+
+  {% if already_checked_in %}
+  <div style="text-align:center; margin-bottom:20px;">
+    <div class="success-icon">&#10003;</div>
+    <h2>Already checked in</h2>
+    <p style="font-size:0.875rem; color:var(--gray-600); margin-top:4px;">
+      {{ reg.guest_confirmed_name or reg.guest_name }} arrived at {{ reg.arrived_at | fmt_datetime }}.
+    </p>
+  </div>
+
+  {% elif reg.status == 'pending' %}
+  <div style="text-align:center; margin-bottom:20px;">
+    <div class="error-icon">&#33;</div>
+    <h2>Not yet confirmed</h2>
+    <p style="font-size:0.875rem; color:var(--gray-600); margin-top:4px;">
+      This guest hasn't confirmed their visit yet.
+    </p>
+  </div>
+
+  {% else %}
+  <div class="scan-status-bar">
+    <span class="badge badge-confirmed">Registered</span>
+  </div>
+  {% endif %}
+
+  <ul class="detail-list" style="margin-bottom:24px;">
+    <li>
+      <span class="label">Guest</span>
+      <span class="value">{{ reg.guest_confirmed_name or reg.guest_name }}</span>
+    </li>
+    <li>
+      <span class="label">Company</span>
+      <span class="value">{{ reg.guest_confirmed_company or reg.guest_company }}</span>
+    </li>
+    <li>
+      <span class="label">Visiting</span>
+      <span class="value">{{ reg.tenant_name }} &middot; {{ reg.tenant_company }}</span>
+    </li>
+    <li>
+      <span class="label">Date</span>
+      <span class="value">{{ reg.visit_date | fmt_date }}</span>
+    </li>
+    <li>
+      <span class="label">Location</span>
+      <span class="value">{{ reg.location }}</span>
+    </li>
+  </ul>
+
+  {% if reg.status == 'confirmed' and not already_checked_in %}
+  <form method="POST" action="/verify/{{ reg.token }}">
+    <button type="submit" class="btn btn-checkin">&#10003;&nbsp; Check In Guest</button>
+  </form>
+  {% endif %}
+
+</div>
+{% endblock %}

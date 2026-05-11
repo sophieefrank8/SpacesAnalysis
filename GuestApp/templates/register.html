@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Register a Guest — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Register a Guest to Visit Basecamp SF</h1>
+  <p class="subtitle">Your guest will receive an invite to pre-register with security so they can meet you on the floor.</p>
+
+  <form method="POST" action="/register">
+
+    <p class="section-label">Your details</p>
+
+    <div class="form-group">
+      <label for="tenant_name">Your full name</label>
+      <input type="text" id="tenant_name" name="tenant_name" required placeholder="Jane Smith">
+    </div>
+    <div class="form-group">
+      <label for="tenant_email">Your email</label>
+      <input type="email" id="tenant_email" name="tenant_email" required placeholder="jane@company.com">
+    </div>
+
+    <div class="divider"></div>
+    <p class="section-label">Guest details</p>
+
+    <div class="form-group">
+      <label for="guest_email">Guest email</label>
+      <input type="email" id="guest_email" name="guest_email" required placeholder="john@guestcompany.com">
+    </div>
+
+    <div class="divider"></div>
+    <p class="section-label">Visit details</p>
+
+    <div class="form-group">
+      <label for="location">Location</label>
+      <select id="location" name="location" required>
+        <option value="" disabled selected>Select a Basecamp location</option>
+        {% for loc in locations %}
+        <option value="{{ loc }}">{{ loc }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="visit_date">Date of visit</label>
+      <input type="date" id="visit_date" name="visit_date" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send guest invitation &rarr;</button>
+  </form>
+</div>
+{% endblock %}

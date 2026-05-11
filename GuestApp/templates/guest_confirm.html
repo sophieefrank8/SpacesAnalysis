@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Confirm Your Visit — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Confirm your visit</h1>
+  <p class="subtitle">
+    <strong>{{ reg.tenant_name }}</strong> has invited you to Basecamp.
+    Please confirm your details below to receive your entry QR code.
+  </p>
+
+  <ul class="detail-list" style="margin-bottom: 24px;">
+    <li><span class="label">Location</span><span class="value">{{ reg.location }}</span></li>
+    <li><span class="label">Date</span><span class="value">{{ reg.visit_date | fmt_date }}</span></li>
+  </ul>
+
+  <div class="divider"></div>
+  <p class="section-label">Your details</p>
+
+  <form method="POST" action="/confirm/{{ reg.token }}">
+    <div class="form-group">
+      <label for="confirmed_name">Full name</label>
+      <input type="text" id="confirmed_name" name="confirmed_name" required placeholder="Your full name">
+    </div>
+    <div class="form-group">
+      <label for="confirmed_company">Company</label>
+      <input type="text" id="confirmed_company" name="confirmed_company" required placeholder="Your company">
+    </div>
+    <div class="form-group">
+      <label for="confirmed_email">Email</label>
+      <input type="email" id="confirmed_email" name="confirmed_email"
+             value="{{ reg.guest_email }}" required>
+    </div>
+    <div class="form-group">
+      <label for="office_setup">What is your current office setup?</label>
+      <select id="office_setup" name="office_setup" required>
+        <option value="" disabled selected>Select one</option>
+        <option>Remote / no office</option>
+        <option>Home office</option>
+        <option>Shared co-working space</option>
+        <option>Private office</option>
+        <option>Corporate HQ</option>
+      </select>
+    </div>
+
+    <div class="form-group" style="display:flex; gap:10px; align-items:flex-start; margin-top:8px;">
+      <input type="checkbox" id="policy" name="policy" required
+             style="width:auto; margin-top:3px; flex-shrink:0;">
+      <label for="policy" style="margin-bottom:0; font-size:0.8125rem; color:var(--gray-600);">
+        I agree to the <a href="/policy" target="_blank" style="color:var(--gray-900); text-decoration:underline;">guest access and email communications terms</a>.
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary" style="margin-top:20px;">Confirm &amp; get QR code &rarr;</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}You're Signed In — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+  <div class="success-icon">&#10003;</div>
+  <h1>You're signed in</h1>
+  <p class="subtitle">
+    We've notified <strong>{{ walk_in.host_name }}</strong> that you're here.
+    Please wait at security until your host arrives.
+  </p>
+
+  <div class="divider"></div>
+
+  <ul class="detail-list" style="text-align:left;">
+    <li><span class="label">Guest</span><span class="value">{{ walk_in.guest_name }} &middot; {{ walk_in.guest_company }}</span></li>
+    <li><span class="label">Visiting</span><span class="value">{{ walk_in.host_name }}</span></li>
+    <li><span class="label">Location</span><span class="value">{{ walk_in.location }}</span></li>
+    <li><span class="label">Arrived</span><span class="value">{{ walk_in.arrived_at | fmt_datetime }}</span></li>
+  </ul>
+</div>
+{% endblock %}

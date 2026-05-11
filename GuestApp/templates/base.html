@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Basecamp{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<div class="page">
+  <div class="logo-wrap">
+    <img src="/static/logo_dark.png" alt="Basecamp" onerror="this.style.display='none'">
+  </div>
+  {% block content %}{% endblock %}
+</div>
+</body>
+</html>

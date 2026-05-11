@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Your Entry QR Code — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+  <div class="success-icon">&#10003;</div>
+  <h1>You're confirmed!</h1>
+  <p class="subtitle">Show this QR code to security when you arrive. We've also emailed it to you.</p>
+
+  <div class="qr-wrap">
+    <img src="data:image/png;base64,{{ qr_b64 }}" alt="Entry QR Code">
+  </div>
+
+  <ul class="detail-list" style="text-align:left; margin-bottom:20px;">
+    <li><span class="label">Location</span><span class="value">{{ reg.location }}</span></li>
+    <li><span class="label">Date</span><span class="value">{{ reg.visit_date | fmt_date }}</span></li>
+    <li><span class="label">Host</span><span class="value">{{ reg.tenant_name }}</span></li>
+  </ul>
+
+  <p style="font-size:0.8125rem; color: var(--gray-400);">
+    Bookmark this page or save the emailed QR code for quick access on the day.
+  </p>
+</div>
+{% endblock %}

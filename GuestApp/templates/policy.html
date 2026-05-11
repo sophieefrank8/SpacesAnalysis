@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Guest Policy — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Guest Policy</h1>
+  <p class="subtitle">By visiting Basecamp, all guests agree to the following terms.</p>
+
+  <div class="divider"></div>
+
+  <ul class="detail-list" style="gap: 18px;">
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">1. Stay with your host</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Guests must remain with their host at all times and may not access areas beyond what their host is authorized to use.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">2. Do not use unrented desks or equipment</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Only sit at or use desks, monitors, and equipment that belong to your host. Do not occupy desks rented by other tenants.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">3. Do not touch others' belongings</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Respect the property of all tenants. Do not handle, move, or disturb items that do not belong to your host.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">4. Keep noise to a minimum</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Use hushed voices in open work areas. Take calls and louder conversations to designated phone booths or meeting rooms.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">5. Leave common areas as you found them</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Clean up after yourself in kitchens, lounges, and shared spaces. Dispose of waste properly and return any items you use.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">6. No property damage</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Any damage to Basecamp property or the belongings of tenants is the responsibility of the guest and their host.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">7. Respect restricted areas</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Do not enter server rooms, storage areas, or any space marked as staff- or tenant-only without explicit authorization.</span>
+    </li>
+    <li style="flex-direction: column; gap: 4px;">
+      <span class="value">8. Photography and filming</span>
+      <span style="font-size:0.875rem; color:var(--gray-600);">Do not photograph or film other tenants, their work, or screens without their consent.</span>
+    </li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <p style="font-size:0.8125rem; color:var(--gray-600); margin-bottom: 12px;">
+    By confirming your visit you also agree that Basecamp and Tandem may occasionally send you information about events, membership, and updates. You can unsubscribe at any time.
+  </p>
+
+  <p style="font-size:0.75rem; color:var(--gray-400);">
+    Violations of this policy may result in removal from the premises. Basecamp reserves the right to update these terms at any time.
+  </p>
+</div>
+{% endblock %}

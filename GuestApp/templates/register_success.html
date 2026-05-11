@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Invitation Sent — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="success-icon">&#10003;</div>
+  <h1 style="text-align:center">Invitation sent</h1>
+  <p class="subtitle" style="text-align:center">
+    We've emailed <strong>{{ reg.guest_email }}</strong> with a link to confirm their visit and receive their QR entry code.
+  </p>
+
+  <div class="divider"></div>
+
+  <ul class="detail-list">
+    <li><span class="label">Location</span><span class="value">{{ reg.location }}</span></li>
+    <li><span class="label">Date</span><span class="value">{{ reg.visit_date | fmt_date }}</span></li>
+    <li><span class="label">Host</span><span class="value">{{ reg.tenant_name }}</span></li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <a href="/register" class="btn btn-primary">Register another guest</a>
+</div>
+{% endblock %}

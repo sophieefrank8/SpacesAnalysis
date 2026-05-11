@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Already Confirmed — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+  <div class="success-icon">&#10003;</div>
+  <h1>Already confirmed</h1>
+  <p class="subtitle">
+    This visit has already been confirmed.
+    {% if reg.status == 'arrived' %}
+    {{ reg.guest_confirmed_name or reg.guest_name }} has already checked in.
+    {% endif %}
+  </p>
+  <a href="/qr/{{ reg.token }}" class="btn btn-primary">View QR code</a>
+</div>
+{% endblock %}

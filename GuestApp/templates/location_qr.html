@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basecamp — Location QR Codes</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    @media print {
+      .no-print { display: none; }
+      .qr-card { page-break-inside: avoid; }
+      body { background: white; }
+    }
+    .qr-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .qr-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 40px 32px;
+      text-align: center;
+      width: 340px;
+    }
+    .qr-card img {
+      width: 240px;
+      height: 240px;
+      margin-bottom: 20px;
+    }
+    .qr-card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+    .qr-card p {
+      font-size: 0.8125rem;
+      color: var(--gray-600);
+    }
+    .print-header {
+      text-align: center;
+      padding: 32px 20px 0;
+    }
+    .print-header img { height: 40px; }
+  </style>
+</head>
+<body>
+  <div class="print-header">
+    <img src="/static/logo_dark.png" alt="Basecamp" onerror="this.style.display='none'">
+  </div>
+
+  <div style="text-align:center; padding: 16px 0 0;" class="no-print">
+    <button onclick="window.print()" class="btn btn-primary" style="width:auto; padding: 10px 24px;">
+      Print QR codes
+    </button>
+  </div>
+
+  <div class="qr-grid">
+    {% for qr in qr_codes %}
+    <div class="qr-card">
+      <img src="data:image/png;base64,{{ qr.qr_b64 }}" alt="QR code for {{ qr.label }}">
+      <h2>{{ qr.label }}</h2>
+      <p>Scan to sign in as a walk-in guest</p>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

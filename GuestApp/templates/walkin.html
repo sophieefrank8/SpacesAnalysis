@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Sign In — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Welcome to Basecamp</h1>
+  <p class="subtitle">
+    {% if location %}
+      {{ location }} &mdash; please fill in your details and we'll let your host know you're here.
+    {% else %}
+      Please fill in your details and we'll let your host know you're here.
+    {% endif %}
+  </p>
+
+  <form method="POST" action="/walkin">
+    <input type="hidden" name="location" value="{{ location or '' }}">
+
+    <p class="section-label">Your details</p>
+
+    <div class="form-group">
+      <label for="guest_name">Your full name</label>
+      <input type="text" id="guest_name" name="guest_name" required placeholder="Jane Smith">
+    </div>
+    <div class="form-group">
+      <label for="guest_company">Your company</label>
+      <input type="text" id="guest_company" name="guest_company" required placeholder="Acme Inc.">
+    </div>
+    <div class="form-group">
+      <label for="guest_email">Your email</label>
+      <input type="email" id="guest_email" name="guest_email" required placeholder="jane@acme.com">
+    </div>
+
+    <div class="divider"></div>
+    <p class="section-label">Who are you visiting?</p>
+
+    <div class="form-group">
+      <label for="host_name">Their full name</label>
+      <input type="text" id="host_name" name="host_name" required placeholder="Alex Johnson">
+    </div>
+    <div class="form-group">
+      <label for="host_email">Their email</label>
+      <input type="email" id="host_email" name="host_email" required placeholder="alex@theircompany.com">
+    </div>
+    <div class="form-group">
+      <label for="reason">Reason for visit</label>
+      <textarea id="reason" name="reason" required placeholder="e.g. Meeting, coffee chat..."></textarea>
+    </div>
+
+    {% if not location %}
+    <div class="divider"></div>
+    <p class="section-label">Location</p>
+    <div class="form-group">
+      <select name="location" required>
+        <option value="" disabled selected>Select a Basecamp location</option>
+        {% for loc in locations %}
+        <option value="{{ loc }}">{{ loc }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    {% endif %}
+
+    <button type="submit" class="btn btn-primary">Notify my host &rarr;</button>
+  </form>
+</div>
+{% endblock %}

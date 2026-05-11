@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Invalid QR Code — Basecamp{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+  <div class="error-icon">&#33;</div>
+  <h1>QR code not recognized</h1>
+  <p class="subtitle">{{ message }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Admin — Basecamp Guest Log{% endblock %}
+
+{% block head %}
+<style>
+  .tabs { display:flex; gap:4px; margin-bottom:20px; border-bottom:1px solid var(--gray-200); }
+  .tab {
+    padding:8px 16px; font-size:0.875rem; font-weight:500; cursor:pointer;
+    border:none; background:none; color:var(--gray-600); border-bottom:2px solid transparent;
+    margin-bottom:-1px;
+  }
+  .tab.active { color:var(--black); border-bottom-color:var(--black); }
+  .tab-panel { display:none; }
+  .tab-panel.active { display:block; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="card card-wide">
+  <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
+    <div>
+      <h1>Guest Log</h1>
+      <p class="subtitle" style="margin-bottom:0;">All visits across Basecamp locations.</p>
+    </div>
+    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+      <a href="/location-qr" class="btn btn-secondary" style="width:auto;" target="_blank">Print QR codes</a>
+      <a href="/register" class="btn btn-secondary" style="width:auto;">+ New registration</a>
+    </div>
+  </div>
+
+  <form method="GET" action="/admin" class="filter-bar">
+    <select name="location">
+      <option value="">All locations</option>
+      {% for loc in locations %}
+      <option value="{{ loc }}" {% if filter_location == loc %}selected{% endif %}>{{ loc }}</option>
+      {% endfor %}
+    </select>
+    <select name="status">
+      <option value="">All statuses</option>
+      <option value="pending"   {% if filter_status == 'pending'   %}selected{% endif %}>Pending</option>
+      <option value="confirmed" {% if filter_status == 'confirmed' %}selected{% endif %}>Confirmed</option>
+      <option value="arrived"   {% if filter_status == 'arrived'   %}selected{% endif %}>Arrived</option>
+    </select>
+    <input type="date" name="date" value="{{ filter_date }}">
+    <button type="submit" class="btn btn-primary" style="width:auto;">Filter</button>
+    {% if filter_location or filter_status or filter_date %}
+    <a href="/admin" class="btn btn-secondary" style="width:auto;">Clear</a>
+    {% endif %}
+  </form>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('pre-reg', this)">
+      Pre-registered ({{ rows | length }})
+    </button>
+    <button class="tab" onclick="switchTab('walk-ins', this)">
+      Walk-ins ({{ walk_ins | length }})
+    </button>
+  </div>
+
+  <!-- Pre-registered guests -->
+  <div id="pre-reg" class="tab-panel active">
+    <div class="table-wrap">
+      {% if rows %}
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th><th>Time</th><th>Location</th>
+            <th>Tenant</th><th>Guest</th><th>Company</th>
+            <th>Status</th><th>Registered</th><th>Confirmed</th><th>Arrived</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in rows %}
+          <tr>
+            <td>{{ r.visit_date | fmt_date }}</td>
+            <td>{{ r.visit_time | fmt_time }}</td>
+            <td style="font-size:0.8125rem; color:var(--gray-600);">{{ r.location }}</td>
+            <td>
+              <div style="font-weight:500;">{{ r.tenant_name }}</div>
+              <div style="font-size:0.8rem; color:var(--gray-400);">{{ r.tenant_company }}</div>
+            </td>
+            <td>
+              <div style="font-weight:500;">{{ r.guest_confirmed_name or r.guest_name }}</div>
+              <div style="font-size:0.8rem; color:var(--gray-400);">{{ r.guest_confirmed_email or r.guest_email }}</div>
+            </td>
+            <td>{{ r.guest_confirmed_company or r.guest_company }}</td>
+            <td>
+              {% if r.status == 'pending' %}<span class="badge badge-pending">Pending</span>
+              {% elif r.status == 'confirmed' %}<span class="badge badge-confirmed">Confirmed</span>
+              {% elif r.status == 'arrived' %}<span class="badge badge-arrived">Arrived</span>
+              {% endif %}
+            </td>
+            <td style="font-size:0.8rem; color:var(--gray-400);">{{ r.created_at | fmt_datetime }}</td>
+            <td style="font-size:0.8rem; color:var(--gray-400);">{{ r.confirmed_at | fmt_datetime if r.confirmed_at else '—' }}</td>
+            <td style="font-size:0.8rem; color:var(--gray-400);">{{ r.arrived_at | fmt_datetime if r.arrived_at else '—' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p style="padding:40px 0; text-align:center; color:var(--gray-400);">No pre-registered visits found.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Walk-ins -->
+  <div id="walk-ins" class="tab-panel">
+    <div class="table-wrap">
+      {% if walk_ins %}
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th><th>Arrived</th><th>Location</th>
+            <th>Guest</th><th>Company</th>
+            <th>Visiting</th><th>Host email</th><th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for w in walk_ins %}
+          <tr>
+            <td><span class="badge badge-arrived">Arrived</span></td>
+            <td style="white-space:nowrap;">{{ w.arrived_at | fmt_datetime }}</td>
+            <td style="font-size:0.8125rem; color:var(--gray-600);">{{ w.location }}</td>
+            <td>
+              <div style="font-weight:500;">{{ w.guest_name }}</div>
+              <div style="font-size:0.8rem; color:var(--gray-400);">{{ w.guest_email }}</div>
+            </td>
+            <td>{{ w.guest_company }}</td>
+            <td style="font-weight:500;">{{ w.host_name }}</td>
+            <td style="font-size:0.8rem; color:var(--gray-400);">{{ w.host_email }}</td>
+            <td style="font-size:0.8rem;">{{ w.reason }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p style="padding:40px 0; text-align:center; color:var(--gray-400);">No walk-ins found.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+{% endblock %}
