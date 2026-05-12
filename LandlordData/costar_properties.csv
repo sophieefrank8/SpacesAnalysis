@@ -1,0 +1,1452 @@
+num,address,city,type,size,sf_avail,rent
+1,Rapp Bldg 121-123 2nd St,San Francisco,Office,"30,000 SF","4,051 - 12,153",$35.00 - 45.00 SF/Year
+2,329 Bryant St,San Francisco,Office,"23,554 SF","635 - 7,271",$32.00 SF/Year
+3,188-190 King St,San Francisco,Apartments,100 Units,"1,100 - 5,600",$70.00 - 75.00 SF/Year
+4,740-748 Valencia St,San Francisco,Retail,"9,700 SF","1,500",$52.00 SF/Year
+5,48 2nd St,San Francisco,Office,"13,200 SF","2,000 - 8,618",Withheld
+6,303 2nd St,San Francisco,Office,"784,658 SF","1,807 - 450,892",Withheld
+7,Levi's Plaza | 1160 East &… 1160 Battery St,San Francisco,Office,"228,039 SF","10 - 55,636",Withheld
+8,45 Belden Pl,San Francisco,Office,"17,375 SF","2,035",$45.00 SF/Year
+9,411 Borel Ave,San Mateo,Office,"141,134 SF","1,191 - 44,018",$35.40 SF/Year
+10,Harold Dollar Building 351 California St,San Francisco,Office,"140,000 SF","1,500 - 48,352",$19.00 - 72.00 SF/Year
+11,Colorado Business Offices 711-719 Colorado Ave,Palo Alto,Office,"7,516 SF",950,$78.00 SF/Year
+12,150 S Park Ave,San Francisco,Office,"3,700 SF","1,850 - 3,700",$96.00 SF/Year
+13,17-19 S Park St,San Francisco,Office,"3,500 SF","2,000 $120.00",SF/Year
+14,77 N San Mateo Dr,San Mateo,Office,"11,393 SF","11,393",$78.00 SF/Year
+15,North Bldg 2301-2475 3rd St,San Francisco,Flex,"460,000 SF","100 - 6,335",Withheld
+16,325 9th St,San Francisco,Office,"16,875 SF","5,625 - 11,250",Withheld
+17,1045 Bryant St,San Francisco,Office,"32,953 SF","4,361 - 24,711",Withheld
+18,715 Colorado Ave,Palo Alto,Office,"7,516 SF",950,Withheld
+19,3373 Middlefield Rd,Palo Alto,Specialty,"11,219 SF","9,872",Withheld
+20,257 Castro St,Mountain View,Office,"14,800 SF","270 - 3,600",$48.00 - 63.00 SF/Year
+21,3295 El Camino Real,Atherton,Office,"9,289 SF","8,600 - 17,889",$42.00 SF/Year
+22,100-112 Gough St,San Francisco,Office,"13,200 SF",145 - 944,$19.32 - 63.00 SF/Year
+23,425 Harbor Blvd,Belmont,Flex,"32,000 SF","1,200 - 3,200",$24.00 SF/Year
+24,930 Montgomery St,San Francisco,Office,"24,156 SF","3,152",$38.00 SF/Year
+25,1475 E Bayshore Rd,East Palo Alto,Flex,"1,150 SF","1,150",Withheld
+26,695 Oak Grove Ave,Menlo Park,Office,"17,835 SF","1,430",Withheld
+27,156 S Park St,San Francisco,Office,"3,561 SF","352 - 3,561",$79.00 SF/Year
+28,The Flatiron Bldg 1 Sutter St,San Francisco,Office,"34,258 SF","909 - 12,183",Withheld
+29,410 Townsend St,San Francisco,Office,"78,000 SF","7,649 - 36,245",Withheld
+30,50 California 50 California St,San Francisco,Office,"700,785 SF","10 - 171,899",Withheld
+31,505 Montgomery St,San Francisco,Office,"350,786 SF","10 - 115,528",$36.00 - 60.00 SF/Year
+32,1850 Gateway Dr,San Mateo,Office,"142,911 SF","2,979 - 72,792",$47.40 - 63.00 SF/Year
+33,Bush & Larkin 1200-1232 Larkin St,San Francisco,Warehouse,"37,812 SF","18,906 - 37,812",$50.00 SF/Year
+34,The Redstone Building 2940 16th St,San Francisco,Office,"55,560 SF","143 - 1,898",$23.28 SF/Year
+35,550 Allerton St,Redwood City,Office,"76,649 SF","14,886",$87.00 SF/Year
+36,388 Cambridge Ave,Palo Alto,Office,"38,523 SF","7,600 - 32,600 $119.40",SF/Year
+37,Union Square Building 291 Geary St,San Francisco,Office,"41,385 SF","857 - 10,569",Withheld
+38,993 Laurel St,San Carlos,Office,"17,853 SF","1,128 - 14,661",Withheld
+39,986 Mission St,San Francisco,Office,"45,060 SF","2,000 - 29,270",$22.00 - 26.00 SF/Year
+40,The Russ Building 235 Montgomery St,San Francisco,Office,"530,000 SF","457 - 254,124",$29.00 SF/Year
+41,601 Montgomery St,San Francisco,Office,"233,628 SF","1,430 - 132,094",Withheld
+42,The Mills Building 220 Montgomery St,San Francisco,Office,"491,624 SF","3,506 - 141,937",$29.00 - 68.00 SF/Year
+43,Sunnyvale Financial Plaza 333 W El Camino Real,Sunnyvale,Office,"52,414 SF","1,100 - 16,005",Withheld
+44,Union Street Plaza 2001 Union St,San Francisco,Office,"84,236 SF","1,000 - 5,646",$62.00 - 72.00 SF/Year
+45,400 South 400 S El Camino Real,San Mateo,Office,"153,432 SF","1,825",$81.00 SF/Year
+46,2000 Alameda 2000 Alameda de las Pul- gas,San Mateo,Office,"153,336 SF","4,478 - 21,467",$45.00 SF/Year
+47,900 Front St,San Francisco,Office,"116,328 SF","4,500 - 9,000",$48.00 SF/Year
+48,2513-2525 E Charleston Rd,Mountain View,Office,"49,137 SF","7,647 - 33,498",$42.00 SF/Year
+49,Amco Building 650 5th St,San Francisco,Office,"60,900 SF","1,334 - 8,933",Withheld
+50,101 S San Mateo Dr,San Mateo,Office,"70,334 SF","5,744 - 23,650",Withheld
+51,Laurel Towers 3700 S El Camino Real,San Mateo,Office,"8,170 SF","547 - 3,187",$23.40 - 30.00 SF/Year
+52,1301 Sansome St,San Francisco,Office,"35,466 SF","50 - 22,051",$38.00 SF/Year
+53,1650 S Amphlett Blvd,San Mateo,Office,"46,686 SF","881 - 5,066",Withheld
+54,1730 S Amphlett Blvd,San Mateo,Office,"61,485 SF","1,395 - 20,524",Withheld
+55,600 El Camino Real,Belmont,Retail,"10,700 SF","3,400",$36.00 SF/Year
+56,James Bong Bldg 833 Market St,San Francisco,Office,"126,894 SF","289 - 59,046",$33.00 - 36.00 SF/Year
+57,1045 17th St,San Francisco,Office,"16,000 SF","1,446 - 14,816",$32.04 - 33.00 SF/Year
+58,490 Post St,San Francisco,Office,"129,000 SF","90 - 6,991",$52.80 - 66.00 SF/Year
+59,90 Spruce Ave,South San Francisco,Light Distribution,"36,000 SF","742 - 12,820",$18.60 - 21.00 SF/Year
+60,385 1st Ave,San Mateo,Office,"1,670 SF","1,670",$36.00 SF/Year
+61,500-506 2nd Ave,San Mateo,Office,"5,000 SF","1,860",$24.00 SF/Year
+62,181 2nd St,San Francisco,Office,"26,000 SF","150 - 20,500",$40.00 - 42.00 SF/Year
+63,425 2nd St,San Francisco,Office,"54,712 SF","3,100 - 7,502",$29.00 - 42.00 SF/Year
+64,625 Second 625 2nd St,San Francisco,Office,"171,187 SF","3,625 - 33,638",$45.00 - 65.00 SF/Year
+65,665 3rd St,San Francisco,Office,"134,445 SF","200 - 51,605",$27.00 - 36.00 SF/Year
+66,6258-6260 3rd St,San Francisco,Retail,"3,000 SF","1,370",$30.00 SF/Year
+67,51-69 E 3rd Ave,San Mateo,Office,"40,000 SF","100 - 4,500",$48.00 SF/Year
+68,301 E 3rd Ave,San Mateo,Office,"10,000 SF","1,200 - 3,197",$54.00 SF/Year
+69,370 4th St,San Francisco,Office,"8,000 SF","4,000 - 11,472",$40.00 SF/Year
+70,534-548 4th St,San Francisco,Office,"28,000 SF","14,000 - 28,000",$45.00 SF/Year
+71,584-590 4th St,San Francisco,Retail,"5,625 SF","625 - 4,850",$35.00 SF/Year
+72,4-98 E 4th Ave,San Mateo,Retail,"92,769 SF","2,740",$45.00 SF/Year
+73,17 E 4th Ave,San Mateo,Office,"2,305 SF","1,152 - 2,305",$33.00 SF/Year
+74,33 E 4th Ave,San Mateo,Office,"8,555 SF","3,145 - 8,555",$30.00 SF/Year
+75,37 E 4th Ave,San Mateo,Office,"9,600 SF","5,000",$60.00 SF/Year
+76,325 5th St,San Francisco,Office,"10,891 SF","3,572 - 7,144",$48.00 SF/Year
+77,153 E 5th Ave,San Mateo,Retail,"3,500 SF",845,$52.20 SF/Year
+78,Twin Pines Professional B… 1200 6th Ave,Belmont,Office,"3,976 SF",806,$39.00 SF/Year
+79,380 7th St,San Francisco,Office,"4,800 SF","2,125",$45.12 SF/Year
+80,301-335 8th St,San Francisco,Showroom,"72,324 SF","1,335 - 13,875",$21.00 SF/Year
+81,Sobel Design Bldg 680 8th St,San Francisco,Retail,"47,628 SF","1,055 - 13,503",Withheld
+82,271-275 9th St,San Francisco,Office,"22,500 SF","4,900",$18.00 SF/Year
+83,346 9th St,San Francisco,Office,"25,000 SF","12,500 - 25,000",$60.00 SF/Year
+84,414-424 9th St,San Francisco,Office,"30,010 SF","6,690",$32.00 SF/Year
+85,450 9th St,San Francisco,Office,"27,000 SF","9,000 - 27,000",$30.00 SF/Year
+86,James Lick Bath House 165 10th St,San Francisco,Office,"12,658 SF",600,$54.96 SF/Year
+87,221-225 11th St,San Francisco,Retail,"11,396 SF","4,170",$36.00 SF/Year
+88,350 11th St,San Francisco,Office,"25,000 SF","3,125 - 25,000",$48.00 SF/Year
+89,645 14th Ave,San Francisco,Specialty,"32,703 SF","11,434 - 22,868",$36.00 SF/Year
+90,411 15th Ave,San Francisco,Apartments,16 Units,"752 - 1,542",Withheld
+91,2973 16th St,San Francisco,Office,"22,572 SF","4,281 - 8,562",$15.00 - 21.00 SF/Year
+92,3140-3150 16th St,San Francisco,Retail,"20,214 SF","2,699 - 5,748",$36.00 - 60.00 SF/Year
+93,3001 19th St,San Francisco,Office,"17,000 SF","6,000",$48.00 SF/Year
+94,1800-1824 20th St,San Francisco,Office,"11,834 SF","422 - 1,611",$45.00 - 59.00 SF/Year
+95,3505 20th St,San Francisco,Office,"7,381 SF","4,200",$30.00 SF/Year
+96,126 W 25th Ave,San Mateo,Retail,"9,107 SF","2,500",$18.00 SF/Year
+97,Cedar Hill Office 295 89th St,Daly City,Office,"24,072 SF","556 - 1,725",$34.20 SF/Year
+98,Bayside Corporate Center 433 Airport Blvd,Burlingame,Office,"67,000 SF","493 - 16,974",$24.00 - 30.00 SF/Year
+99,930 Alabama St,San Francisco,Office,"6,500 SF","6,500",$80.00 SF/Year
+100,Sea Breeze 111 Anza Blvd,Burlingame,Office,"101,485 SF","1,040 - 22,495",$45.00 SF/Year
+101,455 Arkansas St,San Francisco,Office,"12,000 SF","5,000",$30.96 SF/Year
+102,15-25 S B St,San Mateo,Office,"11,600 SF","1,425",$43.20 SF/Year
+103,38-42 S B St,San Mateo,Office,"8,043 SF","2,200",$33.72 SF/Year
+104,Old City Hall 215-227 S B St,San Mateo,Retail,"13,000 SF","387 - 2,519",$46.20 SF/Year
+105,709-711 S B St,San Mateo,Retail,"5,005 SF","2,385 - 5,005",$30.00 SF/Year
+106,Pinefino 100 Baden Ave,South San Francisco,Apartments,69 Units,"1,185",$36.00 SF/Year
+107,999 Baker Way,San Mateo,R&D,"68,706 SF","100 - 30,288",$54.00 SF/Year
+108,Imperial Bank Bldg 18-22 Battery St,San Francisco,Office,"62,260 SF","656 - 6,700",$36.00 SF/Year
+109,98 Battery St,San Francisco,Office,"65,675 SF","2,246 - 5,020",$42.00 SF/Year
+110,335-369 Beach Rd,Burlingame,R&D,"32,000 SF","561 - 2,471",$27.00 SF/Year
+111,505 Beach St,San Francisco,Office,"21,202 SF","1,650 - 5,565",$32.00 - 40.00 SF/Year
+112,500 Ben Franklin Ct,San Mateo,Office,"2,545 SF","2,545",$30.00 SF/Year
+113,189 N Bernardo Ave,Mountain View,Office,"63,270 SF","9,000 - 40,635",$39.00 - 41.40 SF/Year
+114,319 N Bernardo Ave,Mountain View,R&D,"51,440 SF","100 - 38,609",$28.68 - 192.00 SF/Year
+115,200 Blossom Ln,Mountain View,Office,"8,620 SF","2,056 - 6,432",$35.40 - 71.40 SF/Year
+116,1611 Borel Pl,San Mateo,Office,"10,000 SF",776,$43.80 SF/Year
+117,1650 Borel Pl,San Mateo,Office,"25,700 SF","681 - 10,265",$43.80 SF/Year
+118,Bovet Office Centre 155 Bovet Rd,San Mateo,Office,"131,606 SF","1,487 - 44,188",$47.40 SF/Year
+119,300 Brannan St,San Francisco,Office,"67,792 SF","1,344 - 17,315",$35.00 - 47.00 SF/Year
+120,425-427 Brannan St,San Francisco,Showroom,"19,500 SF","9,750",$75.00 SF/Year
+121,790 Brannan St,San Francisco,Office,"3,700 SF","1,850",$39.00 SF/Year
+122,840 Brannan St,San Francisco,Retail,"55,140 SF","397 - 6,000",$33.00 SF/Year
+123,1000 Brannan St,San Francisco,Office,"90,000 SF","4,336 - 13,815",$24.00 - 30.00 SF/Year
+124,Bldg B 370-390 Bridge Pky,Redwood City,Office,"31,620 SF","875 - 16,746",$35.40 - 42.00 SF/Year
+125,100-120 Broadway,San Francisco,Office,"25,525 SF","4,900 - 25,525",$33.00 SF/Year
+126,325-333 Broadway,San Francisco,Office,"16,600 SF","3,500 - 7,100",$24.00 - 40.00 SF/Year
+127,483-493 Broadway,San Francisco,Retail,"5,996 SF","2,998",$48.00 SF/Year
+128,678 Broadway,San Francisco,Retail,"5,698 SF","2,507",$36.00 SF/Year
+129,1747-1749 Broadway St,Redwood City,Office,"10,962 SF","338 - 1,608",$30.72 - 45.00 SF/Year
+130,1991 Broadway St,Redwood City,Office,"61,710 SF","2,912 - 10,250",$87.00 SF/Year
+131,Fox Theatre 2209-2223 Broadway St,Redwood City,Retail,"39,662 SF","8,013",$60.00 SF/Year
+132,487 Bryant St,San Francisco,Office,"10,767 SF","2,860 - 10,056",$24.00 - 36.00 SF/Year
+133,514 Bryant St,San Francisco,Office,"6,100 SF","3,050 - 6,100",$38.00 SF/Year
+134,617-629 Bryant St,San Francisco,Office,"36,000 SF","15,000 - 36,000",$80.00 SF/Year
+135,715 Bryant st. 715 Bryant St,San Francisco,Warehouse,"10,000 SF","1,550 - 6,700",$26.00 - 32.00 SF/Year
+136,772 Bryant St,San Francisco,Office,"6,000 SF","2,000 - 6,000",$36.00 SF/Year
+137,855 Bryant St,San Francisco,Office,"6,596 SF","1,222",$35.35 SF/Year
+138,2180-2182 Bryant St,San Francisco,Office,"18,739 SF","1,300 - 4,050",$50.76 - 60.48 SF/Year
+139,Pacific Union Bldg 3727-3735 Buchanan St,San Francisco,Office,"24,200 SF","1,226 - 2,726",$51.00 SF/Year
+140,333 Bush St,San Francisco,Office,"597,694 SF","54 - 150,488",$49.00 SF/Year
+141,381 Bush St,San Francisco,Office,"13,500 SF","150 - 1,950",$29.00 - 48.00 SF/Year
+142,2222 Bush St,San Francisco,Retail,"7,613 SF","2,378 - 4,792",$60.00 SF/Year
+143,517 Byron St,Palo Alto,Office,"2,868 SF",732,$96.00 SF/Year
+144,220 California Ave,Palo Alto,Office,"6,452 SF","1,085",$57.00 SF/Year
+145,777 California Ave,Palo Alto,Office,"59,861 SF","11,192",$81.00 SF/Year
+146,1145 California Dr,Burlingame,Retail,"11,500 SF","1,420 - 3,555",$36.00 SF/Year
+147,350 California St,San Francisco,Office,"305,000 SF","100 - 215,454",$36.00 - 39.00 SF/Year
+148,Insurance Exchange Bldg 433 California St,San Francisco,Office,"108,925 SF","1,711 - 71,321",$40.00 SF/Year
+149,California Tower 550 California St,San Francisco,Office,"332,672 SF","586 - 39,765",$36.00 - 40.00 SF/Year
+150,580 California Street 580 California St,San Francisco,Office,"357,700 SF","10 - 174,444",$55.00 SF/Year
+151,720 California St,San Francisco,Office,"84,294 SF","12,042",$38.00 SF/Year
+152,756 California St,Mountain View,Office,"2,480 SF",997,$78.00 SF/Year
+153,1700 California 1700 California St,San Francisco,Apartments,47 Units,"2,250 - 46,356",$72.00 SF/Year
+154,3838 California St,San Francisco,Office,"82,805 SF","480 - 10,652",$69.00 - 71.40 SF/Year
+155,One California One California St,San Francisco,Office,"512,000 SF","705 - 160,745",$79.00 SF/Year
+156,145 North California 145 N California Ave,Palo Alto,Office,"3,432 SF",654,$73.32 SF/Year
+157,480 S California Ave,Palo Alto,Office,"23,118 SF","1,380",$73.91 SF/Year
+158,The Mony Building 550 S California Ave,Palo Alto,Office,"25,773 SF","2,000",$83.40 SF/Year
+159,400 W California Ave,Sunnyvale,Office,"34,862 SF","11,000 - 29,871",$48.00 SF/Year
+160,350 Cambridge Ave,Palo Alto,Office,"24,176 SF","1,892 - 8,765",$39.00 - 63.00 SF/Year
+161,415 Cambridge Ave,Palo Alto,Office,"6,125 SF",150,$66.00 SF/Year
+162,430 Cambridge Ave,Palo Alto,Office,"6,128 SF","2,668",$42.72 SF/Year
+163,121 Capp St,San Francisco,Flex,"11,752 SF","2,871 - 5,871",$27.00 SF/Year
+164,201 Castro St,Mountain View,Office,"4,000 SF","2,500",$57.00 SF/Year
+165,444 Castro St,Mountain View,Office,"179,937 SF","1,490 - 58,454",$63.00 - 93.00 SF/Year
+166,Mountain View City Center 650 Castro St,Mountain View,Office,"122,400 SF","4,909 - 94,456",$78.00 - 95.40 SF/Year
+167,1950-2190 Cesar Chavez,San Francisco,Warehouse,"341,154 SF","19,634",$12.24 SF/Year
+168,870 E Charleston Rd,Palo Alto,Office,"5,000 SF","1,630",$54.96 SF/Year
+169,919 Clay St,San Francisco,Retail,"1,875 SF","1,320",$30.00 SF/Year
+170,3190 Clearview Way,San Mateo,Office,"13,601 SF","1,158 - 4,808",$36.36 - 39.00 SF/Year
+171,900-910 Clement St,San Francisco,Retail,"4,524 SF","2,206 - 4,524",$39.00 SF/Year
+172,363 Clementina St,San Francisco,Office,"11,200 SF","5,800",$45.00 SF/Year
+173,743 Clementina St,San Francisco,Office,"3,600 SF","3,600",$48.00 SF/Year
+174,Bldg 1 555 Clyde Ave,Mountain View,Office,"6,674 SF","1,704 - 5,038",$39.00 SF/Year
+175,Oakmead Village Square -… 349 Cobalt Way,Sunnyvale,Office,"6,611 SF","1,080 - 2,160",$34.20 SF/Year
+176,580 College Ave,Palo Alto,Office,"7,000 SF","1,335 - 7,000",$60.00 SF/Year
+177,200-222 Columbus Ave,San Francisco,Office,"20,000 SF","756 - 2,806",$32.00 - 44.00 SF/Year
+178,Bradford Bldg 632 Commercial St,San Francisco,Office,"12,500 SF","1,775 - 5,929",$32.00 - 58.00 SF/Year
+179,149 Commonwealth Dr,Menlo Park,Office,"153,738 SF","10 - 37,022",$42.00 SF/Year
+180,819-829 Cowan Rd,Burlingame,Flex,"24,998 SF","2,544 - 5,531",Withheld
+181,1134 Crane St,Menlo Park,Office,"10,000 SF","3,000",$52.20 SF/Year
+182,Candlestick Point Condo… 1 Crescent Way,San Francisco,Apartments,260 Units,"1,600",$19.20 SF/Year
+183,1500-1560 Custer Ave,San Francisco,Warehouse,"70,000 SF","9,791 - 19,853",$19.80 SF/Year
+184,Pioneer Square Bldg 555 De Haro St,San Francisco,Office,"50,021 SF","5,220 - 13,416",$42.96 - 43.00 SF/Year
+185,1-25 Division St,San Francisco,Retail,"59,000 SF","1,000 - 9,278",$24.00 SF/Year
+186,290 Division St,San Francisco,Office,"35,628 SF","9,674",$48.00 SF/Year
+187,Athens of San Carlos 552-560 El Camino Real,San Carlos,Apartments,24 Units,"1,320 - 2,756",$45.00 SF/Year
+188,648-650 El Camino Real,Redwood City,Office,"9,910 SF","525 - 2,181",$30.00 SF/Year
+189,Building 1 855 El Camino Real,Palo Alto,Retail,"23,060 SF","919 - 5,497",$90.00 SF/Year
+190,1010 El Camino Real,Menlo Park,Office,"53,807 SF","2,738 - 10,228 $105.00",SF/Year
+191,1150 El Camino Real,Menlo Park,Office,"2,500 SF",309,$69.90 SF/Year
+192,1285 El Camino Real,Menlo Park,Apartments,15 Units,"1,002",$78.00 SF/Year
+193,1501 El Camino Real,Belmont,Retail,"21,000 SF","670 - 2,350",$24.00 SF/Year
+194,1705 El Camino Real,Palo Alto,Office,"11,128 SF","11,128",$66.00 SF/Year
+195,1860 El Camino Real,Burlingame,Office,"48,013 SF","640 - 4,785",$45.00 - 49.80 SF/Year
+196,2051 El Camino Real,Palo Alto,Office,"6,529 SF","1,260",$72.00 SF/Year
+197,Four Palo Alto Square 3000 El Camino Real,Palo Alto,Office,"19,539 SF","100 - 10,701",$90.00 SF/Year
+198,El Camino Real @ Calaba… 3084-3088 El Camino Real,Santa Clara,Retail,"3,853 SF","1,564 - 3,853",$47.40 SF/Year
+199,Seoul Plaza 3148 El Camino Real,Santa Clara,Office,"15,200 SF","440 - 3,531",$36.00 SF/Year
+200,3239 El Camino Real 3239 El Camino Real,Palo Alto,Office,"4,469 SF",567,$57.00 SF/Year
+201,3330 El Camino Real,Santa Clara,Retail,"9,623 SF","430 - 2,240",Withheld
+202,4131 El Camino Real,Palo Alto,Office,"16,274 SF","1,242 - 9,242",$55.00 SF/Year
+203,Los Altos Clinic 4906-4908 El Camino Real,Los Altos,Office,"13,800 SF","500 - 1,000",$34.80 SF/Year
+204,4920 El Camino Real,Los Altos,Office,"22,416 SF","5,851 - 12,138",$35.40 SF/Year
+205,4940 El Camino Real,Los Altos,Office,"16,563 SF","3,721",$54.00 SF/Year
+206,Los Altos Office Center 4962 El Camino Real,Los Altos,Office,"26,417 SF","560 - 2,675",$37.80 - 47.40 SF/Year
+207,4970 El Camino Real,Los Altos,Office,"19,353 SF","1,392 - 13,941",$46.80 SF/Year
+208,4984 El Camino Real,Los Altos,Office,"26,274 SF","1,347 - 10,572",$46.80 SF/Year
+209,Crossroads Office Center 700 E El Camino Real,Mountain View,Office,"49,800 SF","6,014 - 31,140",$71.40 SF/Year
+210,950 E El Camino Real,Sunnyvale,Retail,"3,889 SF","3,889",$60.00 SF/Year
+211,70 N El Camino Real,San Mateo,Office,"4,000 SF",875,$35.40 SF/Year
+212,1300 S El Camino Real,San Mateo,Office,"99,995 SF","1,552 - 46,760",$59.40 SF/Year
+213,1743-1745 S El Camino Real,San Mateo,Retail,"13,200 SF","5,850",$30.00 SF/Year
+214,2285-2291 S El Camino Real,San Mateo,Office,"7,219 SF","1,500",$27.00 SF/Year
+215,Buildings 4 & 5 100 W El Camino Real,Mountain View,Office,"25,000 SF",761,$51.00 SF/Year
+216,800 W El Camino Real,Mountain View,Office,"118,457 SF","100 - 24,500",$90.00 SF/Year
+217,970 W El Camino Real,Sunnyvale,Retail,"8,590 SF",422,$84.00 SF/Year
+218,1100 W El Camino Real,Mountain View,Retail,"4,213 SF","3,546",$42.00 SF/Year
+219,Abhyanker Startup & Med… 1580 W El Camino Real,Mountain View,Office,"14,275 SF","1,165 - 2,515",$46.20 SF/Year
+220,Atrium Business Center 1975 W El Camino Real,Mountain View,Office,"65,996 SF","4,145 - 27,742",$57.00 - 63.00 SF/Year
+221,Alpine Animal Hospital 2460 W El Camino Real,Mountain View,Office,"2,394 SF","2,394",$57.00 SF/Year
+222,5050 W El Camino Real,Los Altos,Office,"40,417 SF","2,792",$63.00 SF/Year
+223,111 Ellis St,San Francisco,Office,"21,412 SF","2,944 - 12,507",$35.00 SF/Year
+224,625 Ellis St,Mountain View,Office,"35,760 SF","3,257 - 22,919",$54.00 - 59.40 SF/Year
+225,899 Ellis St,San Francisco,Office,"5,450 SF","2,355 - 4,711",$33.00 SF/Year
+226,300 S Ellsworth Ave,San Mateo,Office,"33,266 SF","8,480 - 26,495",$94.20 SF/Year
+227,One Embarcadero Center One Embarcadero Ctr,San Francisco,Office,"838,051 SF","$45.00 94 - 202,638",- 224.88 SF/Year
+228,Bldg B 331 E Evelyn Ave,Mountain View,R&D,"71,012 SF","5,552 - 67,048",$42.00 SF/Year
+229,701-747 W Evelyn Ave,Mountain View,Retail,"9,994 SF","1,947 - 9,994",$54.00 SF/Year
+230,727-747 W Evelyn Ave,Mountain View,Retail,"6,206 SF","761 - 6,102",Withheld
+231,1080-1098 W Evelyn Ave,Sunnyvale,Warehouse,"12,400 SF","960 - 5,284",$31.80 SF/Year
+232,San Francisco Executive P… 150 Executive Park Blvd,San Francisco,Office,"105,000 SF","685 - 21,031",$30.00 SF/Year
+233,299 Fairchild Dr,Mountain View,Light Distribution,"7,500 SF","1,460 - 8,960",$39.00 SF/Year
+234,2555 Flores St,San Mateo,Office,"26,000 SF","493 - 9,312",$36.00 - 39.00 SF/Year
+235,620 Folsom Street 620 Folsom St,San Francisco,Office,"49,800 SF","16,600 - 33,200",$19.00 SF/Year
+236,Shiply Square 821 Folsom St,San Francisco,Apartments,78 Units,"3,228",$36.00 SF/Year
+237,832 Folsom St,San Francisco,Office,"52,000 SF","3,600",$38.00 SF/Year
+238,848-850 Folsom St,San Francisco,Retail,"11,059 SF","2,200 - 4,400",$50.00 SF/Year
+239,960 Folsom St,San Francisco,Retail,"3,475 SF","1,350 - 3,475",$30.00 SF/Year
+240,1062 Folsom St,San Francisco,Office,"12,000 SF","4,000 - 8,000",$27.00 SF/Year
+241,1228 Folsom St,San Francisco,Light Manufacturing,"16,500 SF","2,500 - 7,500",$24.00 SF/Year
+242,1435 Folsom St,San Francisco,Flex,"11,468 SF","4,448 - 11,468",$52.00 SF/Year
+243,203 Forest Ave,Palo Alto,Office,"4,228 SF","4,228",$71.40 SF/Year
+244,1060-1098 Foster City Blvd,Foster City,Retail,"73,186 SF","633 - 11,603",Withheld
+245,55 Francisco St,San Francisco,Office,"187,524 SF","6,142 - 50,601",$42.00 - 82.00 SF/Year
+246,60 Francisco St,San Francisco,Office,"15,387 SF","1,119",$48.25 SF/Year
+247,M/N 877 W Fremont Ave,Sunnyvale,Office,"7,365 SF","1,263 - 6,066",$35.40 SF/Year
+248,459 Fulton St,San Francisco,Office,"17,544 SF","483 - 1,320",$27.00 - 29.76 SF/Year
+249,3036-3040 Fulton St,San Francisco,Apartments,4 Units,300 $140.00,SF/Year
+250,3537 Fulton St,San Francisco,Office,"1,005 SF",660,$45.36 SF/Year
+251,The Presidio 10 Funston Ave,San Francisco,Office,"4,010 SF","4,010",$70.00 SF/Year
+252,601 Gateway Blvd,South San Francisco,Office,"221,383 SF","1,744 - 98,798",$48.00 SF/Year
+253,611 Gateway Blvd,South San Francisco,Office,"262,274 SF","100 - 75,091",$42.00 SF/Year
+254,Building I 1800 Gateway Dr,San Mateo,Office,"78,204 SF","10,270",$47.40 SF/Year
+255,Building II 1810 Gateway Dr,San Mateo,Office,"75,715 SF","3,862 - 38,972",$47.40 SF/Year
+256,1840 Gateway Dr,San Mateo,Office,"68,974 SF","65 - 32,747",$57.00 SF/Year
+257,Emeric Goodman 1115 Geary Blvd,San Francisco,Office,"22,608 SF","1,224 - 2,824",$29.52 - 34.20 SF/Year
+258,2186 Geary Blvd,San Francisco,Office,"19,751 SF",755,$48.00 SF/Year
+259,5300-5320 Geary Blvd,San Francisco,Office,"15,000 SF","500 - 1,053",$51.60 SF/Year
+260,Bankers Investment Buildi… 49-55 Geary St,San Francisco,Office,"151,546 SF","835 - 35,015",$32.00 - 42.00 SF/Year
+261,Geary-Grant Building 101-111 Geary St,San Francisco,Office,"8,800 SF","240 - 2,090",$30.00 SF/Year
+262,459 Geary St,San Francisco,Office,"20,592 SF","2,665",$36.00 SF/Year
+263,1 Embarcadero Place 2100 Geng Rd,Palo Alto,Office,"48,081 SF","100 - 8,063",$57.00 SF/Year
+264,1648 Gilbreth Rd,Burlingame,Office,"7,187 SF","3,593 - 7,187",$22.20 SF/Year
+265,585 Glenwood Ave,Menlo Park,Office,"4,950 SF","84 - 6,445",$61.22 SF/Year
+266,263-265 Golden Gate Ave,San Francisco,Retail,"3,900 SF","1,115 - 2,305",$45.00 SF/Year
+267,44 Gough St,San Francisco,Office,"36,041 SF","105 - 5,217",$23.00 - 34.00 SF/Year
+268,301 Grand Ave,South San Francisco,Office,"12,000 SF","3,689",$24.36 SF/Year
+269,435 Grand Ave,South San Francisco,Office,"7,995 SF","3,997 - 7,994",$27.00 SF/Year
+270,239 Grant Ave,San Francisco,Office,"13,133 SF","1,700 - 3,400",$33.84 SF/Year
+271,253 Grant Ave,San Francisco,Retail,"2,293 SF","338 - 1,952",$47.04 SF/Year
+272,626 Grant Ave,San Francisco,Office,"13,884 SF",100,$45.00 SF/Year
+273,1503 Grant Rd,Mountain View,Office,"19,771 SF","2,007 - 7,692",$71.40 SF/Year
+274,30 Guerrero St,San Francisco,Office,"1,364 SF","1,364",$36.00 SF/Year
+275,20 Haight St,San Francisco,Office,"10,497 SF","10,497",$54.00 SF/Year
+276,67-71 Haight St,San Francisco,Retail,"2,450 SF","1,650",$50.90 SF/Year
+277,681 Harrison St,San Francisco,Office,"2,645 SF","1,322 - 2,645",$29.50 SF/Year
+278,1818 Harrison St,San Francisco,Manufacturing,"18,360 SF","18,360",$12.00 SF/Year
+279,263 Hatch Ln,Burlingame,Office,"3,550 SF","2,175",$51.00 SF/Year
+280,575 High St,Palo Alto,Office,"22,467 SF","1,840",$84.00 SF/Year
+281,831 High St,Palo Alto,Office,"5,400 SF","5,400",$63.00 SF/Year
+282,Parkside Towers 1001-1051 E Hillsdale Blvd,Foster City,Office,"399,422 SF","7,509 - 150,323",$23.40 - 54.00 SF/Year
+283,Foster City Medical Pavilion 1241 E Hillsdale Blvd,Foster City,Office,"40,143 SF","933 - 16,063",$45.00 - 51.00 SF/Year
+284,Hillsdale Office Center 1291 E Hillsdale Blvd,Foster City,Office,"46,452 SF","381 - 11,234",$36.00 - 42.00 SF/Year
+285,1310 Hollenbeck Ave,Sunnyvale,Office,"5,012 SF","722 - 1,444",$49.80 SF/Year
+286,Hooper South 100 Hooper St,San Francisco,Office,"212,000 SF 12,469","- 149,530",$65.00 SF/Year
+287,101 Hope St,Mountain View,Office,"9,096 SF","9,096",$83.40 SF/Year
+288,The Folger Coffee Compa… 101 Howard St,San Francisco,Office,"114,556 SF","7,328 - 25,665",$50.00 - 52.00 SF/Year
+289,530 Howard St,San Francisco,Office,"25,000 SF","4,481",$29.00 SF/Year
+290,Central Building 835-837 Howard St,San Francisco,Office,"34,963 SF","7,903",$29.00 SF/Year
+291,977 Howard St,San Francisco,Warehouse,"3,675 SF","1,675 - 3,675",$21.60 SF/Year
+292,1154-1158 Howard St,San Francisco,Flex,"13,040 SF","4,000 - 13,040",$30.00 SF/Year
+293,1245-1263 Howard St,San Francisco,Flex,"35,310 SF","5,000 - 15,000",$28.80 SF/Year
+294,1458 Howard St,San Francisco,Office,"9,000 SF","4,500 - 9,000",$42.00 SF/Year
+295,1435-1475 Huntington Ave,South San Francisco,Showroom,"80,000 SF","3,224",$30.60 SF/Year
+296,1486 Huntington Ave,South San Francisco,Office,"13,245 SF","2,621",$34.80 SF/Year
+297,1499 Illinois St,San Francisco,Warehouse,"6,194 SF","6,194",$21.60 SF/Year
+298,922-926 Industrial Ave,Palo Alto,Warehouse,"7,931 SF","1,200",$34.20 SF/Year
+299,1100 Industrial Rd,San Carlos,R&D,"108,000 SF","500 - 4,195",$23.40 SF/Year
+300,2845-2847 Ingalls St,San Francisco,Specialty,"3,369 SF","2,158",$12.24 SF/Year
+301,2201-2209 Irving St,San Francisco,Retail,"11,500 SF","300 - 1,100",$42.00 - 48.00 SF/Year
+302,54 Jeff Adachi Way,San Francisco,Flex,"6,792 SF","2,350 - 4,700",$36.00 SF/Year
+303,Jefferson Plaza 3115-3137 Jefferson Ave,Redwood City,Retail,"6,434 SF","1,625",$42.00 SF/Year
+304,471 Jessie St,San Francisco,Office,"4,680 SF","1,550 - 3,100",$48.00 SF/Year
+305,California Federal Building 950 John Daly Blvd,Daly City,Office,"23,000 SF","3,000 - 4,249",$39.00 SF/Year
+306,20 Jones St,San Francisco,Office,"33,000 SF","2,000 - 33,000",$12.00 - 24.00 SF/Year
+307,GENESIS - Station 2001 Junipero Serra Blvd,Daly City,R&D,"441,000 SF","2,507 - 217,226",$75.00 SF/Year
+308,45-47 Kearny St,San Francisco,Office,"28,660 SF","3,006",$36.00 SF/Year
+309,123-133 Kearny St,San Francisco,Office,"26,446 SF","835 - 3,233",$29.00 SF/Year
+310,221 Kearny St,San Francisco,Office,"9,365 SF","1,573 - 4,646",$40.00 SF/Year
+311,227-231 Kearny St,San Francisco,Retail,"7,050 SF","1,232 - 5,423",$33.00 - 38.00 SF/Year
+312,260 Kearny St,San Francisco,Office,"12,500 SF","1,500 - 3,000",$29.00 SF/Year
+313,1292 Kifer Rd,Sunnyvale,R&D,"25,360 SF","3,600 - 7,200",$24.00 SF/Year
+314,1296 Kifer Rd,Sunnyvale,Office,"57,636 SF","2,000",$27.00 SF/Year
+315,1298 Kifer Rd,Sunnyvale,Office,"25,570 SF","2,320 - 4,680",$26.00 - 39.00 SF/Year
+316,Decathlon Executive Build… 3235 Kifer Rd,Santa Clara,Office,"35,227 SF","2,811 - 7,311",$30.00 SF/Year
+317,Cherry Chase Medical Ce… 665 S Knickerbocker Dr,Sunnyvale,Office,"11,192 SF","720 - 3,991",$35.40 SF/Year
+318,3130 La Selva St,San Mateo,Office,"33,682 SF","787 - 21,898",$45.00 SF/Year
+319,530 Lakeside Dr,Sunnyvale,Office,"44,800 SF","1,443 - 20,908",$63.00 SF/Year
+320,2465 Latham St,Mountain View,Office,"48,006 SF","5,308 - 36,958",$45.00 SF/Year
+321,501 Laurel St,San Carlos,Retail,"6,000 SF","2,000 - 6,000",$35.88 SF/Year
+322,961-963 Laurel St,San Carlos,Office,"8,000 SF","1,734",$39.00 SF/Year
+323,987 Laurel St,San Carlos,Retail,"1,185 SF","1,185",$47.88 SF/Year
+324,510 Lawrence Expy,Sunnyvale,Retail,"17,946 SF","176 - 3,145",$33.00 SF/Year
+325,Bldg D One Letterman Dr,San Francisco,Office,"170,703 SF","6,256 - 24,187 $150.00",SF/Year
+326,980 Linda Vista Ave,Mountain View,R&D,"9,408 SF","9,408",$35.40 SF/Year
+327,320 Logue Ave,Mountain View,Office,"30,636 SF","1,099 - 4,294",$51.00 SF/Year
+328,Telegraph Landing Condos 150-156 Lombard St,San Francisco,Apartments,190 Units,"1,200",$67.00 SF/Year
+329,345 Lorton Ave,Burlingame,Office,"21,300 SF","1,426 - 3,546",$60.00 SF/Year
+330,47 Lusk St,San Francisco,Office,"14,000 SF","1,600",$43.00 SF/Year
+331,591-597 Lytton Ave,Palo Alto,Office,"3,584 SF",316,$60.00 SF/Year
+332,27 Maiden Ln,San Francisco,Office,"61,972 SF","1,168 - 16,207",$24.00 - 45.00 SF/Year
+333,100 Grant 77 Maiden Ln,San Francisco,Office,"120,334 SF","1,950 - 53,113",$23.88 - 30.48 SF/Year
+334,170 Maiden Ln,San Francisco,Office,"64,800 SF","7,329 - 22,021",$39.00 SF/Year
+335,250 Main St,San Mateo,Retail,"9,811 SF","1,340",$30.84 SF/Year
+336,The Brugger Bldg 305 Main St,Redwood City,Office,"55,200 SF","18,400 - 36,800",$45.00 SF/Year
+337,388 Market St,San Francisco,Office,"257,040 SF","10 - 195,245",$45.00 - 65.00 SF/Year
+338,575 Market St,San Francisco,Office,"480,752 SF","100 - 136,615",$65.00 SF/Year
+339,Finance Bldg 576-580 Market St,San Francisco,Office,"31,325 SF","4,541 - 13,655",$48.00 SF/Year
+340,West Coast Life Building 601-605 Market St,San Francisco,Office,"53,577 SF","595 - 6,712",$38.00 - 45.00 SF/Year
+341,One New Montgomery 625 Market St,San Francisco,Office,"70,491 SF","2,408 - 41,929",$70.00 - 80.00 SF/Year
+342,717 Market St,San Francisco,Office,"81,099 SF","9,252 - 18,611",$40.00 SF/Year
+343,Flood Bldg 870 Market St,San Francisco,Office,"300,000 SF","515 - 53,910",$40.00 - 45.00 SF/Year
+344,979-989 Market St,San Francisco,Office,"117,000 SF","18,222 - 91,110",$39.00 SF/Year
+345,1011-1013 Market St,San Francisco,Retail,"9,800 SF","2,000 - 4,500",$18.00 SF/Year
+346,Orpheum Theatre Bldg 1182 Market St,San Francisco,Office,"117,498 SF","6,028",$18.00 SF/Year
+347,Yully Bldg 1210-1212 Market St,San Francisco,Office,"23,700 SF","947 - 10,457",$12.00 - 19.00 SF/Year
+348,1540 Market St,San Francisco,Office,"48,225 SF","700 - 11,200",$15.00 SF/Year
+349,1869-1871 Market St,San Francisco,Office,"6,906 SF",800,$37.56 SF/Year
+350,2055-2057 Market St,San Francisco,Retail,"3,850 SF","1,925 - 3,850",$50.00 SF/Year
+351,2073-2079 Market St,San Francisco,Apartments,37 Units,"2,098 - 4,720",$36.00 SF/Year
+352,2370 Market St,San Francisco,Office,"7,119 SF","1,643",$24.00 SF/Year
+353,1060 Marsh Rd,Menlo Park,Office,"34,864 SF","6,437 - 17,432",$30.00 SF/Year
+354,208-220 Marshall St,Redwood City,Retail,"8,869 SF","2,876",$39.00 SF/Year
+355,702 Marshall St,Redwood City,Office,"62,595 SF","463 - 17,784",$66.00 - 72.00 SF/Year
+356,Birch Building 910 Marshall St,Redwood City,Office,"13,717 SF","13,717",$30.00 SF/Year
+357,Westmoor Village 1211-1291 S Mary Ave,Sunnyvale,Retail,"60,909 SF","1,700 - 6,220",$45.00 SF/Year
+358,34-38 Mason St,San Francisco,Office,"12,375 SF","3,026",$32.00 SF/Year
+359,440-444 S Mathilda Ave,Sunnyvale,Retail,"31,691 SF","10,829 - 31,691",$39.00 SF/Year
+360,560 S Mathilda Ave,Sunnyvale,Office,"5,700 SF","1,000 - 5,700",$60.00 SF/Year
+361,1220-1230 Midas Way,Sunnyvale,R&D,"54,500 SF","3,078 - 9,421",$63.00 SF/Year
+362,Haas Candy Factory 14 Mint Plz,San Francisco,Office,"16,400 SF","1,115",$26.91 SF/Year
+363,66-90 Mint St,San Francisco,Office,"25,000 SF","1,723 - 6,756",$32.00 SF/Year
+364,611-615 Mission St,San Francisco,Office,"45,461 SF","5,919 - 11,888",$55.00 SF/Year
+365,966 Mission St,San Francisco,Office,"7,300 SF","7,300",$42.00 SF/Year
+366,972 Mission St,San Francisco,Office,"62,000 SF","11,000",$22.00 SF/Year
+367,1328 Mission St,San Francisco,Office,"13,710 SF","2,545 - 7,237",$33.00 SF/Year
+368,1338 Mission St,San Francisco,Office,"13,437 SF","2,897",$12.00 SF/Year
+369,1360 Mission St,San Francisco,Office,"35,293 SF","3,051 - 12,035",$18.00 SF/Year
+370,1375-1385 Mission St,San Francisco,Office,"12,200 SF","1,957 - 5,548",$18.00 SF/Year
+371,1663 Mission St,San Francisco,Office,"74,750 SF","2,500 - 5,500",$30.00 SF/Year
+372,& 11 Dubose Ave 1700 Mission St,San Francisco,Retail,"6,730 SF","2,250",$31.97 SF/Year
+373,2001-2017 Mission St,San Francisco,Office,"27,591 SF","4,663 - 9,750",$27.00 SF/Year
+374,Redlick Building 2101-2129 Mission St,San Francisco,Office,"131,885 SF","3,952 - 17,221",$42.00 SF/Year
+375,2390 Mission St,San Francisco,Office,"15,000 SF","4,500",$42.00 SF/Year
+376,2871-2873 Mission St,San Francisco,Retail,"5,639 SF",150 - 350,$60.00 - 65.00 SF/Year
+377,210-218 Mississippi St,San Francisco,Flex,"8,235 SF","3,573",$26.88 SF/Year
+378,819 Mitten Rd,Burlingame,Office,"10,000 SF","1,185",$22.20 SF/Year
+379,856 Mitten Rd,Burlingame,Office,"10,000 SF","1,500 - 7,500",$30.00 SF/Year
+380,44 Montgomery 44 Montgomery St,San Francisco,Office,"692,000 SF","500 - 265,088",$55.00 SF/Year
+381,Alexander Building 155 Montgomery St,San Francisco,Office,"68,119 SF","251 - 13,072",$40.00 - 58.00 SF/Year
+382,Westlake Bldg 909 Montgomery St,San Francisco,Office,"77,174 SF","4,082 - 32,270",$30.00 SF/Year
+383,1700 Montgomery St,San Francisco,Office,"142,466 SF","58 - 26,290",$60.00 SF/Year
+384,One Montgomery Tower One Montgomery St,San Francisco,Office,"752,942 SF 5,844","- 395,053",$39.00 - 45.00 SF/Year
+385,186-198 S Murphy Ave,Sunnyvale,Retail,"16,000 SF","403 - 3,024",$24.00 - 48.00 SF/Year
+386,Law Offices 438 S Murphy Ave,Sunnyvale,Office,"9,612 SF","100 - 1,588",$57.00 SF/Year
+387,B 615 National Ave,Mountain View,Office,"19,176 SF","10,040",$54.00 SF/Year
+388,116 Natoma St,San Francisco,Office,"18,840 SF","3,949",$42.00 SF/Year
+389,654 Natoma St,San Francisco,Flex,"3,750 SF","1,875",$28.80 SF/Year
+390,90 New Montgomery St,San Francisco,Office,"132,661 SF","504 - 46,883",$45.00 SF/Year
+391,101 New Montgomery St,San Francisco,Office,"57,155 SF","3,600 - 33,708",$42.00 SF/Year
+392,111-115 New Montgomery St,San Francisco,Office,"30,974 SF","4,281 - 8,576",$48.00 SF/Year
+393,Rialto on New Montgomery 116-118 New Montgomery St,San Francisco,Office,"141,145 SF","14,414",$65.00 SF/Year
+394,1175-1185 O'Brien Dr,Menlo Park,Manufacturing,"15,414 SF","2,420 - 7,420",$30.00 SF/Year
+395,"Bldg 7 1430-1440 O'Brien Dr, Menlo Park",Menlo Park,R&D,"64,700 SF","1,685 - 9,826",$96.00 SF/Year
+396,657-659 Oak Grove Ave,Menlo Park,Office,"6,000 SF",437,$72.72 SF/Year
+397,724-726 Oak Grove Ave,Menlo Park,Office,"13,876 SF","3,000",$60.00 SF/Year
+398,845 Oak Grove Ave,Menlo Park,Office,"8,000 SF","495 - 1,995",$54.00 SF/Year
+399,885 Oak Grove Ave,Menlo Park,Office,"10,000 SF",371,$40.44 SF/Year
+400,1267 Oakmead Pky,Sunnyvale,Office,"6,000 SF","6,000",$47.40 SF/Year
+401,Octavia Court 261 Octavia Blvd,San Francisco,Apartments,15 Units,858,$37.76 SF/Year
+402,2483 Old Middlefield Way,Mountain View,Office,"33,000 SF","1,299 - 2,634",$33.00 SF/Year
+403,50 Osgood Pl,San Francisco,Office,"28,060 SF","3,320 - 16,987",$33.00 SF/Year
+404,Oyster Point Marina Plaza… 395 Oyster Point Blvd,South San Francisco,Office,"234,479 SF","1,984 - 50,867",$42.00 - 47.40 SF/Year
+405,1095 Pacific Ave,San Francisco,Apartments,9 Units,"1,450",$22.20 SF/Year
+406,1469 Pacific Ave,San Francisco,Light Manufacturing,"16,493 SF","1,424 - 16,493",$39.00 SF/Year
+407,1545-1555 Pacific Ave,San Francisco,Retail,"13,611 SF","2,000 - 20,417",$24.00 SF/Year
+408,165 St,San Francisco,Office,"5,500 SF","5,500",$58.00 SF/Year
+409,425 Mill Rd 425 Mill Rd,Palo Alto,Apartments,10 Units,"10 - 14,155",$72.00 SF/Year
+410,Bldg B 2421-2431 Park Blvd,Palo Alto,Office,"34,916 SF","1,373",$48.00 SF/Year
+411,251 Park Rd,Burlingame,Office,"6,000 SF",305 - 800,$60.00 SF/Year
+412,422-426 Peninsula Ave,San Mateo,Office,"3,456 SF","968 - 3,456",$45.60 SF/Year
+413,514-516 Peninsula Ave,San Mateo,Retail,"3,416 SF",470,$40.32 SF/Year
+414,102 Persian Dr,Sunnyvale,Office,"6,530 SF","1,600",$36.00 SF/Year
+415,1270 Persian Dr,Sunnyvale,Retail,"5,452 SF","1,025",$36.00 SF/Year
+416,160 Pine St,San Francisco,Office,"96,082 SF","3,661 - 50,379",$36.00 - 63.00 SF/Year
+417,Exchange Block Bldg 369 Pine St,San Francisco,Office,"63,769 SF","501 - 17,680",$39.50 - 62.00 SF/Year
+418,39-45 Polk St,San Francisco,Office,"6,065 SF","1,835",$29.75 SF/Year
+419,507 Polk St,San Francisco,Office,"39,000 SF","680 - 11,528",$24.00 - 30.00 SF/Year
+420,1033-1037 Polk St,San Francisco,Office,"5,200 SF","2,700 - 5,800",$31.00 - 38.00 SF/Year
+421,1715 Polk St,San Francisco,Apartments,16 Units,"1,684",$14.28 SF/Year
+422,1812 Polk St,San Francisco,Retail,"3,052 SF","3,052",$29.00 SF/Year
+423,601-621 Portola Dr,San Francisco,Office,"5,353 SF","840 - 3,840",$34.08 - 71.40 SF/Year
+424,Mechanics Institute Bldg 57-65 Post St,San Francisco,Office,"59,751 SF",234 - 478,$22.50 - 40.56 SF/Year
+425,155-165 Post St,San Francisco,Office,"39,985 SF","3,575 - 19,930",$41.00 SF/Year
+426,Post Scott Medical Building 2201-2215 Post St,San Francisco,Office,"12,390 SF",533,$48.00 SF/Year
+427,660 Price Ave,Redwood City,Office,"7,800 SF","1,752 - 5,066",$35.40 SF/Year
+428,320-350 Primrose Rd,Burlingame,Office,"66,164 SF","925 - 4,925",$47.40 - 59.40 SF/Year
+429,616 Ramona St,Palo Alto,Office,"7,546 SF",268 - 537,$96.00 SF/Year
+430,Remington Health Center 500 E Remington Dr,Sunnyvale,Office,"36,440 SF",828,$49.80 SF/Year
+431,525 W Remington Dr,Sunnyvale,Office,"10,001 SF",681,$36.00 SF/Year
+432,51 Renato Ct,Redwood City,Office,"5,166 SF","620 - 3,151",$42.00 - 56.40 SF/Year
+433,1001 N Rengstorff Ave,Mountain View,Office,"12,853 SF","6,909",$47.40 SF/Year
+434,1550 Rollins Rd,Burlingame,Warehouse,"12,500 SF","1,098 - 6,785",$30.00 SF/Year
+435,St. Francis Shopping Cent… 11-63 Saint Francis Sq,Daly City,Retail,"59,000 SF","854 - 24,620",$51.00 SF/Year
+436,554 San Antonio Rd,Mountain View,Office,"12,386 SF","6,193",$30.00 SF/Year
+437,885 N San Antonio Rd,Los Altos,Office,"10,000 SF","336 - 1,008",$50.04 - 53.57 SF/Year
+438,900 N San Antonio Rd,Los Altos,Office,"7,904 SF",950,$57.00 SF/Year
+439,Hacienda Gardens 1395 San Carlos Ave,San Carlos,Office,"6,000 SF",150,$80.40 SF/Year
+440,215 N San Mateo Dr,San Mateo,Office,"5,793 SF","715 - 3,176",$34.80 - 36.00 SF/Year
+441,Shanghai Commercial Ba… 231 Sansome St,San Francisco,Office,"19,600 SF","2,850 - 5,700",$35.00 SF/Year
+442,407-411 Sansome St,San Francisco,Office,"17,854 SF","3,000 - 13,451",$24.00 - 36.00 SF/Year
+443,755 Sansome St,San Francisco,Office,"70,000 SF","4,241 - 17,975",$30.00 - 45.00 SF/Year
+444,847 Sansome St,San Francisco,Office,"20,784 SF","3,650 - 8,239",$29.00 - 48.00 SF/Year
+445,900 Sansome St,San Francisco,Specialty,"28,863 SF","5,100 - 27,700",Withheld
+446,622 Santa Cruz Ave,Menlo Park,Retail,"6,000 SF","3,000",$60.00 SF/Year
+447,Feve Building 711-713 Santa Cruz Ave,Menlo Park,Retail,"9,600 SF",776,$54.00 SF/Year
+448,Duca & Hanley Building 725-729 Santa Cruz Ave,Menlo Park,Retail,"10,030 SF","244 - 3,281",$66.00 SF/Year
+449,Portside Phase II 400 Seaport Ct,Redwood City,Office,"36,890 SF","3,163 - 37,578",$39.00 - 42.00 SF/Year
+450,ChesHill on Mission 33 Seneca Ave,San Francisco,Apartments,61 Units,"1,047",$42.00 SF/Year
+451,409 Sherman Ave,Palo Alto,Office,"11,874 SF","3,958 - 7,916",$59.40 SF/Year
+452,Bldg A 883 N Shoreline Blvd,Mountain View,Office,"7,694 SF","2,522",$39.00 SF/Year
+453,2000 Sierra Point Pky,Brisbane,Office,"237,810 SF","1,377 - 108,833",$18.00 SF/Year
+454,881-883 Sneath Ln,San Bruno,Office,"27,924 SF","585 - 6,946",$30.00 SF/Year
+455,901-903 Sneath Ln,San Bruno,Office,"40,830 SF","387 - 3,700",$34.20 SF/Year
+456,Richard Creek Medical Ce… 525 South Dr,Mountain View,Office,"20,112 SF","1,097 - 7,924",$51.00 SF/Year
+457,500 Spruce St,San Francisco,Retail,"8,300 SF",610,$48.00 SF/Year
+458,220 S Spruce Ave,South San Francisco,Office,"20,000 SF","1,668 - 3,828",$27.00 SF/Year
+459,161 S Spruce St,South San Francisco,Office,"9,950 SF","4,555",$33.00 SF/Year
+460,836-852 Stanton Rd,Burlingame,Warehouse,"20,092 SF","4,952 - 13,119",$18.60 SF/Year
+461,Stevenson Place 71 Stevenson St,San Francisco,Office,"331,512 SF","10 - 167,961",$44.00 - 57.00 SF/Year
+462,Dante Bldg 1600-1612 Stockton,San Francisco,Office,"18,000 SF",500,$60.00 SF/Year
+463,260 S Sunnyvale Ave,Sunnyvale,Office,"11,000 SF","3,030",$35.40 SF/Year
+464,212 Sutter St,San Francisco,Office,"13,400 SF","650 - 4,650",$30.00 SF/Year
+465,246-250 Sutter St,San Francisco,Office,"55,359 SF","3,198 - 20,485",$45.00 SF/Year
+466,312 Sutter St,San Francisco,Office,"33,824 SF","205 - 21,436",$28.00 SF/Year
+467,315 Sutter St,San Francisco,Office,"8,750 SF","1,100 - 2,450",$33.36 - 81.84 SF/Year
+468,Philippine Center 445-447 Sutter St,San Francisco,Office,"81,123 SF","195 - 16,211",$36.00 SF/Year
+469,535-545 Sutter St,San Francisco,Retail,"22,121 SF","750 - 6,240",$29.00 SF/Year
+470,547-555 Sutter St,San Francisco,Office,"25,158 SF","595 - 10,821",$29.00 SF/Year
+471,559-567 Sutter St,San Francisco,Office,"26,414 SF","2,952 - 20,850",$12.00 - 19.00 SF/Year
+472,575 Sutter St,San Francisco,Office,"30,900 SF","1,625 - 5,180",$21.00 SF/Year
+473,679 Sutter St,San Francisco,Office,"15,139 SF","3,743 - 7,486",$33.00 SF/Year
+474,1388 Sutter St,San Francisco,Office,"216,909 SF","300 - 24,671",$28.00 - 36.00 SF/Year
+475,1927-1929 Taraval St,San Francisco,Apartments,4 Units,"2,000",$29.76 SF/Year
+476,2143-2145 Taraval St,San Francisco,Retail,"2,100 SF","2,100",$39.00 SF/Year
+477,Savoy Bldg 2720 Taylor St,San Francisco,Office,"59,600 SF","415 - 42,468",$25.00 SF/Year
+478,Townsend Bldg 123 Townsend St,San Francisco,Office,"136,950 SF","5,925 - 67,643",$33.00 SF/Year
+479,148 Townsend St,San Francisco,Office,"57,402 SF","1,000 - 28,072",$12.00 - 28.00 SF/Year
+480,164 Townsend St,San Francisco,Office,"29,025 SF","2,410",$55.00 SF/Year
+481,350 Townsend St,San Francisco,Office,"68,048 SF","230 - 7,396",$30.00 - 33.00 SF/Year
+482,Parkview Terrace Senior C… 871 Turk St,San Francisco,Apartments,101 Units,"1,067",$30.00 SF/Year
+483,Provident Bldg 303 Twin Dolphin Dr,Redwood City,Office,"194,691 SF","10 - 55,109",$48.00 SF/Year
+484,555 Twin Dolphin 555 Twin Dolphin Dr,Redwood City,Office,"200,851 SF","4,631 - 60,255",$69.00 SF/Year
+485,524 Union St,San Francisco,Retail,"11,260 SF","300 - 9,505",$45.84 SF/Year
+486,1626-1630 Union St,San Francisco,Office,"8,556 SF","1,000 - 2,139",$36.00 SF/Year
+487,101 University Ave,Palo Alto,Office,"42,180 SF",606,$90.00 SF/Year
+488,102 University Ave,Palo Alto,Office,"15,077 SF","4,095 - 9,672 $150.00",SF/Year
+489,1220-1244 University Dr,Menlo Park,Office,"10,000 SF",371,$66.00 SF/Year
+490,499 University St,Palo Alto,Office,"36,537 SF","937 - 2,151",$48.00 SF/Year
+491,767-777 Valencia St,San Francisco,Office,"3,060 SF","1,000",$60.00 SF/Year
+492,Pacific Vision 711 Van Ness Ave,San Francisco,Office,"141,369 SF","1,063 - 90,291",$42.00 SF/Year
+493,Medical Arts Bldg 2000 Van Ness Ave,San Francisco,Office,"46,183 SF","275 - 9,019",$42.00 SF/Year
+494,2001 Van Ness Ave,San Francisco,Office,"40,000 SF","598 - 3,031",$50.00 SF/Year
+495,430 S Van Ness Ave,San Francisco,Retail,"10,130 SF","3,000",$40.00 SF/Year
+496,850 S Van Ness Ave,San Francisco,Office,"11,064 SF",85 - 539,$63.00 - 63.72 SF/Year
+497,633 Veterans Blvd,Redwood City,Flex,"15,000 SF","1,885",$30.00 SF/Year
+498,124-132 Waverly Pl,San Francisco,Apartments,30 Units,"600 - 1,450",$41.40 SF/Year
+499,435 N Whisman Rd,Mountain View,Office,"7,744 SF","7,744",$51.00 SF/Year
+500,1021 S Wolfe Rd,Sunnyvale,Office,"18,700 SF","450 - 5,950",$35.40 - 39.00 SF/Year
+501,2145 Keith St,San Francisco,Office,"2,400 SF","2,400",$22.00 SF/Year
+502,52-54 2nd St,San Francisco,Office,"7,042 SF","1,300",Withheld
+503,85 2nd St,San Francisco,Office,"124,245 SF","16,111 - 49,114",Withheld
+504,The Pelton Building 132-142 2nd St,San Francisco,Office,"38,766 SF","6,004",Withheld
+505,400 2nd St,San Francisco,Office,"500,000 SF 14,935","- 449,995",Withheld
+506,599 2nd St 577 2nd St,San Francisco,Office,"30,480 SF","5,000",Withheld
+507,30 3rd St,San Francisco,Office,"53,016 SF","1,471 - 56,224",Withheld
+508,625 3rd St,San Francisco,Office,"42,429 SF","618 - 11,550",Withheld
+509,660 3rd St,San Francisco,Office,"88,000 SF","15,000 - 20,467",Withheld
+510,300 4th St,San Francisco,Office,"18,000 SF","3,600 - 7,200",Withheld
+511,The Technical Instrumen… 344-348 6th St,San Francisco,Office,"17,400 SF","3,900 - 17,400",Withheld
+512,255 9th St,San Francisco,Office,"15,000 SF","1,500 - 15,000",Withheld
+513,455-457 9th St,San Francisco,Office,"14,475 SF","1,657 - 14,475",Withheld
+514,Onyx 1717 17th St,San Francisco,Apartments,22 Units,"2,800",Withheld
+515,1766 18th St,San Francisco,Retail,"2,425 SF","800 - 2,425",Withheld
+516,The Pioneer Building 3180 18th St,San Francisco,Office,"39,016 SF","2,806 - 39,106",Withheld
+517,3254 19th St,San Francisco,Flex,"5,050 SF","1,850",Withheld
+518,25th Avenue Professiona… 161 W 25th Ave,San Mateo,Office,"11,625 SF","279 - 2,149",Withheld
+519,800 Airport Blvd,Burlingame,Office,"42,839 SF","1,029 - 5,140",Withheld
+520,1027 Alma St,Palo Alto,Office,"5,000 SF","1,125",Withheld
+521,1100 Alma St,Menlo Park,Office,"16,500 SF","784 - 3,557",Withheld
+522,643 Bair Island Rd,Redwood City,Office,"82,770 SF","1,662 - 11,688",Withheld
+523,Hilp Bldg 603-615 Battery St,San Francisco,Office,"56,710 SF","1,812 - 10,263",Withheld
+524,1050 Battery St,San Francisco,Office,"39,855 SF","7,002 - 32,304",Withheld
+525,1485 Bayshore Blvd,San Francisco,Office,"109,856 SF","100 - 2,970",Withheld
+526,Embarcadero Center 2479 E Bayshore Rd,Palo Alto,Office,"100,734 SF","456 - 51,445",Withheld
+527,Building 5 380 N Bernardo Ave,Mountain View,R&D,"28,069 SF","16,000",Withheld
+528,243 Brannan St,San Francisco,Retail,"2,227 SF","2,227",Withheld
+529,Gallo Bldg 250 Brannan St,San Francisco,Office,"100,850 SF 16,000","- 100,850",Withheld
+530,301 Brannan St,San Francisco,Office,"82,834 SF","11,504 - 82,834",Withheld
+531,350 Brannan St,San Francisco,Office,"18,055 SF","1,250 - 7,010",Withheld
+532,525 Brannan St,San Francisco,Office,"51,706 SF","1,554 - 3,438",Withheld
+533,732 Brannan St,San Francisco,Office,"17,600 SF","8,800 - 17,600",Withheld
+534,410-420 Brewster Ave,Redwood City,Office,"7,200 SF","3,100",Withheld
+535,801 Brewster Ave,Redwood City,Office,"28,460 SF","1,370 - 11,306",Withheld
+536,644 Broadway,San Francisco,Retail,"49,760 SF",120 - 800,Withheld
+537,2198 Broadway St,Redwood City,Office,"11,129 SF","1,089 - 4,731",Withheld
+538,520 Bryant St,San Francisco,Office,"10,537 SF","3,515 - 10,545",Withheld
+539,530-536 Bryant St,Palo Alto,Office,"4,788 SF","1,238",Withheld
+540,531 Bryant St,San Francisco,Office,"54,452 SF","1,265 - 54,452",Withheld
+541,541-547 Bryant St,Palo Alto,Office,"8,368 SF","2,854",Withheld
+542,635 Bryant St,Palo Alto,Office,"4,672 SF",250 - 600,Withheld
+543,Stonestown Medical Dent… 557-599 Buckingham Way,San Francisco,Office,"54,319 SF","410 - 24,763",Withheld
+544,Kahala Tower 851 Burlway Rd,Burlingame,Office,"64,740 SF","331 - 10,626",Withheld
+545,100 Bush St,San Francisco,Office,"223,722 SF","250 - 115,322",Withheld
+546,225 Bush St,San Francisco,Office,"666,021 SF","515 - 239,527",Withheld
+547,530 Bush St,San Francisco,Office,"116,092 SF","2,424 - 64,929",Withheld
+548,Music City Cultural Center 1353-1355 Bush St,San Francisco,Office,"28,500 SF",156,Withheld
+549,1801 Bush St,San Francisco,Office,"33,900 SF","1,075",Withheld
+550,100 CAL 100 California St,San Francisco,Office,"301,816 SF","805 - 84,239",Withheld
+551,101 California St,San Francisco,"Office 1,250,000",SF,"2,391 - 156,051",Withheld
+552,200 California St,San Francisco,Office,"28,168 SF","4,283 - 8,569",Withheld
+553,230 California St,San Francisco,Office,"42,550 SF","826 - 6,334",Withheld
+554,244 California St,San Francisco,Office,"39,384 SF","1,214 - 17,816",Withheld
+555,345 California Center 345 California St,San Francisco,Office,"610,000 SF","65 - 181,245",Withheld
+556,425 California 425 California St,San Francisco,Office,"211,344 SF","4,498 - 28,186",Withheld
+557,Merchants Exchange Bldg 465 California St,San Francisco,Office,"241,106 SF","50 - 66,892",Withheld
+558,Bank of America Tower 555 California St,San Francisco,"Office 1,507,000",SF,"2,565 - 227,494",Withheld
+559,600 California St,San Francisco,Office,"359,883 SF","1,178 - 276,594",Withheld
+560,1656 California St,San Francisco,Office,"9,279 SF","9,279",Withheld
+561,2425 California St,San Francisco,Retail,"5,050 SF","460 - 3,250",Withheld
+562,Landsby 2580-2590 California St,Mountain View,Apartments,632 Units,"880 - 14,123",Withheld
+563,2870-2880 California St,San Francisco,Apartments,2 Units,"5,214 - 5,241",Withheld
+564,321 Castro St,Mountain View,Office,"19,915 SF","4,880",Withheld
+565,1142-1150 Chestnut Ln,Menlo Park,Office,"5,890 SF","1,570",Withheld
+566,Bldg 5 569 Clyde Ave,Mountain View,Office,"6,428 SF",916,Withheld
+567,38 Clyde St,San Francisco,Office,"1,200 SF","1,200",Withheld
+568,653-655 Commercial St,San Francisco,Retail,"7,057 SF","2,160 - 7,057",Withheld
+569,350 Convention Way,Redwood City,Office,"76,535 SF","3,510 - 25,853",Withheld
+570,North Park - Bldg 2 650 Davis St,San Francisco,Office,"94,362 SF","6,835 - 27,352",Withheld
+571,290 De Haro St,San Francisco,Office,"41,669 SF","2,229 - 20,669",Withheld
+572,745 Distel Dr,Los Altos,Office,"8,676 SF",425,Withheld
+573,41-43 Drumm St,San Francisco,Retail,"4,800 SF","1,600",Withheld
+574,270 East Ln,Burlingame,Office,"26,539 SF","5,160 - 26,539",Withheld
+575,57-65 El Camino Real,Menlo Park,Office,"6,951 SF","6,951",Withheld
+576,776 El Camino Real,Redwood City,Retail,"3,258 SF","3,258",Withheld
+577,1048 El Camino Real,Redwood City,Office,"7,636 SF","2,274",Withheld
+578,1390 El Camino Real,San Carlos,Office,"12,444 SF","4,607",Withheld
+579,1422 El Camino Real,Menlo Park,Office,"3,867 SF","3,548",Withheld
+580,1550 El Camino Real,Menlo Park,Office,"23,364 SF","1,075",Withheld
+581,1625 El Camino Real,Belmont,Office,"14,027 SF","680 - 3,988",Withheld
+582,1699 El Camino Real,Millbrae,Retail,"9,000 SF","397 - 3,250",Withheld
+583,Mid Peninsula Medical Arts… 1720 El Camino Real,Burlingame,Office,"106,018 SF","1,529 - 8,606",Withheld
+584,1750 El Camino Real,Burlingame,Office,"28,000 SF","736 - 5,417",Withheld
+585,1800 El Camino Real,Menlo Park,Office,"9,187 SF","4,231",Withheld
+586,3225 El Camino Real,Palo Alto,Apartments,8 Units,"9,300",Withheld
+587,3567 El Camino Real,Palo Alto,Retail,"4,642 SF","2,321",Withheld
+588,Citi Bank 3755 El Camino Real,Santa Clara,Retail,"11,148 SF","6,088",Withheld
+589,Camino Altos Plaza 4300 El Camino Real,Los Altos,Office,"25,070 SF","1,500 - 14,246",Withheld
+590,4410 El Camino Real,Los Altos,Office,"37,064 SF","2,326",Withheld
+591,5-25 S Ellsworth Ave,San Mateo,Retail,"20,820 SF","1,000",Withheld
+592,414-480 S Ellsworth Ave,San Mateo,Retail,"4,646 SF","852 - 3,520",Withheld
+593,Two Embarcadero Center Two Embarcadero Ctr,San Francisco,Office,"804,891 SF","584 - 222,415",Withheld
+594,1900 Embarcadero Rd,Palo Alto,Office,"25,303 SF","1,714",Withheld
+595,644 Emerson St,Palo Alto,Office,"8,600 SF","2,238",Withheld
+596,701-747 W Evelyn Ave,Mountain View,Office,"38,890 SF","6,481 - 30,832",Withheld
+597,250 Executive Park Blvd,San Francisco,Office,"114,089 SF","2,048 - 73,466",Withheld
+598,1400 Fashion Island Blvd,San Mateo,R&D,"200,000 SF","3,332 - 171,661",Withheld
+599,Century Centre I 1450 Fashion Island Blvd,San Mateo,Office,"107,804 SF","1,227 - 45,756",Withheld
+600,777 Florida St,San Francisco,Office,"36,480 SF","1,214",Withheld
+601,795 Folsom St,San Francisco,Office,"220,180 SF","7,167 - 162,980",Withheld
+602,890-894 Folsom St,San Francisco,Office,"2,500 SF","1,750",Withheld
+603,1516 Folsom St,San Francisco,Office,"8,325 SF",-,Withheld
+604,1585 Folsom St,San Francisco,R&D,"30,000 SF","13,045 - 30,000",Withheld
+605,655-675 Forest Ave,Palo Alto,Office,"1,440 SF","1,440",Withheld
+606,181 Fremont 181 Fremont St,San Francisco,Office,"684,000 SF","400 - 92,982",Withheld
+607,222 Front St,San Francisco,Office,"30,000 SF","2,500 - 5,794",Withheld
+608,1001 Front St,San Francisco,Office,"119,000 SF","208 - 85,399",Withheld
+609,One Front Street One Front St,San Francisco,Office,"645,281 SF","275 - 356,590",Withheld
+610,650 Gateway Blvd,South San Francisco,Office,"51,400 SF","3,847 - 23,191",Withheld
+611,1600-1630 Geary Blvd,San Francisco,Office,"5,735 SF","2,000 - 4,196",Withheld
+612,The Grant & Geary Center 77 Geary St,San Francisco,Office,"124,646 SF","143 - 52,915",Withheld
+613,Balilla Apartments 565-569 Geary St,San Francisco,Apartments,61 Units,"319 - 1,599",Withheld
+614,The Presidio 1160 Gorgas Ave,San Francisco,Office,"4,463 SF","4,463",Withheld
+615,21 Grant Ave,San Francisco,Office,"23,702 SF","1,403 - 19,852",Withheld
+616,39-41 Grant Ave,San Francisco,Office,"9,769 SF","2,000",Withheld
+617,1234 Grant Ave,San Francisco,Retail,"8,600 SF","4,500",Withheld
+618,The Crossroads I 1825 S Grant St,San Mateo,Office,"160,960 SF","2,286 - 95,964",Withheld
+619,Green Front 55 Green St,San Francisco,Office,"45,525 SF","9,461",Withheld
+620,69 Green St,San Francisco,Office,"14,592 SF","3,648 - 14,592",Withheld
+621,SF Police Credit Union 1250 Grundy Ln,San Bruno,Office,"68,000 SF","9,800",Withheld
+622,459 Hamilton Ave,Palo Alto,Office,"14,676 SF","538 - 2,218",Withheld
+623,Hills Plaza 2 2 Harrison St,San Francisco,Office,"213,731 SF","19,060",Withheld
+624,55 Hawthorne St,San Francisco,Office,"145,186 SF","17,505 - 145,186",Withheld
+625,380 Hayes St,San Francisco,Office,"20,655 SF","4,381 - 9,777",Withheld
+626,675-685 High St,Palo Alto,Office,"6,625 SF","2,575",Withheld
+627,Third Floor Office Space 1290 Howard Ave,Burlingame,Office,"35,000 SF","1,480",Withheld
+628,301 Howard St,San Francisco,Office,"320,000 SF","4,867 - 96,886",Withheld
+629,1014-1016 Howard St,San Francisco,Flex,"6,424 SF","3,212",Withheld
+630,1082 Howard St,San Francisco,R&D,"3,998 SF","1,999 - 3,998",Withheld
+631,758 Industrial Rd,San Carlos,Manufacturing,"13,800 SF","3,500 - 13,800",Withheld
+632,Jefferson Building 626 Jefferson Ave,Redwood City,Office,"4,028 SF",230,Withheld
+633,431 Jessie St,San Francisco,Office,"3,772 SF","1,886 - 3,772",Withheld
+634,One Kearny 1 Kearny St,San Francisco,Office,"130,581 SF","500 - 52,839",Withheld
+635,25-33 Kearny St,San Francisco,Office,"42,489 SF","1,065 - 13,009",Withheld
+636,88 Kearny St,San Francisco,Office,"233,887 SF","2,834 - 50,842",Withheld
+637,209-211 Kearny St,San Francisco,Office,"4,500 SF","1,500",Withheld
+638,Panco Bldg 251-255 Kearny St,San Francisco,Office,"32,800 SF","3,843 - 19,215",Withheld
+639,Jackson House 900 Kearny St,San Francisco,Office,"36,068 SF","4,926 - 17,276",Withheld
+640,251 Laguna St,San Francisco,Office,"5,190 SF","5,190",Withheld
+641,Metropolitan Hotel 216-220 Linden Ave,South San Francisco,Apartments,68 Units,"245 - 1,672",Withheld
+642,1875-1877 Lombard St,San Francisco,Retail,"4,342 SF","1,400",Withheld
+643,2205-2207 Lombard St,San Francisco,Retail,"2,263 SF","1,400",Withheld
+644,228 Lorton Ave,Burlingame,Office,"3,900 SF","1,950 - 3,900",Withheld
+645,25 Lusk St,San Francisco,Retail,"16,421 SF","3,600",Withheld
+646,49 Lusk St,San Francisco,Flex,"14,000 SF","1,300 - 3,700",Withheld
+647,The Crown Building 877 Mahler Rd,Burlingame,Office,"54,349 SF","851 - 4,942",Withheld
+648,Gumps Bldg 30 Maiden Ln,San Francisco,Office,"96,222 SF","8,766 - 81,329",Withheld
+649,45-47 Maiden Ln,San Francisco,Retail,"19,327 SF","4,080 - 13,293",Withheld
+650,221 Main 221 Main St,San Francisco,Office,"389,310 SF","4,102",Withheld
+651,San Mateo Science Center… 951 Mariners Island Blvd,San Mateo,Office,"124,800 SF","8,800 - 102,100",Withheld
+652,Spear & Steuart Towers One Market Plz,San Francisco,"Office 1,602,806",SF,"659 - 955,436",Withheld
+653,Hobart Building 582-590 Market St,San Francisco,Office,"147,252 SF","270 - 33,208",Withheld
+654,595 Market Street 595 Market St,San Francisco,"Office 446,460",SF,"1,000 - 222,161",Withheld
+655,Monadnock Building 685 Market St,San Francisco,Office,"222,918 SF","12,794 - 70,185",Withheld
+656,Central Tower 703-705 Market St,San Francisco,Office,"116,000 SF","2,000 - 38,083",Withheld
+657,720 Market St,San Francisco,Office,"47,650 SF","10 - 25,793",Withheld
+658,Phelan Building 760 Market St,San Francisco,Office,"298,124 SF","155 - 141,077",Withheld
+659,901 Market St,San Francisco,Office,"206,697 SF","2,072 - 180,841",Withheld
+660,935-965 Market St,San Francisco,Retail,"255,765 SF","58 - 162,920",Withheld
+661,944 Market St,San Francisco,Office,"35,543 SF","4,920 - 25,345",Withheld
+662,Frontier Tower 995 Market St,San Francisco,Office,"90,552 SF","65 - 87,269",Withheld
+663,1155 Market St,San Francisco,Office,"158,988 SF","1,620 - 109,158",Withheld
+664,The Mart SF 1355 Market St,San Francisco,Office,"729,279 SF","239 - 524,726",Withheld
+665,1390 Market St,San Francisco,Office,"233,911 SF","1,415 - 86,556",Withheld
+666,1965-1967 Market St,San Francisco,Office,"15,300 SF","4,200 - 15,300",Withheld
+667,2185-2193 Market St,San Francisco,Apartments,16 Units,"1,309",Withheld
+668,2390 Market St,San Francisco,Retail,"14,114 SF","7,057 - 14,114",Withheld
+669,510 S Mathilda Ave,Sunnyvale,Office,"8,883 SF","636 - 2,639",Withheld
+670,707 Menlo Ave,Menlo Park,Office,"9,350 SF","1,080",Withheld
+671,555 Middlefield,Redwood City,Office,"2,350 SF","2,350",Withheld
+672,Palo Alto Midtown Center 2741 Middlefield Rd,Palo Alto,Office,"18,767 SF","700 - 8,253",Withheld
+673,101 Mission St,San Francisco,Office,"213,705 SF","2,298 - 62,369",Withheld
+674,201 Mission St,San Francisco,Office,"547,960 SF","796 - 343,425",Withheld
+675,300 Mission St,San Francisco,Office,"668,197 SF","6,810 - 253,392",Withheld
+676,Salesforce Tower 415 Mission St,San Francisco,"Office 1,420,682",SF,"10,315 - 174,307",Withheld
+677,500 Mission St,San Francisco,Office,"22,000 SF","2,730 - 17,360",Withheld
+678,555 Mission St,San Francisco,Office,"557,015 SF","3,790 - 91,209",Withheld
+679,601-609 Mission St,San Francisco,Office,"49,518 SF","3,998 - 14,720",Withheld
+680,1167-1169 Mission St,San Francisco,Flex,"32,000 SF","4,502 - 11,927",Withheld
+681,2183-2185 Mission St,San Francisco,Retail,"7,415 SF","2,175 - 7,415",Withheld
+682,Los Portales Building 2480-2482 Mission St,San Francisco,Office,"36,969 SF","445 - 17,068",Withheld
+683,4430-4434 Mission St,San Francisco,Office,"7,500 SF","3,800",Withheld
+684,1 Mississippi St,San Francisco,Office,"4,904 SF","1,000",Withheld
+685,139 Mitchell Ave,South San Francisco,Office,"19,000 SF",841,Withheld
+686,101 Montgomery St,San Francisco,Office,"42,067 SF","7,730",Withheld
+687,101 Montgomery St,San Francisco,Office,"294,146 SF","10 - 65,725",Withheld
+688,102 Montgomery St,San Francisco,Office,"43,000 SF","8,000 - 37,000",Withheld
+689,250 Montgomery St,San Francisco,Office,"130,326 SF","134 - 45,250",Withheld
+690,456 Montgomery St,San Francisco,Office,"178,014 SF","956 - 85,896",Withheld
+691,555 Montgomery St,San Francisco,Office,"261,839 SF","1,233 - 50,375",Withheld
+692,Transamerica Pyramid 600 Montgomery St,San Francisco,Office,"515,307 SF","3,082 - 190,361",Withheld
+693,655 Montgomery St,San Francisco,Office,"273,000 SF","958 - 70,207",Withheld
+694,Parc Telegraph 1603-1643 Montgomery St,San Francisco,Apartments,118 Units,"1,962",Withheld
+695,5M 415 Natoma St,San Francisco,Office,"649,376 SF","808 - 621,558",Withheld
+696,1040 Noel Dr,Menlo Park,Office,"7,577 SF",562,Withheld
+697,2578 Noriega St,San Francisco,Retail,"3,967 SF","1,400",Withheld
+698,Lakeside Medical Bldg 2645 Ocean Ave,San Francisco,Office,"29,775 SF","1,105 - 3,000",Withheld
+699,2758-2764 Octavia St,San Francisco,Retail,"4,930 SF","374 - 2,558",Withheld
+700,100 Oracle Pky,Redwood City,Office,"151,181 SF 15,000","- 115,000",Withheld
+701,99 Osgood Pl,San Francisco,Office,"8,712 SF","1,559",Withheld
+702,433-435 Pacific Ave,San Francisco,Office,"33,652 SF","3,818",Withheld
+703,Hippodrome Building 545-559 Pacific Ave,San Francisco,Office,"26,501 SF","3,486 - 11,413",Withheld
+704,570-574 Pacific Ave,San Francisco,Office,"17,200 SF","8,196",Withheld
+705,1610-1620 Pacific Ave,San Francisco,Office,"9,044 SF","2,500",Withheld
+706,205 Park Rd,Burlingame,Office,"14,000 SF","7,200",Withheld
+707,Pier 17,San Francisco,R&D,"110,000 SF","13,812 - 32,230",Withheld
+708,Pier 70 | Parcel B Office &… Pier 70,San Francisco,R&D,"100,000 SF 16,000","- 100,000",Withheld
+709,Bldg 12 Pier 70,San Francisco,Office,"210,000 SF","1,240 - 23,202",Withheld
+710,330-332 Pine St,San Francisco,Office,"51,522 SF","2,270 - 24,765",Withheld
+711,Dividend Building- Brandi… 348-354 Pine St,San Francisco,Office,"21,420 SF","2,020 - 8,140",Withheld
+712,1649-1655 Polk St,San Francisco,Retail,"12,936 SF","2,500",Withheld
+713,One Post 1 Post St,San Francisco,Office,"488,882 SF","330 - 81,866",Withheld
+714,150 Post St,San Francisco,Office,"117,435 SF","882 - 89,913",Withheld
+715,251 Post St,San Francisco,Office,"37,088 SF","844 - 3,318",Withheld
+716,Seiki Lee Building 1610 Post St,San Francisco,Office,"23,263 SF","300 - 1,040",Withheld
+717,449 Powell St,San Francisco,Office,"34,000 SF","7,500 - 22,500",Withheld
+718,200 Rhode Island St,San Francisco,Office,"101,782 SF 10,844","- 101,782",Withheld
+719,Gateway at Millbrae Station 166 N Rollins Rd,Millbrae,Office,"180,000 SF","3,632 - 52,374",Withheld
+720,The Presidio 563 Ruger St,San Francisco,Office,"5,640 SF","700 - 5,640",Withheld
+721,275 Sacramento St,San Francisco,Office,"95,955 SF","4,872 - 80,719",Withheld
+722,303 Sacramento St,San Francisco,Office,"19,516 SF","3,000",Withheld
+723,353 Sacramento St,San Francisco,Office,"306,883 SF","1,955 - 196,352",Withheld
+724,Midas Bldg 576 Sacramento St,San Francisco,Office,"5,981 SF","1,500 - 3,000",Withheld
+725,686 Sacramento St,San Francisco,Retail,"5,192 SF","2,200",Withheld
+726,608 - 626 San Antonio Rd 608-626 San Antonio Rd,Mountain View,Retail,"11,716 SF","1,950",Withheld
+727,One Sansome Street 1 Sansome St,San Francisco,Office,"630,000 SF","100 - 40,897",Withheld
+728,115 Sansome St 115 Sansome St,San Francisco,Office,"116,395 SF","4,119 - 59,180",Withheld
+729,Kings Building 142 Sansome St,San Francisco,Office,"24,000 SF","3,530 - 10,649",Withheld
+730,233-241 Sansome St,San Francisco,Office,"48,340 SF","1,410 - 16,965",Withheld
+731,500 Sansome St,San Francisco,Office,"154,227 SF","1,673 - 95,429",Withheld
+732,Two Transamerica 505 Sansome St,San Francisco,Office,"191,000 SF","1,487 - 100,755",Withheld
+733,811-821 Sansome St,San Francisco,Office,"4,517 SF","2,200",Withheld
+734,Bldg 2 2000 Seaport Blvd,Redwood City,Office,"123,965 SF","6,593 - 123,965",Withheld
+735,101 Second St,San Francisco,Office,"432,843 SF","2,063 - 102,443",Withheld
+736,2 Shaw Alley St,San Francisco,Office,"29,878 SF","5,303",Withheld
+737,5000 Shoreline Ct,South San Francisco,Office,"156,339 SF","12,587 - 73,216",Withheld
+738,6000 Shoreline Ct,South San Francisco,Office,"146,305 SF","5,598 - 31,852",Withheld
+739,7000 Shoreline Ct,South San Francisco,R&D,"136,395 SF","3,402 - 78,638",Withheld
+740,Shoreline Science Center 130-150 Shoreline Dr,Redwood City,Office,"81,569 SF","13,483 - 81,568",Withheld
+741,Building A 1800 Sierra Point Pky,Brisbane,R&D,"109,237 SF","19,122",Withheld
+742,South Dr Medical Bldg 305 South Dr,Mountain View,Office,"9,398 SF","1,175",Withheld
+743,150 Spear St,San Francisco,Office,"286,510 SF","2,316 - 122,698",Withheld
+744,201 Spear 201 Spear St,San Francisco,Office,"252,591 SF","100 - 119,747",Withheld
+745,444-470 Spear St,San Francisco,Office,"49,851 SF","2,740 - 19,436",Withheld
+746,2620-2626 Spring St,Redwood City,Light Manufacturing,"10,400 SF","2,100 - 9,035",Withheld
+747,1004-1010 Stewart Dr,Sunnyvale,Light Distribution,"17,000 SF","2,650",Withheld
+748,113-115 Stillman St,San Francisco,Office,"9,540 SF","9,540",Withheld
+749,110 Sutter St,San Francisco,Office,"47,665 SF","236 - 17,344",Withheld
+750,Hallidie Bldg 130-150 Sutter St,San Francisco,Office,"92,000 SF","6,538 - 30,331",Withheld
+751,Argonaut Building 211-213 Sutter St,San Francisco,Office,"42,819 SF","862 - 11,153",Withheld
+752,256-262 Sutter St,San Francisco,Office,"14,850 SF","1,378 - 4,878",Withheld
+753,Hotel Ikon 325 Sutter St,San Francisco,Hotel,40 Rooms,"1,020 - 8,290",Withheld
+754,Galen Building 391 Sutter St,San Francisco,Office,"32,991 SF","139 - 4,081",Withheld
+755,500 Sutter St,San Francisco,Office,"64,876 SF","306 - 20,987",Withheld
+756,1150-1154 Sutter St,San Francisco,Office,"19,000 SF","4,500 - 9,500",Withheld
+757,1311 Sutter St,San Francisco,Retail,"13,594 SF","660 - 3,217",Withheld
+758,2300 Sutter St,San Francisco,Office,"32,700 SF","1,028",Withheld
+759,201 Third St,San Francisco,Office,"402,194 SF","15,304 - 61,781",Withheld
+760,510 Townsend St,San Francisco,Office,"299,051 SF","13,912 - 299,051",Withheld
+761,650 Townsend 650 Townsend St,San Francisco,Office,"756,770 SF","3,780 - 427,435",Withheld
+762,North Tower Two Tower Pl,South San Francisco,Office,"394,000 SF","5,000 - 111,154",Withheld
+763,55 Union St,San Francisco,Office,"45,000 SF","5,000 - 45,000",Withheld
+764,510-512 Union St,San Francisco,Office,"9,476 SF","1,200",Withheld
+765,2250 Union St,San Francisco,Retail,"7,800 SF","800 - 4,902",Withheld
+766,452-458 University Ave,Palo Alto,Retail,"23,200 SF","11,063 - 22,406",Withheld
+767,460-476 University Ave,Palo Alto,Retail,"9,300 SF","4,650",Withheld
+768,University Place 1950 University Ave,East Palo Alto,Office,"165,000 SF","68 - 91,777",Withheld
+769,301-315 Valencia St,San Francisco,Retail,"14,854 SF","896 - 1,792",Withheld
+770,Mission Valencia 1699 Valencia St,San Francisco,Apartments,20 Units,"800 - 2,000",Withheld
+771,1835 Valota Rd,Redwood City,Specialty,"43,604 SF","3,500",Withheld
+772,Opera Plaza 601 Van Ness Ave,San Francisco,Apartments,453 Units,"876 - 17,807",Withheld
+773,1400 Van Ness Ave,San Francisco,Office,"22,795 SF","1,282 - 13,994",Withheld
+774,1801 Van Ness Ave,San Francisco,Office,"18,050 SF","778 - 8,863",Withheld
+775,2025-2095 Van Ness Ave,San Francisco,Retail,"11,000 SF","933 - 5,396",Withheld
+776,Peninsula Corporate Cent… 805 Veterans Blvd,Redwood City,Office,"86,000 SF","1,207 - 57,557",Withheld
+777,Villa Centre 888 Villa St,Mountain View,Office,"26,000 SF","4,518 - 10,718",Withheld
+778,305 Walnut St,Redwood City,Office,"90,000 SF","18,000 - 90,000",Withheld
+779,The Clock Tower Bldg 401-423 Washington St,San Francisco,Office,"15,923 SF","2,245 - 4,492",Withheld
+780,500 Washington St. 500 Washington St,San Francisco,Office,"110,000 SF","1,036 - 86,297",Withheld
+781,15th Ave Gate 1808 Wedemeyer St,San Francisco,Office,"30,662 SF",902,Withheld
+782,The Falcone Building 700-710 Winslow St,Redwood City,Office,"14,000 SF","817 - 2,179",Withheld
+783,100-122 2nd Ave,San Mateo,Office,"9,820 SF","1,905",$36.00 SF/Year
+784,360 Third 360 3rd St,San Francisco,Office,"429,796 SF","1,766 - 439,903",$28.00 - 35.00 SF/Year
+785,500-520 3rd St,San Francisco,Office,"155,480 SF","5,904 - 51,450",$44.00 SF/Year
+786,2 E 3rd Ave,San Mateo,Office,"25,344 SF","2,347 - 27,691",$66.00 SF/Year
+787,Medical Arts Building 205 E 3rd Ave,San Mateo,Office,"31,987 SF","3,574",$63.00 SF/Year
+788,636-638 4th St,San Francisco,Office,"11,505 SF","1,000 - 8,000",$36.00 SF/Year
+789,365-371 5th St,San Francisco,Office,"4,550 SF","1,300 - 4,550",$33.60 SF/Year
+790,The D'Ambra Building 2 W 5th Ave,San Mateo,Office,"38,000 SF","9,300",$54.00 SF/Year
+791,1381-1383 9th Ave,San Francisco,Retail,"4,334 SF","1,100",$27.27 SF/Year
+792,345-349 9th St,San Francisco,Retail,"29,100 SF","3,000 - 9,000",$21.00 SF/Year
+793,351 9th St,San Francisco,Light Manufacturing,"30,000 SF","2,500 - 12,500",$72.00 SF/Year
+794,Bldg 6 815 11th Ave,Sunnyvale,Office,"221,090 SF","13,207",$52.20 SF/Year
+795,56-68 12th St,San Francisco,Office,"30,000 SF","3,500",$48.00 SF/Year
+796,601-639 14th Ave,San Francisco,Office,"9,835 SF","4,917 - 9,835",$36.00 SF/Year
+797,320-324 14th St,San Francisco,Apartments,14 Units,"1,170",$24.96 SF/Year
+798,3000-3004 16th St,San Francisco,Office,"17,572 SF","2,427 - 5,297",$24.00 SF/Year
+799,112-118 W 25th Ave,San Mateo,Retail,"6,000 SF","280 - 1,280",Withheld
+800,190 W 25th Ave,San Mateo,Retail,"3,511 SF",750,$30.48 SF/Year
+801,501 Airport Blvd,South San Francisco,Service,"8,442 SF","3,750",$23.40 SF/Year
+802,533 Airport Blvd,Burlingame,Office,"66,026 SF","500 - 6,197",$36.00 SF/Year
+803,700 Airport Blvd,Burlingame,Office,"130,331 SF","1,716 - 43,229",$45.00 SF/Year
+804,1021-1069 Alameda de las Pulgas,Belmont,Retail,"23,769 SF",135 - 505,$42.00 SF/Year
+805,601 Allerton St,Redwood City,Office,"16,490 SF","2,138",$36.00 SF/Year
+806,955 Alma St,Palo Alto,Office,"6,929 SF","3,602",$99.00 SF/Year
+807,100 Altair Way,Sunnyvale,Office,"180,417 SF","12,377 - 180,417",$87.00 SF/Year
+808,100 N B St,San Mateo,Specialty,"9,205 SF","1,025",$33.00 SF/Year
+809,113-119 S B St,San Mateo,Office,"11,800 SF","3,227",$48.00 SF/Year
+810,236 S B St,San Mateo,Retail,"7,560 SF","2,633",$39.00 SF/Year
+811,701-703 S B St,San Mateo,Office,"10,551 SF","5,000",$36.00 SF/Year
+812,735 Battery St,San Francisco,Office,"63,000 SF","12,369 - 25,008",$56.00 SF/Year
+813,1025 Battery St,San Francisco,Office,"8,000 SF","8,000",$82.00 SF/Year
+814,1601 Bayshore Hwy,Burlingame,Office,"57,837 SF",100 $120.00,SF/Year
+815,Bayshore Office Center 1633 Bayshore Hwy,Burlingame,Office,"108,000 SF","414 - 6,275",$35.40 SF/Year
+816,1765 E Bayshore Rd,East Palo Alto,Apartments,-,"1,450",$34.50 SF/Year
+817,O'Brien Place 2191 E Bayshore Rd,Palo Alto,Office,"22,070 SF","1,772 - 5,937",$34.20 SF/Year
+818,3905 Bohannon Dr,Menlo Park,Flex,"22,455 SF","2,538 - 5,076",$27.00 - 37.20 SF/Year
+819,1777 Borel Pl,San Mateo,Office,"45,375 SF","342 - 7,224",$43.80 SF/Year
+820,Bovet Office Centre 177 Bovet Rd,San Mateo,Office,"114,756 SF","3,068 - 41,616",$47.40 SF/Year
+821,333 Bradford St,Redwood City,Office,"29,414 SF","2,085",$42.00 SF/Year
+822,318 Brannan St,San Francisco,Office,"9,000 SF","4,500",$36.00 SF/Year
+823,979 Broadway,Millbrae,Retail,"57,177 SF","1,688 - 15,233",$27.36 SF/Year
+824,The Sequoia Building 2317 Broadway,Redwood City,Office,"45,561 SF","10,055",$47.40 SF/Year
+825,Great Western Bank Bldg 2400 Broadway,Redwood City,Office,"15,000 SF","2,296 - 5,047",$78.00 SF/Year
+826,535-539 Broadway St,San Francisco,Office,"11,383 SF","2,000",$30.00 SF/Year
+827,2000 Broadway St,Redwood City,Office,"25,000 SF","900 - 2,950",$72.00 - 85.00 SF/Year
+828,333 Bryant St,San Francisco,Flex,"110,000 SF","1,443 - 30,554",$36.00 - 38.00 SF/Year
+829,797-799 Bryant St,San Francisco,Retail,"6,750 SF","1,650 - 5,020",$33.00 SF/Year
+830,1504 Bryant St,San Francisco,Distribution,"33,600 SF","5,100 - 33,600",$18.00 SF/Year
+831,The Avenue Plaza 1108-1112 Burlingame Ave,Burlingame,Retail,"23,976 SF","3,314 - 10,222",$47.40 SF/Year
+832,601-603 Bush St,San Francisco,Retail,"1,749 SF","420 - 1,010",$30.48 SF/Year
+833,855 California Ave,Palo Alto,Office,"62,084 SF","11,859",$71.40 SF/Year
+834,199 California Dr,Millbrae,Office,"18,483 SF","200 - 5,192 $2.25",- 2.34 SF/Year
+835,212-214 California St,San Francisco,Office,"11,000 SF","4,142",$24.00 SF/Year
+836,The Newhall Building 260 California St,San Francisco,Office,"52,889 SF","4,773 - 19,786",$49.00 SF/Year
+837,300 California St,San Francisco,Office,"119,000 SF","15,396 - 30,879",$59.00 SF/Year
+838,260 N California Ave,Palo Alto,Office,"33,923 SF","13,851",$64.20 SF/Year
+839,460 S California Ave,Palo Alto,Office,"14,960 SF","750 - 2,675",$30.00 - 53.40 SF/Year
+840,640 W California Ave,Sunnyvale,Office,"58,602 SF","7,513 - 45,434",$54.00 - 59.40 SF/Year
+841,800 W California Ave,Sunnyvale,Office,"60,332 SF","15,981",$59.40 SF/Year
+842,306 Cambridge Ave,Palo Alto,Office,"6,110 SF","2,492",$75.00 SF/Year
+843,274-282 Castro St,Mountain View,Office,"29,308 SF","11,400",$83.40 SF/Year
+844,Silicon Valley Center 400 Castro St,Mountain View,Office,"138,681 SF","8,000 - 13,000",$66.00 SF/Year
+845,421-475 Castro St,Mountain View,Office,"15,000 SF","770 - 10,224",$35.40 - 47.40 SF/Year
+846,605-650 Castro St,Mountain View,Office,"29,924 SF","8,158 - 29,924",$93.00 SF/Year
+847,655 Castro St,Mountain View,Office,"5,600 SF",700,$56.52 SF/Year
+848,Castro Commons 1174 Castro St,Mountain View,Office,"28,495 SF","3,769",$60.00 SF/Year
+849,3435 Cesar Chavez,San Francisco,Office,"74,614 SF","1,600",$33.00 SF/Year
+850,1127-1135 Chestnut St,Menlo Park,Office,"4,000 SF",917,$45.00 SF/Year
+851,49 S Claremont St,San Mateo,Office,"2,863 SF",800,$34.80 SF/Year
+852,Clyde Avenue Business P… 559 Clyde Ave,Mountain View,R&D,"6,408 SF","1,569",$35.40 SF/Year
+853,Bldg 6 565 Clyde Ave,Mountain View,R&D,"10,224 SF","1,880",$35.40 SF/Year
+854,Oakmead Village Square -… 333 Cobalt Way,Sunnyvale,Office,"5,760 SF",720,$34.20 SF/Year
+855,974 Commercial St,Palo Alto,R&D,"8,000 SF","1,000",$36.00 SF/Year
+856,Concar 900 Concar Dr,San Mateo,Office,"114,282 SF","11,681 - 32,753",$58.20 SF/Year
+857,465 Convention Way,Redwood City,Flex,"6,910 SF","1,200",$33.00 SF/Year
+858,47-49 Drumm St,San Francisco,Office,"5,434 SF","2,200",$79.00 SF/Year
+859,90 El Camino Real,Burlingame,Office,"2,204 SF","2,204",$55.00 SF/Year
+860,US Bank Building 475 El Camino Real,Millbrae,Office,"36,160 SF","324 - 4,169",$36.00 SF/Year
+861,570 El Camino Real,Redwood City,Retail,"17,500 SF","1,000 - 5,800",$30.00 SF/Year
+862,665 El Camino Real,Redwood City,Showroom,"4,750 SF","1,500 - 4,750",$36.00 SF/Year
+863,800 El Camino Real,Menlo Park,Office,"50,000 SF","10,300",$47.40 SF/Year
+864,Building 5 855 El Camino Real,Palo Alto,Office,"25,264 SF","433 - 1,272",$66.00 SF/Year
+865,Building 4 855 El Camino Real,Palo Alto,Retail,"60,000 SF",592,$66.00 SF/Year
+866,Menlo Park Office Center 1000 El Camino Real,Menlo Park,Office,"49,350 SF","6,076 - 28,195 $107.40",SF/Year
+867,1600 El Camino Real,Menlo Park,Office,"52,000 SF","7,340 - 23,233",$117.00 SF/Year
+868,Mills Estate Office Bldg 1838 El Camino Real,Burlingame,Office,"20,024 SF","1,510",$36.00 SF/Year
+869,1906 El Camino Real,Menlo Park,Office,"11,967 SF","3,202",$69.00 SF/Year
+870,Five Palo Alto Square 3000 El Camino Real,Palo Alto,Office,"130,929 SF","2,540 - 22,851",$90.00 SF/Year
+871,3295 El Camino Real,Santa Clara,Retail,"11,498 SF","2,800",$26.64 SF/Year
+872,3400 El Camino Real,Santa Clara,Office,"4,956 SF",500,$37.20 SF/Year
+873,Los Altos Village Court 4546 El Camino Real,Los Altos,Retail,"60,012 SF","666 - 3,176",Withheld
+874,4966 El Camino Real,Los Altos,Office,"26,274 SF","1,310 - 3,753",$35.40 - 47.40 SF/Year
+875,1110 S El Camino Real,San Mateo,Office,"4,859 SF",341,$35.00 SF/Year
+876,485-493 S El Camino Real,San Mateo,Retail,"18,663 SF","2,541 - 15,461",$45.00 SF/Year
+877,Apple One Plaza 1515-1521 S El Camino Real,San Mateo,Office,"20,000 SF","1,700 - 8,115",$42.00 SF/Year
+878,1730 S El Camino Real,San Mateo,Office,"43,613 SF","710 - 7,053",$57.00 SF/Year
+879,Bldg A 2121 S El Camino Real,San Mateo,Office,"14,594 SF","14,594",$54.00 SF/Year
+880,Bldg C 2121 S El Camino Real,San Mateo,Office,"23,000 SF","5,010 - 18,767",$54.00 SF/Year
+881,Bldg B 2121 S El Camino Real,San Mateo,Office,"21,084 SF","1,472 - 14,014",$54.00 SF/Year
+882,Tower Plaza 2121 S El Camino Real,San Mateo,Office,"130,100 SF","2,830 - 63,735",$54.00 SF/Year
+883,2440 W El Camino Real,Mountain View,Office,"142,711 SF","6,800 - 69,103",$51.00 SF/Year
+884,605 Ellis St,Mountain View,Office,"15,300 SF","1,450",$51.00 SF/Year
+885,636 Ellis St,Mountain View,Office,"14,612 SF","7,306 - 14,612",$48.00 SF/Year
+886,101 S Ellsworth Ave,San Mateo,Office,"87,504 SF","1,509 - 14,563",$81.00 SF/Year
+887,Tycer-Fultz-Belleck 1731 Embarcadero Rd,Palo Alto,Office,"24,192 SF","1,812 - 10,351",$42.00 SF/Year
+888,1870 Embarcadero Rd,Palo Alto,Office,"33,638 SF","8,410 - 33,638",$47.40 SF/Year
+889,940 Emmett Ave,Belmont,Office,"8,573 SF","397 - 2,364",$35.40 SF/Year
+890,100 W Evelyn Ave,Mountain View,Office,"32,200 SF","7,200 - 32,200",$66.00 - 87.00 SF/Year
+891,111 W Evelyn Ave,Sunnyvale,Office,"47,174 SF","1,195 - 8,349",$75.00 SF/Year
+892,Bldg 3 150 W Evelyn Ave,Mountain View,Office,"49,052 SF","7,389 - 27,644",$87.00 SF/Year
+893,551 Faxon Ave,San Francisco,Office,"3,750 SF","1,885",$36.00 SF/Year
+894,58-60 Federal St,San Francisco,Office,"99,500 SF","18,500 - 92,500",$45.00 SF/Year
+895,1271-1291 Fifth Ave,Belmont,Office,"5,884 SF",700,$34.00 SF/Year
+896,2200 Fillmore St,San Francisco,Retail,"3,493 SF",160,$112.08 SF/Year
+897,868 Folsom St,San Francisco,Service,"15,838 SF","7,919 - 15,838",$32.00 SF/Year
+898,1475-1481 Folsom St,San Francisco,Office,"21,000 SF","3,200",$42.00 SF/Year
+899,155-175 Forest Ave,Palo Alto,Office,"24,464 SF","1,300",$99.00 SF/Year
+900,Bldg 910 1 Franklin Pky,San Mateo,Office,"118,700 SF 18,746","- 100,030",$45.00 - 54.00 SF/Year
+901,"E, F, G 877 W Fremont Ave",Sunnyvale,Office,"5,000 SF","1,412",$35.40 SF/Year
+902,De Anza Office Center 920-924 W Fremont Ave,Sunnyvale,Office,"7,897 SF","5,338",$48.00 SF/Year
+903,1820 Gateway Dr,San Mateo,Office,"81,081 SF","3,593 - 22,612",$47.40 SF/Year
+904,Emeric Goodman 1109-1121 Geary Blvd,San Francisco,Apartments,31 Units,"1,224",$36.00 SF/Year
+905,3126-3128 Geary Blvd,San Francisco,Retail,"6,576 SF","2,400",$20.00 SF/Year
+906,3360-3380 Geary Blvd,San Francisco,Office,"28,000 SF","6,360 - 16,220",$30.00 SF/Year
+907,3701 Geary Blvd,San Francisco,Apartments,6 Units,"1,883",$36.00 SF/Year
+908,6147 Geary Blvd,San Francisco,Retail,"7,200 SF","2,100 - 6,400",$42.00 SF/Year
+909,10-12 Geary St,San Francisco,Office,"14,000 SF","356 - 2,967",$33.72 - 37.50 SF/Year
+910,140 Geary St,San Francisco,Office,"56,933 SF","1,800 - 30,263",$45.00 SF/Year
+911,3 Embarcadero Place 2300 Geng Rd,Palo Alto,Office,"49,454 SF","11,443",$57.00 SF/Year
+912,195 Glenn Way,San Carlos,Office,"7,230 SF","1,800",$42.00 SF/Year
+913,166 Golden Gate Ave,San Francisco,Office,"57,171 SF","10,000 - 17,000",$24.00 SF/Year
+914,12 Gough St,San Francisco,Office,"6,780 SF","1,819",$30.00 SF/Year
+915,304 Grand Avenue 304 Grand Ave,South San Francisco,Office,"11,000 SF","200 - 4,000",$27.00 SF/Year
+916,348 Grand Ave,South San Francisco,Retail,"11,572 SF","1,000 - 4,000",$34.56 SF/Year
+917,381-383 Grand Ave,South San Francisco,Retail,"4,095 SF",875,$42.00 SF/Year
+918,601-625 Grant Ave,San Francisco,Retail,"19,108 SF","4,330",$24.00 SF/Year
+919,1056 Grant Ave,San Francisco,Retail,"12,468 SF",650,$43.80 SF/Year
+920,1100-1108 Grant Ave,San Francisco,Retail,"7,140 SF","2,000 - 6,000",$60.00 SF/Year
+921,480 Green St,San Francisco,Office,"9,000 SF","2,000 - 4,000",$36.00 SF/Year
+922,725 Greenwich St,San Francisco,Office,"11,070 SF",600,$42.00 SF/Year
+923,Los Robles Bldg 167 Hamilton Ave,Palo Alto,Office,"19,828 SF","2,663 - 12,577",$99.00 SF/Year
+924,537 Hamilton Ave,Palo Alto,Office,"18,637 SF","9,242 $132.00",SF/Year
+925,810-816 Hamilton St,Redwood City,Retail,"12,258 SF","3,000",$66.00 SF/Year
+926,34 Harriet St,San Francisco,Office,"7,332 SF","3,666 - 7,332",$60.00 SF/Year
+927,937-939 Harrison St,San Francisco,R&D,"8,923 SF","2,500",$19.20 SF/Year
+928,1351-1355 Harrison St,San Francisco,Retail,"1,050 SF","1,050",$34.20 SF/Year
+929,3705 Haven Ave,Menlo Park,Office,"10,361 SF","140 - 1,370",$64.32 - 72.00 SF/Year
+930,3715 Haven Ave,Menlo Park,Office,"20,844 SF","739 - 15,669",$23.88 SF/Year
+931,333-335 Hayes St,San Francisco,Office,"8,140 SF",124 - 484,$60.00 SF/Year
+932,101 Henry Adams St,San Francisco,Office,"227,591 SF","1,428",$30.00 SF/Year
+933,411 High St,Palo Alto,Office,"7,400 SF","7,400",$93.00 SF/Year
+934,Zachariah Bldg 650-658 High St,Palo Alto,Office,"17,288 SF","7,240",$59.40 SF/Year
+935,919 E Hillsdale Blvd,Foster City,Office,"143,000 SF","3,013 - 38,098",$45.00 SF/Year
+936,1600 W Hillsdale Boulevard 1600 W Hillsdale Blvd,San Mateo,Office,"18,784 SF","4,237",$35.40 SF/Year
+937,151 Hope St,Mountain View,Office,"60,000 SF","6,386 - 60,000 $105.00",SF/Year
+938,278 Hope St,Mountain View,Office,"6,600 SF","1,483 - 3,568",$35.32 - 40.28 SF/Year
+939,606-612 Howard St,San Francisco,Office,"70,074 SF","9,319 - 19,008",$39.00 SF/Year
+940,1121 Howard St,San Francisco,R&D,"6,200 SF","3,100 - 6,200",$36.00 SF/Year
+941,1487 Huntington Ave,South San Francisco,Office,"13,899 SF","13,899",$24.00 SF/Year
+942,255 Hyde St,San Francisco,Office,"15,868 SF","2,625",$24.00 SF/Year
+943,1278 Indiana St,San Francisco,Office,"10,110 SF","711 - 2,835",$33.00 SF/Year
+944,266 Industrial Rd,San Carlos,Manufacturing,"52,400 SF","3,300",$30.00 SF/Year
+945,963 Industrial Rd,San Carlos,R&D,"15,985 SF","3,204 - 6,603",$34.20 SF/Year
+946,985 Industrial Rd,San Carlos,Office,"29,844 SF","1,792 - 12,725",$45.00 SF/Year
+947,The Brittan Building 990 Industrial Rd,San Carlos,Office,"23,703 SF","840 - 8,617",$27.00 - 42.00 SF/Year
+948,150 W Iowa Ave,Sunnyvale,Office,"11,896 SF","1,150 - 2,359",$54.00 SF/Year
+949,52-54 Jeff Adachi Way,San Francisco,Office,"6,700 SF","2,700 - 6,700",$36.00 SF/Year
+950,541 Jefferson Ave,Redwood City,Office,"11,160 SF","723 - 4,068",$36.00 SF/Year
+951,531 Jessie St,San Francisco,Flex,"2,325 SF","2,325",$27.60 SF/Year
+952,Showplace Square South 245-299 Kansas St,San Francisco,Office,"81,285 SF","690 - 13,990",$39.00 - 45.60 SF/Year
+953,300 Kansas St,San Francisco,R&D,"151,777 SF","6,820 - 151,777",$78.00 SF/Year
+954,710-758 La Playa St,San Francisco,Apartments,95 Units,"1,100 - 2,460",$36.00 SF/Year
+955,Paragon Point I&III 3 Lagoon Dr,Redwood City,Office,"151,013 SF","1,570 - 72,526",$42.00 - 69.00 SF/Year
+956,1418 Larkin St,San Francisco,Apartments,12 Units,850,$22.56 SF/Year
+957,1682 Laurel St,San Carlos,Office,"1,510 SF",810,$42.00 SF/Year
+958,2346 Lombard St,San Francisco,Retail,"5,855 SF",510,$42.00 SF/Year
+959,245 Lytton Avenue 245 Lytton Ave,Palo Alto,Office,"58,952 SF","4,990 $102.00",SF/Year
+960,325 Lytton Ave,Palo Alto,Office,"31,688 SF","$102.00 3,042 - 25,759",- 117.00 SF/Year
+961,111-125 Maiden Ln,San Francisco,Office,"76,282 SF","851 - 6,851",$48.00 SF/Year
+962,999 Main St,Redwood City,Office,"17,188 SF","9,945",$75.00 SF/Year
+963,Teichert Building 1629 Main St,Redwood City,Office,"37,207 SF","7,853",$59.40 SF/Year
+964,100 Marine Pky,Redwood City,Office,"83,010 SF","3,115 - 17,021",$59.40 SF/Year
+965,655 Mariners Island Blvd,San Mateo,Office,"13,017 SF","2,000",$22.20 SF/Year
+966,Keynote Plaza 777 Mariners Island Blvd,San Mateo,Office,"182,838 SF","1,882 - 48,299",$69.00 SF/Year
+967,455 Market St,San Francisco,Office,"397,298 SF","494 - 114,170",$59.00 - 69.00 SF/Year
+968,1049 Market St,San Francisco,Office,"50,900 SF","350 - 6,853",$22.00 - 32.00 SF/Year
+969,Ede Building 1059-1061 Market St,San Francisco,Office,"65,600 SF","7,790 - 31,160",$18.00 - 24.00 SF/Year
+970,1067-1073 Market St,San Francisco,Office,"24,000 SF","1,000 - 3,500",$30.00 - 40.00 SF/Year
+971,1128 Market St,San Francisco,Office,"79,204 SF","5,000 - 73,954",$32.00 SF/Year
+972,990 Marsh Rd,Menlo Park,Office,"12,908 SF","6,454 - 12,908",$30.00 SF/Year
+973,1020 Marsh Rd,Menlo Park,Office,"34,000 SF","17,000 - 34,000",$30.00 SF/Year
+974,1100 Marsh Rd,Menlo Park,Office,"11,381 SF","11,381",$30.00 SF/Year
+975,Marshall Square West 901 Marshall St,Redwood City,Office,"65,000 SF","2,180 - 30,093",$75.00 SF/Year
+976,1001 Marshall St,Redwood City,Office,"72,000 SF","11,096 - 56,579",$75.00 SF/Year
+977,100 Mathilda Pl,Sunnyvale,Office,"213,405 SF","16,189 - 78,626",$78.00 SF/Year
+978,Sunnyvale CityLine 150 Mathilda Pl,Sunnyvale,Office,"141,896 SF","7,939 - 19,499",$78.00 SF/Year
+979,607-611 Menlo Ave,Menlo Park,Office,"2,000 SF","1,000",$48.00 SF/Year
+980,770 Menlo Ave,Menlo Park,Office,"10,000 SF","844 - 3,757",$57.00 - 59.40 SF/Year
+981,200 Middlefield 200 Middlefield Rd,Menlo Park,Office,"43,083 SF","5,608",$93.00 SF/Year
+982,525 Middlefield Rd,Menlo Park,Office,"28,000 SF","1,461 - 4,784",$66.00 SF/Year
+983,535 Middlefield Rd,Menlo Park,Office,"28,000 SF","1,704 - 18,293",$42.00 - 66.00 SF/Year
+984,545 Middlefield Rd,Menlo Park,Office,"28,000 SF","3,554 - 7,595",$66.00 SF/Year
+985,95 Minna St,San Francisco,Office,"9,600 SF","2,400",$72.50 SF/Year
+986,The Veronica Building 647-649 Mission St,San Francisco,Office,"40,274 SF","6,000 - 24,000",$32.00 SF/Year
+987,959-965 Mission St,San Francisco,Office,"86,000 SF","734 - 70,268",$29.00 - 48.00 SF/Year
+988,1271-1275 Mission St,San Francisco,Office,"8,750 SF","2,916 - 8,750",$48.00 SF/Year
+989,1449-1453 Mission St,San Francisco,Office,"72,000 SF","6,100",$30.00 SF/Year
+990,2069-2071 Mission St,San Francisco,Retail,"5,040 SF","2,469",$18.00 SF/Year
+991,2729 Mission St,San Francisco,Office,"4,000 SF","1,100 - 3,000 $21.82",- 31.58 SF/Year
+992,3041-3043 Mission St,San Francisco,Office,"10,000 SF","2,800",$60.00 SF/Year
+993,4575 Mission St,San Francisco,Retail,"2,086 SF","2,086",$23.04 SF/Year
+994,4596 Mission St,San Francisco,Retail,"4,000 SF",550,$36.00 SF/Year
+995,880 Mitten Road 880 Mitten Rd,Burlingame,Office,"18,427 SF","1,800 - 6,752",$30.00 SF/Year
+996,385 Moffett Park Dr,Sunnyvale,Office,"84,799 SF","7,439 - 47,617",$30.00 SF/Year
+997,100 Montgomery St,San Francisco,Office,"436,855 SF","858 - 175,197",$40.00 SF/Year
+998,850 Montgomery St,San Francisco,Office,"22,479 SF","2,075",$36.00 SF/Year
+999,1801 Murchison Dr,Burlingame,Office,"16,334 SF","760 - 3,660",$34.80 - 36.00 SF/Year
+1000,510 Myrtle Ave,South San Francisco,Office,"20,651 SF","1,694",$27.00 SF/Year
+1001,The Atruim 1900 S norfolk St,San Mateo,Office,"164,013 SF","100 - 63,504",$45.00 SF/Year
+1002,1500 Noriega St,San Francisco,Office,"7,242 SF",858,$48.00 SF/Year
+1003,1263 Oakmead Pky,Sunnyvale,Office,"8,350 SF","4,000",$35.40 SF/Year
+1004,2335-2339 Ocean Ave,San Francisco,Office,"7,928 SF","1,177 - 2,452",$20.76 SF/Year
+1005,2395 Ocean Ave,San Francisco,Office,"2,776 SF",$88.00 80 - 460,- 165.00 SF/Year
+1006,2566 Ocean Ave,San Francisco,Office,"8,268 SF","500 - 4,634",$36.00 SF/Year
+1007,1916 Old Middlefield Way,Mountain View,R&D,"16,931 SF","3,751",$30.00 SF/Year
+1008,Oyster Point Marina Plaza I 400 Oyster Point Blvd,South San Francisco,Office,"226,702 SF","900 - 16,865",$33.00 - 47.40 SF/Year
+1009,Bldg A 1801 Mill Rd,Palo Alto,Office,"49,638 SF","13,765 - 27,542",$71.40 SF/Year
+1010,Bldg B 1841 Mill Rd,Palo Alto,Office,"60,000 SF","3,100 - 30,713",$71.40 SF/Year
+1011,Bldg D 1891 Mill Rd,Palo Alto,Office,"31,738 SF","10,379 - 20,936",$71.40 SF/Year
+1012,888 Paris St,San Francisco,Office,"30,000 SF",875,$27.36 SF/Year
+1013,3197 Park Blvd,Palo Alto,Office,"10,000 SF","10,000",$59.40 SF/Year
+1014,420 Peninsula Ave,San Mateo,Office,"3,800 SF",993,$43.50 SF/Year
+1015,3225 Pierce St,San Francisco,Retail,"5,036 SF","2,100",$60.00 SF/Year
+1016,111 Pine St,San Francisco,Office,"206,034 SF","1,268 - 159,419",$35.00 - 45.00 SF/Year
+1017,200 Pine Street 200-216 Pine St,San Francisco,Office,"49,463 SF","721 - 7,168",$50.00 SF/Year
+1018,333 Pine St,San Francisco,Office,"27,600 SF","3,840 - 8,104",$65.00 SF/Year
+1019,870 N Point St,San Francisco,Office,"12,000 SF","1,019",$39.45 SF/Year
+1020,229 Polaris Ave,Mountain View,Office,"6,016 SF","1,000",$72.00 SF/Year
+1021,455 Portage Ave,Palo Alto,R&D,"12,192 SF","5,935 - 12,192",$75.00 SF/Year
+1022,157 W Portal Ave,San Francisco,Office,"4,922 SF","1,000",$39.00 SF/Year
+1023,St. Francis Circle Professi… 380 W Portal Ave,San Francisco,Office,"4,000 SF","600 - 2,500",$35.40 - 42.00 SF/Year
+1024,801 Portola Dr,San Francisco,Office,"10,181 SF",267 - 812,$47.40 SF/Year
+1025,Charing Cross Apartments 891 Post St,San Francisco,Apartments,46 Units,212 - 624,$23.28 - 45.24 SF/Year
+1026,20 N Railroad Ave,San Mateo,Warehouse,"21,505 SF","4,038 - 10,164",$21.00 SF/Year
+1027,540 Ralston Ave,Belmont,Office,"10,865 SF","1,370",$42.00 SF/Year
+1028,636 Ramona Ave,Palo Alto,Office,"4,750 SF","4,750 $102.00",SF/Year
+1029,450-460 Ramona St,Palo Alto,Retail,"1,980 SF","1,058",$60.00 SF/Year
+1030,Bldg 1 201 Redwood Shores Pky,Redwood City,Office,"144,222 SF","3,470 - 36,150",$35.40 - 75.00 SF/Year
+1031,Bldg 2 203 Redwood Shores Pky,Redwood City,Office,"190,348 SF","1,280 - 77,640",$48.00 - 75.00 SF/Year
+1032,860 E Remington Dr,Sunnyvale,Office,"8,608 SF","1,500",$48.00 SF/Year
+1033,1040 N Rengstorff Ave,Mountain View,Retail,"12,528 SF","1,300 - 4,336",$51.00 SF/Year
+1034,716-720 Sacramento St,San Francisco,Office,"17,000 SF","881 - 1,802",$28.68 - 36.00 SF/Year
+1035,825 San Antonio Rd,Palo Alto,Office,"6,060 SF",350 - 814,$49.08 - 63.48 SF/Year
+1036,960 San Antonio Rd,Palo Alto,Office,"12,512 SF","2,960",$36.00 SF/Year
+1037,1785 San Carlos Ave,San Carlos,Office,"8,799 SF","714 - 5,179",$39.00 SF/Year
+1038,704-706 N San Mateo Dr,San Mateo,Service,"7,826 SF","1,382",$39.12 SF/Year
+1039,851 N San Mateo Dr,San Mateo,Office,"6,500 SF",630,$29.52 SF/Year
+1040,Adam Grant Bldg 114 Sansome St,San Francisco,Office,"193,750 SF","3,865 - 80,076",$35.00 - 59.00 SF/Year
+1041,Stock Exchange Tower 155 Sansome St,San Francisco,Office,"68,000 SF","1,616",$33.00 SF/Year
+1042,220 Sansome Street 220 Sansome St,San Francisco,Office,"63,272 SF","711 - 33,201",$39.00 - 45.00 SF/Year
+1043,Bemis Bldg 1050 Sansome St,San Francisco,Office,"31,537 SF","4,041 - 14,158",$29.00 SF/Year
+1044,499 Seaport Cir,Redwood City,Office,"9,072 SF","1,478",$39.00 SF/Year
+1045,485 Seaport Ct,Redwood City,Office,"1,690 SF","1,690",$39.00 SF/Year
+1046,493-495 Seaport Ct,Redwood City,Office,"4,210 SF","685 - 4,210",$39.00 SF/Year
+1047,501 Seaport Ct,Redwood City,Office,"8,600 SF","323 - 4,608",$33.00 - 39.00 SF/Year
+1048,503 Seaport Ct,Redwood City,Office,"4,175 SF",840,$39.00 SF/Year
+1049,425 Sherman Avenue 425 Sherman Ave,Palo Alto,Office,"25,000 SF","1,840",$57.00 SF/Year
+1050,949 Sherwood Ave,Los Altos,Office,"4,000 SF","1,280",$45.00 SF/Year
+1051,Shorebreeze II 255 Shoreline Dr,Redwood City,Office,"111,317 SF","1,936 - 38,435",$69.00 SF/Year
+1052,Shorebreeze I 275 Shoreline Dr,Redwood City,Office,"117,350 SF","1,001 - 28,395",$69.00 SF/Year
+1053,701 N Shoreline Blvd,Mountain View,Office,"15,648 SF","1,623 - 7,304",$57.00 SF/Year
+1054,Bldg B 883 N Shoreline Blvd,Mountain View,Office,"8,360 SF","831 - 3,411",$39.00 - 42.00 SF/Year
+1055,1051-1099 Sneath Ln,San Bruno,Light Distribution,"51,613 SF","3,200 - 14,280",$25.80 SF/Year
+1056,1146-1148 Sonora Ct,Sunnyvale,Light Manufacturing,"11,055 SF","2,100",$23.40 SF/Year
+1057,2657-2659 Spring St,Redwood City,Office,"5,612 SF","1,242",$30.00 SF/Year
+1058,Station Park Green 430 Station Park Cir S100,San Mateo,Apartments,599 Units,"1,095 - 6,941",$48.00 SF/Year
+1059,401-415 Stockton St,San Francisco,Office,"23,648 SF","4,000 - 18,174",$29.00 SF/Year
+1060,Mandarin Towers 950 Stockton St,San Francisco,Office,"121,176 SF","734 - 4,104",$38.52 - 54.00 SF/Year
+1061,55 Sumner St,San Francisco,Office,"1,950 SF","1,950",$45.00 SF/Year
+1062,1222-1226 Sutter St,San Francisco,Office,"10,852 SF","4,000",$24.00 SF/Year
+1063,830-834 Taraval St,San Francisco,Retail,"4,125 SF","2,200",$24.00 SF/Year
+1064,1043 Taraval St,San Francisco,Retail,"3,300 SF",400,$60.00 SF/Year
+1065,1100-1102 Taraval St,San Francisco,Retail,"4,800 SF","805 - 1,630",$44.76 SF/Year
+1066,435 Tasso St,Palo Alto,Office,"32,128 SF","1,573 - 12,905 $105.00",SF/Year
+1067,1075 Terra Bella Ave,Mountain View,Office,"23,347 SF","11,239 - 23,347",$71.40 SF/Year
+1068,810-814 Theatre Way,Redwood City,Office,"10,840 SF","564 - 4,281",$54.00 SF/Year
+1069,1250 Thomas Ave,San Francisco,Warehouse,"5,000 SF","2,500 - 5,000",$21.60 SF/Year
+1070,1111 Triton Dr,Foster City,Office,"10,800 SF","345 - 3,000",$33.00 SF/Year
+1071,Shores Center 3 Twin Dolphin Dr,Redwood City,Office,"56,118 SF","1,501 - 33,556",$47.40 SF/Year
+1072,333 Twin Dolphin Dr,Redwood City,Office,"183,119 SF","1,724 - 81,716",$67.80 - 69.00 SF/Year
+1073,1836-1850 Union St,San Francisco,Retail,"6,207 SF","1,550",$50.28 SF/Year
+1074,525 University Ave,Palo Alto,Office,"211,786 SF","$36.00 1,664 - 20,679",- 138.00 SF/Year
+1075,540 University Ave,Palo Alto,Office,"15,452 SF","1,344 - 2,928",$39.00 SF/Year
+1076,473-475 Valencia St,San Francisco,Retail,"14,400 SF","4,800",$13.20 SF/Year
+1077,1200 Van Ness Ave,San Francisco,Office,"122,017 SF","7,381 - 38,381",$24.00 SF/Year
+1078,1233-1237 Van Ness Ave,San Francisco,Office,"18,000 SF","900 - 6,900",$30.00 SF/Year
+1079,2200 Van Ness Ave,San Francisco,Office,"22,661 SF","6,419",$33.00 SF/Year
+1080,251 S Van Ness Ave,San Francisco,Office,"7,620 SF","350 - 3,000",$30.00 SF/Year
+1081,Vermont Center Showroo… 121-151 Vermont St,San Francisco,Showroom,"36,100 SF","3,654 - 9,054",$30.00 SF/Year
+1082,365 Vermont St,San Francisco,Office,"13,000 SF","5,000 - 13,000",$30.00 SF/Year
+1083,555 Veterans Blvd,Redwood City,Office,"10,226 SF","1,459",$42.00 SF/Year
+1084,Bay Area Bank Building 900 Veterans Blvd,Redwood City,Office,"55,034 SF","801 - 36,081",$48.00 - 71.40 SF/Year
+1085,100 View St,Mountain View,Office,"47,226 SF","3,236 - 47,226",$90.00 SF/Year
+1086,550 Washington St,Daly City,Office,"11,400 SF","200 - 1,234",$35.40 SF/Year
+1087,Pacific Place 1800 Washington St,San Francisco,Apartments,152 Units,"2,135",$39.00 SF/Year
+1088,431 Waverley St,Palo Alto,Office,"15,599 SF","15,599 $119.40",SF/Year
+1089,265-275 N Whisman Rd,Mountain View,R&D,"14,400 SF","14,400",$63.00 SF/Year
+1090,Building 6 425 N Whisman Rd,Mountain View,Office,"14,592 SF","1,532 - 3,663",$46.20 SF/Year
+1091,Linffield Oaks 64 Willow Pl,Menlo Park,Office,"32,201 SF","5,814 - 16,581 $100.20",SF/Year
+1092,125 Willow Rd,Menlo Park,Office,"6,250 SF","1,679",$66.00 SF/Year
+1093,203 Willow St,San Francisco,Office,"32,301 SF","1,230",$23.52 SF/Year
+1094,821 Winslow St,Redwood City,Office,"6,040 SF","6,040",$48.00 SF/Year
+1095,889 Winslow St,Redwood City,Office,"75,569 SF","12,732",$81.00 SF/Year
+1096,Woodside Corporate Cent… 1733 Woodside Rd,Redwood City,Office,"19,000 SF","1,066",$51.00 SF/Year
+1097,1775 Woodside Rd,Redwood City,Office,"22,000 SF","4,977",$51.00 SF/Year
+1098,Woodside Road Professio… 1779 Woodside Rd,Redwood City,Office,"15,000 SF","1,032",$35.40 SF/Year
+1099,1317 7th Avenue,San Francisco,Office,"3,332 SF","3,332",$46.80 SF/Year
+1100,Bldg K/L 877 W Fremont Ave,Sunnyvale,Office,"13,506 SF",904,$35.40 SF/Year
+1101,Bldg I 877 W Fremont Ave,Sunnyvale,Office,"5,824 SF","1,127",$35.40 SF/Year
+1102,Bldg D 877 W Fremont Ave,Sunnyvale,Office,"5,392 SF","1,602",$35.40 SF/Year
+1103,Bldg C 877 W Fremont Ave,Sunnyvale,Office,"5,250 SF","1,185 - 2,918",$35.40 SF/Year
+1104,Bldg H 877 W Fremont Ave,Sunnyvale,Office,"5,344 SF","1,055",$35.40 SF/Year
+1105,KPMG Building 55 2nd St,San Francisco,Office,"390,000 SF 3,457","- 309,228",Withheld
+1106,144-154 2nd St,San Francisco,Office,"30,996 SF","5,166",Withheld
+1107,282 2nd St,San Francisco,Office,"28,851 SF","3,455 - 6,910",Withheld
+1108,400 2nd St,San Francisco,Office,"88,409 SF","15,848 - 88,409",Withheld
+1109,Second Street Square 501 2nd St,San Francisco,Office,"207,809 SF","4,929 - 39,209",Withheld
+1110,640 2nd St,San Francisco,Office,"24,096 SF","8,032",Withheld
+1111,The Canyon 1011-1023 3rd St,San Francisco,Apartments,283 Units,"1,269 - 12,066",Withheld
+1112,2800 3rd St,San Francisco,Warehouse,"37,935 SF","2,792 - 22,664",Withheld
+1113,Parallel on Claremont 435 E 3rd Ave,San Mateo,Office,"38,812 SF","7,749 - 39,295",Withheld
+1114,Pacific Place 22 4th St,San Francisco,Office,"262,872 SF 10,443","- 220,629",Withheld
+1115,Arbello 477 9th Ave,San Mateo,Apartments,120 Units,"4,322 - 27,971",Withheld
+1116,132 9th St,San Francisco,R&D,"25,250 SF","8,400 - 25,250",Withheld
+1117,The Storek Building 149-155 9th St,San Francisco,Office,"39,425 SF","7,885 - 39,425",Withheld
+1118,Common Minna 120-122 10th St,San Francisco,Apartments,12 Units,"1,916",Withheld
+1119,151 10th St,San Francisco,Office,"10,737 SF","2,550",Withheld
+1120,169-179 11th St,San Francisco,Office,"19,811 SF","5,226 - 10,633",Withheld
+1121,Alta Potrero 1301 16th St,San Francisco,Apartments,172 Units,"1,236 - 4,647",Withheld
+1122,The Lion Building 2525-2545 16th St,San Francisco,R&D,"177,640 SF","14,092",Withheld
+1123,3930-3938 24th St,San Francisco,Retail,"21,552 SF","2,400",Withheld
+1124,Bay Park Plaza 1 577 Airport Blvd,Burlingame,Office,"149,327 SF","18,673 - 149,391",Withheld
+1125,803 American St,San Carlos,Flex,"9,450 SF","4,700",Withheld
+1126,1660 S Amphlett Blvd,San Mateo,Office,"47,186 SF","676 - 9,244",Withheld
+1127,1670 S Amphlett Blvd,San Mateo,Office,"47,186 SF","1,891 - 7,071",Withheld
+1128,1700 S Amphlett Blvd,San Mateo,Office,"47,520 SF","6,557",Withheld
+1129,1710 S Amphlett Blvd,San Mateo,Office,"47,520 SF","603 - 9,935",Withheld
+1130,Redwood City Tech Station 500 Arguello St,Redwood City,Office,"97,605 SF","18,917 - 39,226",Withheld
+1131,Baywood 333-345 S B St,San Mateo,Flex,"29,402 SF","6,559",Withheld
+1132,Baldwin Bldg 201 Baldwin Ave,San Mateo,Office,"23,670 SF","11,835",Withheld
+1133,77 Battery St,San Francisco,Office,"16,000 SF","3,000 - 7,000",Withheld
+1134,First National Bank of Nor… 130 Battery St,San Francisco,Office,"36,000 SF","1,385 - 11,417",Withheld
+1135,275 Battery St,San Francisco,Office,"485,000 SF","1,596 - 166,677",Withheld
+1136,Burroughs Bldg 447 Battery St,San Francisco,Office,"30,682 SF","3,518",Withheld
+1137,750 Battery St,San Francisco,Office,"106,475 SF","6,576 - 67,318",Withheld
+1138,840-848 Battery St,San Francisco,Office,"44,461 SF","17,053 - 44,461",Withheld
+1139,940 Battery St,San Francisco,Office,"21,720 SF","2,350 - 13,470",Withheld
+1140,Levi's Plaza 1265 Battery St,San Francisco,Office,"86,115 SF","9,994 - 20,187",Withheld
+1141,One Bay Plaza 1350 Bayshore Hwy,Burlingame,Office,"194,833 SF","1,414 - 33,296",Withheld
+1142,Oritz Building 1555 Bayshore Hwy,Burlingame,Office,"27,600 SF","2,730 - 9,630",Withheld
+1143,Hotel Zephyr 250 Beach St,San Francisco,Hotel,361 Rooms,"1,406",Withheld
+1144,757 Beach St,San Francisco,Flex,"20,000 SF","10,000 - 20,000",Withheld
+1145,781 Beach St,San Francisco,Office,"38,247 SF","2,678 - 24,819",Withheld
+1146,891 Beach St,San Francisco,Office,"7,500 SF","7,500",Withheld
+1147,85 Bluxome St,San Francisco,Office,"56,845 SF","9,633 - 53,014",Withheld
+1148,Menlo Corporate Center 4200 Bohannon Dr,Menlo Park,Office,"45,451 SF","13,322",Withheld
+1149,4300 Bohannon Dr,Menlo Park,Office,"63,079 SF","7,589",Withheld
+1150,Borel Financial Center 160 Bovet Rd,San Mateo,Office,"76,765 SF","1,792 - 10,782",Withheld
+1151,Bradford Professional Co 399 Bradford St,Redwood City,Office,"31,011 SF","10,630",Withheld
+1152,434 Brannan St,San Francisco,Office,"25,378 SF","7,835 - 25,378",Withheld
+1153,466 Brannan St,San Francisco,Office,"2,730 SF","2,730",Withheld
+1154,San Francisco Multimedi… 475 Brannan St,San Francisco,Office,"255,000 SF","16,250 - 132,571",Withheld
+1155,808 Brannan St,San Francisco,Office,"61,455 SF","6,754 - 61,455",Withheld
+1156,Bldg A 350 Bridge Pky,Redwood City,Office,"27,192 SF","1,858 - 7,103",Withheld
+1157,North Park - Bldg 3 75 Broadway,San Francisco,Office,"101,058 SF","1,655 - 49,520",Withheld
+1158,1001 Broadway,Millbrae,Office,"16,668 SF","1,170",Withheld
+1159,1900 Broadway St,Redwood City,Office,"281,000 SF 13,400","- 281,100",Withheld
+1160,Broadway Station 2075 Broadway St,Redwood City,Office,"102,000 SF","17,846",Withheld
+1161,15-17 Brush Pl,San Francisco,Flex,"5,200 SF","2,237",Withheld
+1162,303 Bryant St,Mountain View,Office,"56,247 SF","10,652 - 56,246",Withheld
+1163,340 Bryant St,San Francisco,Office,"65,719 SF","8,364 - 27,893",Withheld
+1164,448-450 Bryant St,San Francisco,Office,"21,250 SF","5,750 - 21,250",Withheld
+1165,518-526 Bryant St,Palo Alto,Retail,"14,500 SF","3,076",Withheld
+1166,539 Bryant St 539 Bryant St,San Francisco,Office,"73,128 SF","4,199 - 24,760",Withheld
+1167,The Hamm's Bldg 1550 Bryant St,San Francisco,Office,"184,706 SF","2,075 - 73,583",Withheld
+1168,1850 Bryant St,San Francisco,Office,"225,733 SF","17,450 - 187,306",Withheld
+1169,Magnolia Place Apartmen… 3322 Buchanan St,San Francisco,Apartments,27 Units,"3,617 - 10,000",Withheld
+1170,1 Bush St,San Francisco,Office,"384,458 SF","5,812 - 20,194",Withheld
+1171,425 Bush St,San Francisco,Office,"43,000 SF","1,700 - 15,998",Withheld
+1172,1465 Bush St,San Francisco,Office,"3,000 SF","2,900",Withheld
+1173,250 California Dr,Burlingame,Office,"44,605 SF","12,365",Withheld
+1174,20 California St,San Francisco,Office,"59,472 SF","1,785 - 30,207",Withheld
+1175,150 California St,San Francisco,Office,"249,960 SF","1,880 - 38,690",Withheld
+1176,201 California St,San Francisco,Office,"272,000 SF","2,102 - 201,371",Withheld
+1177,255 California St,San Francisco,Office,"188,824 SF","780 - 77,736",Withheld
+1178,Historic Union Bank Bldg. 400-430 California St,San Francisco,Office,"295,783 SF","10,559 - 79,801",Withheld
+1179,450 California St,San Francisco,Office,"380,199 SF","11,692 - 380,199",Withheld
+1180,International Bldg 601 California St,San Francisco,Office,"276,521 SF","150 - 50,205",Withheld
+1181,650 California 650 California St,San Francisco,Office,"567,653 SF","3,013 - 162,393",Withheld
+1182,800 California St,Mountain View,Office,"27,957 SF","8,863",Withheld
+1183,1550 California St,San Francisco,Retail,"9,968 SF","4,984 - 9,968",Withheld
+1184,1572-1574 California St,San Francisco,Retail,"8,177 SF","4,088 - 8,177",Withheld
+1185,4263-4293 California St,San Francisco,Apartments,6 Units,"1,000",Withheld
+1186,341-347 S California Ave,Palo Alto,Retail,"9,568 SF","4,794",Withheld
+1187,1117 S California Ave,Palo Alto,Office,"81,282 SF","15,864 - 62,160",Withheld
+1188,Deerfield One 4040 Campbell Ave,Menlo Park,Office,"41,482 SF","9,803",Withheld
+1189,236-238 Castro St,Mountain View,Office,"6,912 SF","1,000 - 2,000",Withheld
+1190,401 Castro St,Mountain View,Office,"31,930 SF","12,821",Withheld
+1191,500-508 Castro St,San Francisco,Retail,"8,836 SF","4,000",Withheld
+1192,582 Castro St,San Francisco,Retail,"3,834 SF","1,569",Withheld
+1193,The Sobrato Building 599 Castro St,Mountain View,Office,"108,973 SF","14,260 - 77,402",Withheld
+1194,150 Chestnut St,San Francisco,Office,"36,642 SF","15,303 - 36,642",Withheld
+1195,Wells Fargo 2055 Chestnut St,San Francisco,Retail,"11,465 SF","1,870 - 11,465",Withheld
+1196,218-220 Clara St,San Francisco,Office,"7,320 SF","1,200",Withheld
+1197,San Mateo Square 800 S Claremont St,San Mateo,Office,"27,961 SF","964 - 11,126",Withheld
+1198,35 Clement St,San Francisco,Retail,"2,271 SF","1,000 - 2,000",Withheld
+1199,360-368 Clementina St,San Francisco,Office,"10,673 SF","2,400 - 9,044",Withheld
+1200,345 Convention Way,Redwood City,Office,"17,808 SF","7,334",Withheld
+1201,444 De Haro St,San Francisco,Office,"180,748 SF","3,167 - 58,735",Withheld
+1202,1010 Doyle St,Menlo Park,Office,"9,672 SF","3,610",Withheld
+1203,Bldg B 1090 Dr Maya Angelou Ln,San Francisco,Office,"323,503 SF","1,159 - 22,241",Withheld
+1204,117 Easy St,Mountain View,Flex,"14,374 SF","2,907 - 14,374",Withheld
+1205,200 El Camino Real,Menlo Park,Office,"33,907 SF","6,506 - 33,907",Withheld
+1206,300 El Camino Real,Menlo Park,Office,"95,274 SF","5,884 - 36,514",Withheld
+1207,555 El Camino Real,San Carlos,Office,"7,682 SF","4,004",Withheld
+1208,811-815 El Camino Real,Menlo Park,Retail,"4,206 SF","1,887 - 3,857",Withheld
+1209,863-877 El Camino Real,Menlo Park,Retail,"9,000 SF",885,Withheld
+1210,3300 El Camino Real,Palo Alto,Office,"52,611 SF","16,232 - 52,611",Withheld
+1211,Westlake Bldg 520 S El Camino Real,San Mateo,Office,"121,320 SF","4,365 - 23,449",Withheld
+1212,Borel Estate Bldg 1700 S El Camino Real,San Mateo,Office,"77,715 SF","1,253 - 14,847",Withheld
+1213,2600 S El Camino Real,San Mateo,Office,"43,455 SF","4,851 - 17,741",Withheld
+1214,412 W El Camino Real,Mountain View,Office,"8,426 SF","8,426",Withheld
+1215,Audiffred Bldg 100 Embarcadero,San Francisco,Office,"25,276 SF","4,942 - 16,566",Withheld
+1216,Four Embarcadero Center 4 Embarcadero Ctr,San Francisco,Office,"945,594 SF","2,028 - 113,992",Withheld
+1217,Three Embarcadero Ctr,San Francisco,Office,"786,411 SF","1,840 - 331,568",Withheld
+1218,1717 Embarcadero Road 1717 Embarcadero Rd,Palo Alto,Office,"16,334 SF","4,140",Withheld
+1219,625-631 Emerson St,Palo Alto,Office,"10,264 SF","1,993 - 3,987",Withheld
+1220,51 Federal St,San Francisco,Office,"26,490 SF","837 - 2,805",Withheld
+1221,Fell Street Apartments 280 Fell St,San Francisco,Apartments,33 Units,"7,700",Withheld
+1222,The Ferry Building 1 Ferry Building,San Francisco,Office,"268,018 SF",69 - 138,Withheld
+1223,Filbert Landing 201 Filbert St,San Francisco,Office,"43,000 SF","5,150 - 17,092",Withheld
+1224,1406-1490 Fillmore St,San Francisco,Office,"66,500 SF","1,519 - 7,847",Withheld
+1225,The Fillmore Center 1475 Fillmore St,San Francisco,Apartments,"1,114 Units","685 - 26,328",Withheld
+1226,100 First 100 First St,San Francisco,Office,"480,457 SF","376 - 134,165",Withheld
+1227,1061 Folsom St,San Francisco,Office,"9,961 SF","5,500",Withheld
+1228,1275 Folsom St,San Francisco,Office,"8,000 SF","1,500 - 3,000",Withheld
+1229,45 Fremont 45 Fremont St,San Francisco,Office,"692,000 SF","7,347 - 325,762",Withheld
+1230,50 Fremont St,San Francisco,Office,"881,252 SF","1,684 - 611,562",Withheld
+1231,747 Front St,San Francisco,Office,"81,415 SF","19,807",Withheld
+1232,630 Gateway Blvd,South San Francisco,R&D,"50,160 SF","7,443",Withheld
+1233,701 Gateway Blvd,South San Francisco,Office,"170,862 SF","2,597 - 141,391",Withheld
+1234,Building 2 at Alexandria Te… 951 Gateway Blvd,South San Francisco,Office,"59,816 SF","8,250",Withheld
+1235,2700 Geary Blvd,San Francisco,Office,"15,000 SF","6,500",Withheld
+1236,3738 Geary Blvd,San Francisco,Retail,"5,792 SF",995,Withheld
+1237,450-454 Geary St,San Francisco,Office,"12,569 SF","1,256 - 4,692",Withheld
+1238,456-466 Geary St,San Francisco,Office,"20,295 SF","1,292 - 6,285",Withheld
+1239,1007-1009 General Kennedy Ave,San Francisco,Office,"42,000 SF","4,000 - 18,977",Withheld
+1240,4 Embarcadero Place 2400 Geng Rd,Palo Alto,Office,"51,963 SF","2,643 - 12,373",Withheld
+1241,The Presidio 1169 Gorgas Ave,San Francisco,Retail,"11,995 SF","3,671",Withheld
+1242,One Hundred Grand 100 Grand Ln,Foster City,Apartments,166 Units,"1,131 - 2,381",Withheld
+1243,Hastings Building 200-214 Grant Ave,San Francisco,Office,"35,285 SF","544 - 14,700",Withheld
+1244,The Crossroads III 1855 S Grant St,San Mateo,Office,"67,796 SF","13,484 - 67,800",Withheld
+1245,The Crossroads II 1875 S Grant St,San Mateo,Office,"175,905 SF","1,138 - 74,086",Withheld
+1246,25-35 Grove St,San Francisco,Office,"12,846 SF","150 - 1,800",Withheld
+1247,300 Hamilton Ave,Palo Alto,Office,"39,290 SF","6,096 - 27,111",Withheld
+1248,400 Hamilton Ave,Palo Alto,Office,"97,000 SF","2,975 - 44,410",Withheld
+1249,Clocktower Square 620 Hansen Way,Palo Alto,Office,"9,234 SF","9,234",Withheld
+1250,600 Harrison St,San Francisco,Office,"219,000 SF","12,226 - 95,392",Withheld
+1251,645 Harrison St,San Francisco,Office,"159,656 SF","5,600 - 63,310",Withheld
+1252,933 Harrison St,San Francisco,Warehouse,"6,200 SF","2,000 - 6,200",Withheld
+1253,Hawthorne Plaza 75 Hawthorne St,San Francisco,Office,"343,565 SF","8,753 - 28,742",Withheld
+1254,989 E Hillsdale Blvd,Foster City,Office,"145,000 SF","5,333 - 34,834",Withheld
+1255,1065 E Hillsdale Blvd,Foster City,Office,"115,600 SF","550 - 92,686",Withheld
+1256,260 Homer Ave,Palo Alto,Office,"46,858 SF","6,307",Withheld
+1257,300 Hope St,Mountain View,Office,"22,357 SF","1,453 - 22,357",Withheld
+1258,988 Howard Ave,Burlingame,Office,"26,581 SF","12,872",Withheld
+1259,Borel Bldg II 180-182 Howard St,San Francisco,Office,"211,146 SF","7,274 - 71,747",Withheld
+1260,Foundry Square III 505 Howard St,San Francisco,Office,"307,000 SF","5,660 - 89,211",Withheld
+1261,577 Howard St,San Francisco,Office,"7,700 SF","2,000",Withheld
+1262,631 Howard St,San Francisco,Office,"108,785 SF","8,052 - 42,349",Withheld
+1263,875 Howard 875 Howard St,San Francisco,Office,"188,252 SF","5,931 - 128,802",Withheld
+1264,957 Industrial Rd,San Carlos,R&D,"21,775 SF","18,454",Withheld
+1265,1411-1417 Irving St,San Francisco,Retail,"4,538 SF","1,385",Withheld
+1266,2340-2380 Irving St,San Francisco,Office,"46,836 SF","437 - 5,166",Withheld
+1267,292-296 Ivy St,San Francisco,Office,"41,891 SF","1,471 - 5,892",Withheld
+1268,200-220 Jackson St,San Francisco,Office,"24,888 SF","2,732",Withheld
+1269,244 Jackson St,San Francisco,Office,"30,087 SF","3,725 - 26,844",Withheld
+1270,412-414 Jackson St,San Francisco,Office,"22,716 SF","4,144",Withheld
+1271,490 Jefferson St,San Francisco,Office,"4,700 SF","1,268 - 3,359",Withheld
+1272,Henry Doelger Building 320-330 Judah St,San Francisco,Office,"11,509 SF","1,426",Withheld
+1273,222-224 Kearny St,San Francisco,Office,"169,024 SF","2,086 - 88,480",Withheld
+1274,325-329 Kearny St,San Francisco,Retail,"4,287 SF","1,300 - 2,600",Withheld
+1275,333-343 Kearny St,San Francisco,Office,"25,600 SF","2,969",Withheld
+1276,550 Kearny Street 550 Kearny St,San Francisco,Office,"196,438 SF","2,128 - 218,246",Withheld
+1277,290 King St,San Francisco,Office,"64,800 SF","3,751",Withheld
+1278,The Nest 200 Lathrop St,Redwood City,Office,"117,000 SF","4,000 - 79,618",Withheld
+1279,Bldg C One Letterman Dr,San Francisco,Office,"221,668 SF","8,489",Withheld
+1280,1016 Lincoln Blvd,San Francisco,Office,"15,918 SF","1,566 - 4,718",Withheld
+1281,Lincoln Center 101 Lincoln Centre Dr,Foster City,Office,"113,465 SF 18,000","- 108,000",Withheld
+1282,Building B 500 Lincoln Centre Dr,Foster City,R&D,"180,000 SF","4,000 - 24,000",Withheld
+1283,155 Linfield Dr,Menlo Park,Office,"26,210 SF","12,165 - 25,320",Withheld
+1284,2200-2218 Lombard St,San Francisco,Retail,"9,400 SF","1,010 - 5,760",Withheld
+1285,2424 Lombard St,San Francisco,Office,"3,337 SF","3,337",Withheld
+1286,80 Maiden Ln,San Francisco,Retail,"3,237 SF","1,079 - 2,158",Withheld
+1287,135 Main St,San Francisco,Office,"257,831 SF","3,329 - 88,725",Withheld
+1288,Brugger Plaza 260 Main St,Redwood City,Office,"17,352 SF","1,882 - 4,441",Withheld
+1289,1201 Main St,Redwood City,Office,"107,212 SF","4,328 - 107,212",Withheld
+1290,The Loft 1301 Main St,Redwood City,Office,"155,700 SF","1,400 - 128,200",Withheld
+1291,8000 Marina Blvd,Brisbane,Office,"201,861 SF","5,438 - 52,479",Withheld
+1292,One Maritime Plaza 1 Maritime Plz,San Francisco,Office,"615,957 SF","10,926 - 44,422",Withheld
+1293,425 Market 425 Market St,San Francisco,"Office 1,030,017","SF 6,540","- 298,556",Withheld
+1294,525 Market St,San Francisco,"Office 1,103,037",SF,"1,210 - 310,581",Withheld
+1295,The Chancery 562-566 Market St,San Francisco,Office,"65,233 SF","541 - 2,384",Withheld
+1296,731 Market St,San Francisco,Office,"92,356 SF","10,125 - 87,851",Withheld
+1297,735 Market St,San Francisco,Office,"59,300 SF","3,056 - 7,479",Withheld
+1298,Humboldt Bank Building 785 Market St,San Francisco,Office,"93,455 SF","1,136 - 31,902",Withheld
+1299,California Savings Bldg 800-830 Market St,San Francisco,Office,"47,494 SF","4,593 - 24,508",Withheld
+1300,923 Market St,San Francisco,Retail,"12,100 SF","2,500 - 10,000",Withheld
+1301,929-931 Market St,San Francisco,Office,"34,000 SF","2,500 - 10,000",Withheld
+1302,988 Market Street 982-998 Market St,San Francisco,Office,"112,372 SF","1,035 - 8,963",Withheld
+1303,1017-1019 Market St,San Francisco,Office,"78,869 SF","7,317 - 78,869",Withheld
+1304,1133-1139 Market St,San Francisco,Apartments,31 Units,"7,355",Withheld
+1305,1455 Market 1455 Market St,San Francisco,"Office 1,026,000",SF,"2,787 - 595,188",Withheld
+1306,1740-1770 Market St,San Francisco,Retail,"25,108 SF","1,249 - 16,835",Withheld
+1307,1745 Market St,San Francisco,Apartments,62 Units,"2,842",Withheld
+1308,2241-2243 Market St,San Francisco,Office,"3,520 SF","1,778",Withheld
+1309,770 Marshall St,Redwood City,Office,"9,121 SF","3,745",Withheld
+1310,The Presidio 1188 Mason St,San Francisco,Warehouse,"12,500 SF","2,282",Withheld
+1311,2600 Mcallister St,San Francisco,Retail,"3,856 SF","1,200",Withheld
+1312,275 Middlefield Rd,Menlo Park,Office,"128,000 SF","17,457 - 65,435",Withheld
+1313,440 E Middlefield Rd,Mountain View,Office,"17,740 SF","8,870 - 17,740",Withheld
+1314,142 Minna St,San Francisco,Office,"12,090 SF","4,888",Withheld
+1315,Foothill Research Cente… 4015 Miranda Ave,Palo Alto,Office,"31,732 SF","15,866 - 31,732",Withheld
+1316,123 Mission St,San Francisco,Office,"362,061 SF","872 - 364,483",Withheld
+1317,350 Mission St,San Francisco,Office,"492,980 SF","16,666 - 67,984",Withheld
+1318,Terminal Plaza 440-456 Mission St,San Francisco,Office,"75,800 SF","2,560 - 56,199",Withheld
+1319,535 Mission St,San Francisco,Office,"303,322 SF","500 - 36,781",Withheld
+1320,Atlas Bldg 604 Mission St,San Francisco,Office,"27,708 SF","2,730 - 5,460",Withheld
+1321,Mint Mall 951-957 Mission St,San Francisco,Office,"105,000 SF","200 - 9,865",Withheld
+1322,1277-1281 Mission St,San Francisco,Office,"5,634 SF","2,537 - 5,634",Withheld
+1323,1340 Mission St,San Francisco,Office,"3,750 SF","3,750",Withheld
+1324,1370-1372 Mission St,San Francisco,Office,"9,200 SF","2,020 - 8,466",Withheld
+1325,2447-2449 Mission St,San Francisco,Retail,"5,781 SF",940,Withheld
+1326,Bay View Tower 2601 Mission St,San Francisco,Office,"62,000 SF","2,655",Withheld
+1327,4799 Mission St,San Francisco,Apartments,12 Units,"1,500",Withheld
+1328,4802 Mission St 4802 Mission St,San Francisco,Retail,"14,228 SF","412 - 5,836",Withheld
+1329,6210-6222 Mission St,Daly City,Retail,"20,895 SF","1,992",Withheld
+1330,Alexandria Center for Scie… 455 Mission Bay Blvd S,San Francisco,Office,"227,308 SF","5,086 - 147,571",Withheld
+1331,180 Montgomery St,San Francisco,Office,"325,006 SF","2,078 - 127,658",Withheld
+1332,300 Montgomery St,San Francisco,Office,"194,023 SF","509 - 66,446",Withheld
+1333,315 Montgomery St,San Francisco,Office,"236,685 SF 13,365","- 116,993",Withheld
+1334,400-404 Montgomery St,San Francisco,Office,"86,230 SF","1,163 - 30,776",Withheld
+1335,417 Montgomery St,San Francisco,Office,"96,090 SF","5,912 - 66,521",Withheld
+1336,451 Montgomery St,San Francisco,Office,"14,003 SF","4,588",Withheld
+1337,First Bank & Trust 550 Montgomery St,San Francisco,Office,"94,897 SF","2,197 - 23,595",Withheld
+1338,744 Montgomery St,San Francisco,Office,"16,598 SF","3,591",Withheld
+1339,1725 Montgomery St,San Francisco,Office,"43,193 SF","14,785",Withheld
+1340,33 New Montgomery 33 New Montgomery St,San Francisco,Office,"244,804 SF","2,387 - 85,982",Withheld
+1341,55 New Montgomery 55 New Montgomery St,San Francisco,Office,"100,183 SF","460 - 97,344",Withheld
+1342,Pac Bell Building 140 New Montgomery St,San Francisco,Office,"342,574 SF","6,372 - 31,630",Withheld
+1343,149 New Montgomery St,San Francisco,Office,"84,318 SF","3,003 - 20,987",Withheld
+1344,199 New Montgomery St,San Francisco,Apartments,167 Units,"2,056",Withheld
+1345,1800 Noriega St,San Francisco,Retail,"2,800 SF","650 - 1,200",Withheld
+1346,1900 Noriega St,San Francisco,Office,"13,917 SF","4,028",Withheld
+1347,Bldg 6 1360 O'Brien Dr,Menlo Park,R&D,"20,486 SF","6,273",Withheld
+1348,Bldg 11 1530 O'Brien Dr,Menlo Park,R&D,"31,850 SF","9,818 - 23,879",Withheld
+1349,Kohler & Chase 26 O'Farrell St,San Francisco,Office,"71,270 SF","2,317 - 5,109",Withheld
+1350,257 Oak St,San Francisco,Office,"3,456 SF","1,740",Withheld
+1351,630 Oak Grove Ave,Menlo Park,Office,"1,600 SF","1,600",Withheld
+1352,1500 Ocean Ave,San Francisco,Retail,"2,990 SF","1,500",Withheld
+1353,2381-2387 Ocean Ave,San Francisco,Retail,"4,237 SF",900,Withheld
+1354,188 Octavia 188 Octavia St,San Francisco,Apartments,28 Units,"1,050",Withheld
+1355,200 Oracle Pky,Redwood City,Office,"230,074 SF","18,580 - 187,314",Withheld
+1356,1004 Oreilly Ave,San Francisco,Office,"4,000 SF","1,056 - 2,112",Withheld
+1357,1450 Owens St,San Francisco,Office,"212,796 SF","11,815 - 116,390",Withheld
+1358,1700 Owens St,San Francisco,Office,"167,053 SF","3,081 - 23,619",Withheld
+1359,343 Oyster Point Blvd,South San Francisco,R&D,"54,000 SF","5,469 - 34,090",Withheld
+1360,534-536 Pacific Ave,San Francisco,Office,"4,667 SF","4,667",Withheld
+1361,1001 Mill Road Buildi… 1001 Mill Rd,Palo Alto,Office,"40,000 SF","9,500",Withheld
+1362,2151-2185 Park Blvd,Palo Alto,Office,"14,456 SF","700 - 2,740",Withheld
+1363,One South Park 1 S Park Ave,San Francisco,Apartments,35 Units,"2,576",Withheld
+1364,126 S Park Ave,San Francisco,Office,"5,442 SF","1,800",Withheld
+1365,Parnassus Heights Medic… 350 Parnassus Ave,San Francisco,Office,"146,036 SF","1,015 - 57,330",Withheld
+1366,1260 Persian Dr,Sunnyvale,Office,"7,632 SF",745,Withheld
+1367,AG Building 40 Pier,San Francisco,Office,"89,666 SF 20,000","- 89,666",Withheld
+1368,100 Pine St,San Francisco,Office,"404,643 SF","100 - 86,862",Withheld
+1369,235 Pine Street 235 Pine St,San Francisco,Office,"164,405 SF","50 - 42,773",Withheld
+1370,340 Pine St,San Francisco,Office,"69,636 SF","2,133 - 7,368",Withheld
+1371,360 Pine St,San Francisco,Office,"20,295 SF","1,600 - 4,000",Withheld
+1372,473 Pine St,San Francisco,Office,"12,000 SF","797 - 5,387",Withheld
+1373,724 Pine Street 724 Pine St,San Francisco,Office,"7,000 SF","876 - 4,818",Withheld
+1374,1528-1540 Pine St,San Francisco,Retail,"55,403 SF","3,589 - 55,403",Withheld
+1375,100 Post St,San Francisco,Office,"46,893 SF","3,553 - 43,340",Withheld
+1376,W.F. Cordes Bldg 126-128 Post St,San Francisco,Office,"45,000 SF","6,258",Withheld
+1377,Campton Place 220 Post St,San Francisco,Retail,"37,889 SF","4,545 - 35,583",Withheld
+1378,231-235 Post St,San Francisco,Office,"24,444 SF","2,057 - 8,975",Withheld
+1379,Lathrop Bldg 275 Post St,San Francisco,Office,"14,773 SF","1,755 - 3,510",Withheld
+1380,Tiffany Bldg 350-360 Post St,San Francisco,Office,"96,882 SF","1,097 - 40,983",Withheld
+1381,1362 Post St,San Francisco,Specialty,"8,856 SF","2,952 - 8,856",Withheld
+1382,390-392 Potrero Ave,Sunnyvale,R&D,"20,272 SF","10,000",Withheld
+1383,207-217 Powell St,San Francisco,Office,"23,217 SF","2,500 - 10,200",Withheld
+1384,1351 Powell St,San Francisco,Apartments,15 Units,"1,340",Withheld
+1385,1717-1719 Powell St,San Francisco,Office,"10,000 SF","2,600",Withheld
+1386,100 Redwood Shores Pky,Redwood City,Office,"62,721 SF","14,728 - 44,978",Withheld
+1387,220-282 Redwood Shores Pky,Redwood City,Retail,"128,544 SF","960 - 12,925",Withheld
+1388,Showplace Square 251 Rhode Island St,San Francisco,Office,"80,000 SF","1,880 - 44,227",Withheld
+1389,3516 Sacramento St,San Francisco,Retail,"7,000 SF","100 - 2,700",Withheld
+1390,1121 San Antonio Rd,Palo Alto,Office,"50,800 SF","7,084 - 15,012",Withheld
+1391,2748 San Bruno Ave,San Francisco,Retail,"3,998 SF","2,500",Withheld
+1392,312 N San Mateo Dr,San Mateo,Office,"4,394 SF","1,736 - 4,394",Withheld
+1393,Hong Kong Bank Bldg 180 Sansome St,San Francisco,Office,"151,326 SF","4,936 - 72,453",Withheld
+1394,343 Sansome St,San Francisco,Office,"277,000 SF","2,911 - 185,861",Withheld
+1395,350 Sansome St,San Francisco,Office,"120,787 SF","575 - 70,169",Withheld
+1396,450 Sansome Street 450 Sansome St,San Francisco,Office,"143,000 SF","5,064 - 23,374",Withheld
+1397,475 Sansome St,San Francisco,Office,"483,000 SF","2,758 - 214,562",Withheld
+1398,704 Sansome St,San Francisco,Office,"11,918 SF","2,917 - 5,970",Withheld
+1399,712-714 Sansome St,San Francisco,Office,"12,600 SF","1,800 - 12,600",Withheld
+1400,Italian-American Hotel 840 Sansome St,San Francisco,Health Care,"10,328 SF","2,111 - 4,709",Withheld
+1401,855 Sansome St,San Francisco,Office,"6,700 SF","1,200 - 2,100",Withheld
+1402,The Press 1045 Sansome St,San Francisco,Office,"83,871 SF","17,177",Withheld
+1403,Saddleman Bldg 1355 Sansome St,San Francisco,Office,"64,656 SF","15,681 - 64,656",Withheld
+1404,506 Santa Cruz Ave,Menlo Park,Office,"27,500 SF","8,742",Withheld
+1405,116 Sheridan Ave,San Francisco,Office,"2,614 SF","300 - 1,307",Withheld
+1406,445 Sherman Ave,Palo Alto,Office,"23,215 SF","1,130 - 10,190",Withheld
+1407,The Spear 60-88 Spear St,San Francisco,Office,"198,000 SF 16,460","- 152,740",Withheld
+1408,One Rincon 101 Spear St,San Francisco,Office,"236,161 SF","15,908 - 34,510",Withheld
+1409,160 Spear St,San Francisco,Office,"303,000 SF","1,591 - 235,121",Withheld
+1410,188 Spear St,San Francisco,Office,"220,000 SF","3,286 - 209,119",Withheld
+1411,49 Stevenson Street 49 Stevenson St,San Francisco,Office,"137,747 SF","4,443 - 30,112",Withheld
+1412,48 Stockton St,San Francisco,Office,"70,566 SF","5,089 - 49,005",Withheld
+1413,55 Stockton St,San Francisco,Office,"130,000 SF","2,164 - 39,062",Withheld
+1414,240 Stockton St,San Francisco,Office,"40,536 SF","3,692 - 11,076",Withheld
+1415,One Eleven Sutter 111 Sutter St,San Francisco,Office,"276,258 SF","2,564 - 13,633",Withheld
+1416,180 Sutter St,San Francisco,Office,"25,643 SF","4,097 - 12,388",Withheld
+1417,2320 Sutter St,San Francisco,Office,"14,400 SF",931,Withheld
+1418,701 Taraval St,San Francisco,Retail,"2,641 SF","1,500",Withheld
+1419,Golden Gate Theatre - Of… 25 Taylor St,San Francisco,Office,"49,939 SF","2,795 - 48,124",Withheld
+1420,420 Taylor St,San Francisco,Office,"115,766 SF","5,387 - 43,041",Withheld
+1421,387 Tehama St,San Francisco,Office,"105,951 SF","11,800",Withheld
+1422,603 Tennessee St,San Francisco,Apartments,24 Units,"1,000 - 2,000",Withheld
+1423,Pier 38 675 The Embarcadero,San Francisco,Warehouse,"209,519 SF 20,000","- 209,519",Withheld
+1424,1012-1016 Torney Ave,San Francisco,Office,"38,144 SF","1,000 - 18,408",Withheld
+1425,Metro Tower 950 Tower Ln,Foster City,"Office 400,000",SF,"1,752 - 122,519",Withheld
+1426,135 Townsend St,San Francisco,Office,"61,000 SF","10,250 - 20,500",Withheld
+1427,139 Townsend St,San Francisco,Office,"58,886 SF","4,130 - 25,991",Withheld
+1428,260 Townsend St,San Francisco,Office,"78,388 SF","2,646 - 57,083",Withheld
+1429,330-332 Townsend St,San Francisco,Office,"60,976 SF","200 - 5,400",Withheld
+1430,450-454 Townsend St,San Francisco,Light Manufacturing,"26,460 SF","8,820 - 26,460",Withheld
+1431,West Bldg 600 Townsend St,San Francisco,Office,"208,259 SF","15,238 - 53,976",Withheld
+1432,Bayhill III Bldg A 801 Traeger Ave,San Bruno,Office,"52,694 SF","1,512 - 3,533",Withheld
+1433,Bayhill III Bldg B 851 Traeger Ave,San Bruno,Office,"68,481 SF","2,012 - 36,569",Withheld
+1434,1772-1776 Union St,San Francisco,Office,"5,659 SF","2,000",Withheld
+1435,1889-1899 Union St,San Francisco,Retail,"8,000 SF",300,Withheld
+1436,384-396 University Ave,Palo Alto,Retail,"15,414 SF","4,845",Withheld
+1437,720 University Ave,Palo Alto,Office,"7,235 SF","3,064",Withheld
+1438,1900 University Ave,East Palo Alto,Office,"143,000 SF","1,059 - 132,573",Withheld
+1439,976 Valencia St,San Francisco,Apartments,20 Units,"1,250",Withheld
+1440,77 Van Ness Ave,San Francisco,Office,"24,000 SF","2,064",Withheld
+1441,1755-1765 Van Ness Ave,San Francisco,Apartments,48 Units,"3,244",Withheld
+1442,682 Villa St,Mountain View,Office,"8,963 SF","4,248 - 8,963",Withheld
+1443,990 Villa St,Mountain View,Office,"17,677 SF","17,677",Withheld
+1444,Chase Center 1 Warriors Way,San Francisco,Sports & Entertainment,"800,000 SF","1,263 - 30,755",Withheld
+1445,Eclipse Champagne Build… 520-550 Washington St,San Francisco,Office,"17,278 SF","4,743",Withheld
+1446,Building G (Block 3) 250 W Washington Ave,Sunnyvale,Office,"355,627 SF","1,957 - 16,087",Withheld
+1447,3131 Webster St,San Francisco,Office,"4,338 SF","2,675",Withheld
+1448,301 N Whisman Rd,Mountain View,Office,"17,100 SF","8,550 - 17,100",Withheld
+1449,455 N. Whisman Road 455 N Whisman Rd,Mountain View,Office,"10,443 SF","2,548",Withheld
+1450,475 N Whisman Rd,Mountain View,Office,"1,275 SF","1,275",Withheld
+1451,Willow Park 80 Willow Rd,Menlo Park,Office,"55,523 SF","9,000 - 55,523",Withheld

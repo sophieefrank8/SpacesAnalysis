@@ -1,0 +1,126 @@
+name: Quarterly Landlord Target Report
+
+on:
+  schedule:
+    # 9am ET on the 1st of Jan, Apr, Jul, Oct
+    - cron: '0 14 1 1,4,7,10 *'
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: 'Phase to run'
+        required: true
+        default: 'identify'
+        type: choice
+        options:
+          - identify
+          - research
+          - send
+      quarter:
+        description: 'Quarter label (e.g. 2026-Q3)'
+        required: true
+        type: string
+      markets:
+        description: 'Markets to process (comma-separated: sf,nyc,boston)'
+        required: false
+        default: 'sf,nyc,boston'
+        type: string
+
+jobs:
+  identify-and-research:
+    name: Phase 1+2 — Identify targets and research owners
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || inputs.phase == 'identify' || inputs.phase == 'research'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Determine quarter label
+        id: quarter
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            MONTH=$(date +%-m)
+            YEAR=$(date +%Y)
+            Q=$(( (MONTH - 1) / 3 + 1 ))
+            echo "label=${YEAR}-Q${Q}" >> $GITHUB_OUTPUT
+          else
+            echo "label=${{ inputs.quarter }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Phase 1 — Identify target buildings (all markets)
+        run: |
+          IFS=',' read -ra MKTS <<< "${{ inputs.markets || 'sf,nyc,boston' }}"
+          for market in "${MKTS[@]}"; do
+            echo "=== Identifying targets for $market ==="
+            python LandlordData/identify_target_buildings.py \
+              --market "$market" \
+              --quarter "${{ steps.quarter.outputs.label }}"
+          done
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+
+      - name: Phase 2 — Research owners (all markets)
+        if: github.event_name == 'schedule' || inputs.phase == 'research' || inputs.phase == 'identify'
+        run: |
+          IFS=',' read -ra MKTS <<< "${{ inputs.markets || 'sf,nyc,boston' }}"
+          for market in "${MKTS[@]}"; do
+            echo "=== Researching owners for $market ==="
+            python LandlordData/research_owners.py \
+              --market "$market" \
+              --quarter "${{ steps.quarter.outputs.label }}"
+          done
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Commit quarterly research outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add LandlordData/quarterly/
+          git diff --staged --quiet || git commit -m "Add ${{ steps.quarter.outputs.label }} landlord research outputs"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Phases 1+2 failed for quarter ${{ steps.quarter.outputs.label }}. Check logs."
+
+  send-report:
+    name: Phase 4 — Compile and send report
+    runs-on: ubuntu-latest
+    if: github.event_name == 'workflow_dispatch' && inputs.phase == 'send'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Phase 4 — Compile and send
+        run: |
+          IFS=',' read -ra MKTS <<< "${{ inputs.markets || 'sf,nyc,boston' }}"
+          python LandlordData/compile_and_send.py \
+            --quarter "${{ inputs.quarter }}" \
+            --markets "${MKTS[@]}"
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          RECIPIENTS: ${{ secrets.RECIPIENTS }}
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Phase 4 send failed for quarter ${{ inputs.quarter }}. Check logs."
