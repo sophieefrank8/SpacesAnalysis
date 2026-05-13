@@ -1,0 +1,52 @@
+name: Weekly Supply Ops Digest
+
+on:
+  schedule:
+    # 9am ET every Tuesday (14:00 UTC)
+    - cron: '0 14 * * 2'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Write CSVs locally instead of sending emails'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  send-digest:
+    name: Build and send weekly digest
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install psycopg2-binary
+
+      - name: Send weekly digest
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python LLMscoring/supply_weekly_digest.py --dry-run
+          else
+            python LLMscoring/supply_weekly_digest.py
+          fi
+        env:
+          NEON_DATABASE_URL: ${{ secrets.NEON_DATABASE_URL }}
+          SMTP_HOST:         ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:         ${{ secrets.SMTP_PORT }}
+          SMTP_USER:         ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD:     ${{ secrets.SMTP_PASSWORD }}
+          ALLEGRA_EMAIL:     ${{ secrets.ALLEGRA_EMAIL }}
+          PETER_EMAIL:       ${{ secrets.PETER_EMAIL }}
+          IAN_EMAIL:         ${{ secrets.IAN_EMAIL }}
+
+      - name: Notify on failure
+        if: failure()
+        run: echo "Weekly supply digest failed. Check logs above."
