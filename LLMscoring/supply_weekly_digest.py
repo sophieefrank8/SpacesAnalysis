@@ -45,7 +45,7 @@ TEAM_MEMBERS = [
     },
     {
         "name": "Pete",
-        "email_env": "PETER_EMAIL",
+        "email_env": "PETE_EMAIL",
         "user_id": "18f3bde5-c3b3-4500-b0e1-8c443161720c",
     },
     {
@@ -314,7 +314,7 @@ def main():
     required_env = [
         "NEON_DATABASE_URL",
         "SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASSWORD",
-        "ALLEGRA_EMAIL", "PETER_EMAIL", "IAN_EMAIL",
+        "ALLEGRA_EMAIL", "PETE_EMAIL", "IAN_EMAIL",
     ]
     missing = [k for k in required_env if not os.environ.get(k)]
     if missing:

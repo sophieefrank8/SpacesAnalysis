@@ -44,7 +44,7 @@ jobs:
           SMTP_USER:         ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD:     ${{ secrets.SMTP_PASSWORD }}
           ALLEGRA_EMAIL:     ${{ secrets.ALLEGRA_EMAIL }}
-          PETER_EMAIL:       ${{ secrets.PETER_EMAIL }}
+          PETE_EMAIL:        ${{ secrets.PETE_EMAIL }}
           IAN_EMAIL:         ${{ secrets.IAN_EMAIL }}
 
       - name: Notify on failure
