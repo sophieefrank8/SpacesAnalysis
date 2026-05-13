@@ -14,7 +14,7 @@ Priority order:
 Env vars required:
     NEON_DATABASE_URL                          Neon Postgres connection string
     SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD
-    ALLEGRA_EMAIL, PETER_EMAIL, IAN_EMAIL
+    ALLEGRA_EMAIL, PETE_EMAIL, IAN_EMAIL
 
 Usage:
     python supply_weekly_digest.py             send emails
@@ -60,6 +60,8 @@ CSV_COLUMNS = [
     "contact_type",
     "opportunity_or_space",
     "city",
+    "contact_name",
+    "contact_email",
     "stage_or_status",
     "note",
     "last_event_date",
@@ -108,20 +110,26 @@ def connect():
 # ---------------------------------------------------------------------------
 
 _OUTREACH_SQL = """
-SELECT
+SELECT DISTINCT ON (so.id)
     so.id,
     so.note,
     so.status,
-    sl."addressLine1"  AS address,
-    sl.city
+    sl."addressLine1"       AS address,
+    sl.city,
+    c.name                  AS contact_name,
+    c.email                 AS contact_email,
+    oc."opportunityId"      AS opportunity_id
 FROM suggested_outreaches so
-JOIN spaces          s  ON s.id         = so.space_id
-JOIN space_location  sl ON sl.id        = s."locationId"
+JOIN spaces               s   ON s.id            = so.space_id
+JOIN space_location        sl  ON sl.id           = s."locationId"
+LEFT JOIN space_contact    sc  ON sc."spaceId"    = so.space_id
+LEFT JOIN contacts         c   ON c.id            = sc."contactId"
+LEFT JOIN opportunity_contact oc ON oc."contactId" = c.id
 WHERE so.deleted_at IS NULL
   AND so.type        = %(type)s
   AND so.status NOT IN ('RESOLVED', 'PAGE_UPDATED')
   AND so.assigned_to = %(user_id)s
-ORDER BY so.created_at ASC
+ORDER BY so.id, so.created_at ASC
 """
 
 _OVERDUE_SQL = """
@@ -133,7 +141,13 @@ SELECT DISTINCT ON (o.id)
     DATE_PART('day', NOW() - oe.follow_up_date)::int AS days_overdue,
     o.id           AS opportunity_id,
     o.name         AS opportunity_name,
-    o.stage
+    o.stage,
+    (SELECT c.name  FROM opportunity_contact oc
+     JOIN contacts c ON c.id = oc."contactId"
+     WHERE oc."opportunityId" = o.id LIMIT 1) AS contact_name,
+    (SELECT c.email FROM opportunity_contact oc
+     JOIN contacts c ON c.id = oc."contactId"
+     WHERE oc."opportunityId" = o.id LIMIT 1) AS contact_email
 FROM opportunity_event oe
 JOIN opportunities o ON o.id = oe.opportunity_id
 WHERE oe.follow_up_date < NOW()
@@ -152,7 +166,13 @@ SELECT
     (SELECT oe.type  FROM opportunity_event oe WHERE oe.opportunity_id = o.id
      ORDER BY oe.date DESC LIMIT 1) AS last_event_type,
     (SELECT oe.notes FROM opportunity_event oe WHERE oe.opportunity_id = o.id
-     ORDER BY oe.date DESC LIMIT 1) AS last_notes
+     ORDER BY oe.date DESC LIMIT 1) AS last_notes,
+    (SELECT c.name  FROM opportunity_contact oc
+     JOIN contacts c ON c.id = oc."contactId"
+     WHERE oc."opportunityId" = o.id LIMIT 1) AS contact_name,
+    (SELECT c.email FROM opportunity_contact oc
+     JOIN contacts c ON c.id = oc."contactId"
+     WHERE oc."opportunityId" = o.id LIMIT 1) AS contact_email
 FROM opportunities o
 WHERE o.owner_id  = %(user_id)s
   AND o.type      = 'LANDLORD'
@@ -172,18 +192,22 @@ def fetch_suggested_outreaches(cur, user_id, outreach_type, priority_rank, label
     cur.execute(_OUTREACH_SQL, {"type": outreach_type, "user_id": user_id})
     rows = []
     for r in cur.fetchall():
+        opp_id = r["opportunity_id"]
+        link = f"{DASHBOARD_BASE}/opportunities/{opp_id}" if opp_id else f"{DASHBOARD_BASE}/opportunities"
         rows.append({
             "priority_rank":        priority_rank,
             "contact_type":         label,
             "opportunity_or_space": r["address"] or "",
             "city":                 r["city"] or "",
+            "contact_name":         r["contact_name"] or "",
+            "contact_email":        r["contact_email"] or "",
             "stage_or_status":      r["status"] or "",
             "note":                 r["note"] or "",
             "last_event_date":      "",
             "last_event_type":      "",
             "follow_up_date":       "",
             "days_overdue":         "",
-            "dashboard_link":       f"{DASHBOARD_BASE}/spaces/{r['id']}",
+            "dashboard_link":       link,
         })
     return rows
 
@@ -197,6 +221,8 @@ def fetch_overdue_events(cur, user_id):
             "contact_type":         "Overdue Follow-Up",
             "opportunity_or_space": r["opportunity_name"] or "",
             "city":                 "",
+            "contact_name":         r["contact_name"] or "",
+            "contact_email":        r["contact_email"] or "",
             "stage_or_status":      r["stage"] or "",
             "note":                 (r["notes"] or "")[:200],
             "last_event_date":      _fmt_date(r["event_date"]),
@@ -217,6 +243,8 @@ def fetch_landlord_opportunities(cur, user_id):
             "contact_type":         "Landlord Targeting",
             "opportunity_or_space": r["name"] or "",
             "city":                 "",
+            "contact_name":         r["contact_name"] or "",
+            "contact_email":        r["contact_email"] or "",
             "stage_or_status":      r["stage"] or "",
             "note":                 (r["last_notes"] or "")[:200],
             "last_event_date":      _fmt_date(r["last_event_date"]),
