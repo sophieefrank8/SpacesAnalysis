@@ -341,7 +341,7 @@ def main():
         print(f"  Total: {len(rows)} rows")
 
         if dry_run:
-            out_path = f"digest_{name.lower()}_{report_date}.csv"
+            out_path = os.path.join(os.path.dirname(__file__), f"digest_{name.lower()}_{report_date}.csv")
             with open(out_path, "wb") as f:
                 f.write(build_csv(rows))
             print(f"  Dry run — CSV written to {out_path}")
