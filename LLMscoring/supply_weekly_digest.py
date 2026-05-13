@@ -311,11 +311,9 @@ def main():
     dry_run = "--dry-run" in sys.argv
     report_date = date.today().strftime("%Y-%m-%d")
 
-    required_env = [
-        "NEON_DATABASE_URL",
-        "SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASSWORD",
-        "ALLEGRA_EMAIL", "PETE_EMAIL", "IAN_EMAIL",
-    ]
+    required_env = ["NEON_DATABASE_URL", "ALLEGRA_EMAIL", "PETE_EMAIL", "IAN_EMAIL"]
+    if not dry_run:
+        required_env += ["SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASSWORD"]
     missing = [k for k in required_env if not os.environ.get(k)]
     if missing:
         sys.exit(f"Missing env vars: {', '.join(missing)}")
