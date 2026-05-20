@@ -78,13 +78,7 @@ templates.env.filters["fmt_datetime"] = fmt_datetime
 # ---------------------------------------------------------------------------
 
 @app.get("/", response_class=RedirectResponse)
-def root(request: Request):
-    host = request.headers.get("x-forwarded-host") or request.headers.get("host", "")
-    if "basecamp-sf.com" in host and "www" not in host:
-        return RedirectResponse(
-            "https://tandemspace.com/offices/san-francisco/south-beach/128-king-st-992b552",
-            status_code=307,
-        )
+def root():
     return RedirectResponse("/register")
 
 

@@ -7,6 +7,12 @@
   ],
   "routes": [
     {
+      "src": "^/$",
+      "has": [{"type": "host", "value": "basecamp-sf.com"}],
+      "headers": {"Location": "https://tandemspace.com/offices/san-francisco/south-beach/128-king-st-992b552"},
+      "status": 307
+    },
+    {
       "src": "/(.*)",
       "dest": "main.py"
     }
