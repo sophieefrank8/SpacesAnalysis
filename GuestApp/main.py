@@ -78,7 +78,13 @@ templates.env.filters["fmt_datetime"] = fmt_datetime
 # ---------------------------------------------------------------------------
 
 @app.get("/", response_class=RedirectResponse)
-def root():
+def root(request: Request):
+    host = request.headers.get("host", "")
+    if host == "basecamp-sf.com":
+        return RedirectResponse(
+            "https://tandemspace.com/offices/san-francisco/south-beach/128-king-st-992b552",
+            status_code=307,
+        )
     return RedirectResponse("/register")
 
 
@@ -100,6 +106,7 @@ def register_submit(
     guest_email: str = Form(...),
     location: str = Form(...),
     visit_date: str = Form(...),
+    reason: str = Form(...),
 ):
     if location not in LOCATIONS:
         raise HTTPException(status_code=400, detail="Invalid location")
@@ -111,6 +118,7 @@ def register_submit(
         guest_email=guest_email,
         location=location,
         visit_date=visit_date,
+        reason=reason,
     )
 
     try:
