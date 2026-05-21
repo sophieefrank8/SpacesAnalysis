@@ -148,6 +148,23 @@ def logout(request: Request):
     return RedirectResponse("/")
 
 
+@app.get("/api/autocomplete", response_class=JSONResponse)
+def autocomplete(q: str = ""):
+    q = q.strip()
+    if len(q) < 2:
+        return []
+    results = database.search_addresses(q)
+    return [
+        {
+            "label": r["addressLine1"],
+            "sublabel": ", ".join(p for p in [r.get("city", ""), r.get("state", "")] if p),
+            "space_count": r.get("space_count", 0),
+            "live_count": r.get("live_count", 0),
+        }
+        for r in results
+    ]
+
+
 @app.get("/search", response_class=HTMLResponse)
 def search_page(request: Request):
     user = _user(request)

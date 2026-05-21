@@ -4,20 +4,146 @@
 {% block content %}
 <div class="card">
   <h1>Find a building</h1>
-  <p class="subtitle">Enter an address to see all spaces</p>
+  <p class="subtitle">Type an address to search Tandem or add a new building</p>
 
-  <form method="POST" action="/search" class="search-form" style="margin-top:4px">
-    <input
-      type="text"
-      name="query"
-      placeholder="e.g. 989 Market St"
-      autocomplete="street-address"
-      autocorrect="off"
-      spellcheck="false"
-      autofocus
-      required
-    >
-    <button type="submit" class="btn btn-primary">Search</button>
-  </form>
+  <div class="ac-wrap" style="margin-top:16px">
+    <div class="ac-input-row">
+      <input
+        id="ac-input"
+        type="text"
+        placeholder="e.g. 989 Market St"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+        autofocus
+      >
+    </div>
+    <ul id="ac-list" class="ac-list" style="display:none" role="listbox"></ul>
+  </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const input   = document.getElementById('ac-input');
+const list    = document.getElementById('ac-list');
+let debounce  = null;
+let activeIdx = -1;
+let lastItems = [];
+
+function navigate(url) { window.location.href = url; }
+
+function render(items) {
+  lastItems = items;
+  activeIdx = -1;
+  list.innerHTML = '';
+
+  if (!items.length) { list.style.display = 'none'; return; }
+
+  items.forEach((item, i) => {
+    const li = document.createElement('li');
+    li.className = 'ac-item';
+    li.setAttribute('role', 'option');
+    li.dataset.idx = i;
+
+    if (item.type === 'tandem') {
+      const badge = item.live_count
+        ? `<span class="ac-badge ac-badge-live">${item.live_count} live</span>`
+        : `<span class="ac-badge ac-badge-draft">${item.space_count} space${item.space_count !== 1 ? 's' : ''}</span>`;
+      li.innerHTML = `
+        <span class="ac-item-icon">🏢</span>
+        <span class="ac-item-body">
+          <span class="ac-item-label">${item.label}</span>
+          <span class="ac-item-sub">${item.sublabel}</span>
+        </span>
+        ${badge}`;
+    } else {
+      li.innerHTML = `
+        <span class="ac-item-icon">📍</span>
+        <span class="ac-item-body">
+          <span class="ac-item-label">${item.label}</span>
+          <span class="ac-item-sub">${item.sublabel}</span>
+        </span>
+        <span class="ac-badge ac-badge-new">New</span>`;
+    }
+
+    li.addEventListener('mousedown', (e) => { e.preventDefault(); selectItem(i); });
+    list.appendChild(li);
+  });
+
+  list.style.display = 'block';
+}
+
+function selectItem(i) {
+  const item = lastItems[i];
+  if (!item) return;
+  list.style.display = 'none';
+  if (item.type === 'tandem') {
+    navigate('/building?address=' + encodeURIComponent(item.label));
+  } else {
+    navigate('/request/new?address=' + encodeURIComponent(item.rawAddress)
+      + '&new_building=1&full_address=' + encodeURIComponent(item.label));
+  }
+}
+
+function setActive(idx) {
+  const lis = list.querySelectorAll('.ac-item');
+  lis.forEach((el, i) => el.classList.toggle('ac-item-active', i === idx));
+  activeIdx = idx;
+}
+
+input.addEventListener('keydown', (e) => {
+  if (list.style.display === 'none') return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault(); setActive(Math.min(activeIdx + 1, lastItems.length - 1));
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault(); setActive(Math.max(activeIdx - 1, 0));
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    if (activeIdx >= 0) { selectItem(activeIdx); }
+    else if (input.value.trim()) { navigate('/building?address=' + encodeURIComponent(input.value.trim())); }
+  } else if (e.key === 'Escape') {
+    list.style.display = 'none';
+  }
+});
+
+input.addEventListener('blur', () => { setTimeout(() => { list.style.display = 'none'; }, 150); });
+input.addEventListener('focus', () => { if (lastItems.length) list.style.display = 'block'; });
+
+input.addEventListener('input', () => {
+  const q = input.value.trim();
+  clearTimeout(debounce);
+  if (q.length < 2) { render([]); return; }
+
+  debounce = setTimeout(async () => {
+    // Run Tandem lookup and Nominatim in parallel
+    const [tandemResults, nominatimResults] = await Promise.allSettled([
+      fetch('/api/autocomplete?q=' + encodeURIComponent(q)).then(r => r.json()),
+      fetch('https://nominatim.openstreetmap.org/search?format=json&limit=4&q='
+        + encodeURIComponent(q), { headers: { 'Accept-Language': 'en' } }).then(r => r.json()),
+    ]);
+
+    const tandem = (tandemResults.status === 'fulfilled' ? tandemResults.value : [])
+      .map(r => ({ type: 'tandem', label: r.label, sublabel: r.sublabel,
+                   space_count: r.space_count, live_count: r.live_count }));
+
+    // Exclude Nominatim results whose address already appears in Tandem
+    const tandemSet = new Set(tandem.map(r => r.label.toLowerCase()));
+    const nominatim = (nominatimResults.status === 'fulfilled' ? nominatimResults.value : [])
+      .map(r => {
+        const addr = r.address || {};
+        // Build a short street label from structured address fields
+        const street = [addr.house_number, addr.road].filter(Boolean).join(' ')
+          || r.display_name.split(',')[0];
+        const city   = addr.city || addr.town || addr.village || addr.county || '';
+        const state  = addr.state || '';
+        return { type: 'nominatim', rawAddress: street,
+                 label: r.display_name, sublabel: [city, state].filter(Boolean).join(', ') };
+      })
+      .filter(r => !tandemSet.has(r.label.toLowerCase()));
+
+    render([...tandem, ...nominatim]);
+  }, 220);
+});
+</script>
 {% endblock %}
