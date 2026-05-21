@@ -194,7 +194,7 @@ def space_detail(request: Request, space_id: str):
 
 
 @app.get("/request/new", response_class=HTMLResponse)
-def request_new(request: Request, address: str = ""):
+def request_new(request: Request, address: str = "", new_building: str = ""):
     user = _user(request)
     if not user:
         return RedirectResponse("/")
@@ -204,6 +204,7 @@ def request_new(request: Request, address: str = ""):
         "space": None,
         "address": address,
         "intent": "NEW",
+        "new_building": bool(new_building),
     })
 
 
@@ -221,7 +222,24 @@ def request_update(request: Request, space_id: str):
         "space": space,
         "address": space["addressLine1"],
         "intent": "UPDATE",
+        "new_building": False,
     })
+
+
+def _geocode_address(address: str) -> str | None:
+    try:
+        resp = requests.get(
+            "https://nominatim.openstreetmap.org/search",
+            params={"q": address, "format": "json", "addressdetails": "1", "limit": "1"},
+            headers={"User-Agent": "TandemFieldApp/1.0"},
+            timeout=5,
+        )
+        results = resp.json()
+        if results:
+            return results[0].get("display_name", "")
+    except Exception as e:
+        print(f"[geocode] error: {e}")
+    return None
 
 
 @app.post("/submit", response_class=HTMLResponse)
@@ -238,9 +256,11 @@ async def submit_request(
     total_price: str = Form(""),
     term_months: str = Form(""),
     term_note: str = Form(""),
+    listing_status: str = Form(""),
     should_publish: str = Form(""),
     price_note: str = Form(""),
     notes: str = Form(""),
+    is_new_building: str = Form(""),
     contact_name: List[str] = Form(default=[]),
     contact_email: List[str] = Form(default=[]),
     contact_phone: List[str] = Form(default=[]),
@@ -262,6 +282,11 @@ async def submit_request(
                 "role": contact_role[i] if i < len(contact_role) else "",
             })
 
+    full_address = None
+    if is_new_building == "yes":
+        query = f"{address} {unit}".strip() if unit else address
+        full_address = _geocode_address(query)
+
     data = {
         "intent": intent,
         "space_id": space_id,
@@ -274,11 +299,14 @@ async def submit_request(
         "total_price": total_price,
         "term_months": term_months,
         "term_note": term_note,
+        "listing_status": listing_status,
         "should_publish": should_publish,
         "price_note": price_note,
         "notes": notes,
         "contacts": contacts,
         "user_name": user["name"],
+        "is_new_building": is_new_building == "yes",
+        "full_address": full_address or "",
     }
 
     photo_files = []

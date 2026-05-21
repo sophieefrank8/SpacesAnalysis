@@ -1,0 +1,347 @@
+{% extends "base.html" %}
+{% block title %}{% if intent == 'UPDATE' %}Update Listing{% else %}New Listing Request{% endif %} – Tandem Field App{% endblock %}
+
+{% block content %}
+{% if space %}
+<a href="/space/{{ space.id }}" class="back-link">← {{ space.addressLine2 or space.addressLine1 }}</a>
+{% else %}
+<a href="/building?address={{ address | urlencode }}" class="back-link">← {{ address or 'Building' }}</a>
+{% endif %}
+
+<div style="margin-bottom:20px">
+  <h1>Submit a Request</h1>
+  <p class="subtitle">Send details to Clarisse to create or update a listing</p>
+</div>
+
+<form method="POST" action="/submit" enctype="multipart/form-data">
+  <input type="hidden" name="space_id" value="{{ space.id if space else '' }}">
+  <input type="hidden" name="address" value="{{ address }}">
+  <input type="hidden" name="is_new_building" value="{{ 'yes' if new_building else '' }}">
+
+  {% if new_building %}
+  <div class="new-building-banner">
+    🏗️ <strong>New Building</strong> — this address isn't in Tandem yet. A Google Maps lookup will verify the full address on submit.
+  </div>
+  {% endif %}
+
+  <!-- ── Intent toggle ─────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Request Type</div>
+    <div class="intent-toggle">
+      <div>
+        <input type="radio" name="intent" id="intent-new" value="NEW" {% if intent == 'NEW' %}checked{% endif %} onchange="toggleListing()">
+        <label for="intent-new">
+          <span class="intent-icon">🆕</span>
+          NEW LISTING PAGE
+        </label>
+      </div>
+      <div>
+        <input type="radio" name="intent" id="intent-update" value="UPDATE" {% if intent == 'UPDATE' %}checked{% endif %} onchange="toggleListing()">
+        <label for="intent-update">
+          <span class="intent-icon">✏️</span>
+          UPDATE LISTING
+        </label>
+      </div>
+    </div>
+
+    {% if space %}
+    <div id="listing-link-section" class="listing-link" style="{% if intent != 'UPDATE' %}display:none{% endif %}">
+      <span>🔗</span>
+      <a href="https://tandem.space/office/{{ space.id }}" target="_blank">View current listing on Tandem</a>
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- ── Unit details ────────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Unit Details</div>
+
+    <div class="form-group">
+      <label for="unit">Unit / Floor</label>
+      <input type="text" id="unit" name="unit" placeholder="e.g. Suite 400 or Floor 3" value="{{ space.addressLine2 if space and space.addressLine2 else '' }}">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group" style="margin-bottom:0">
+        <label for="sq_footage">Sq Footage</label>
+        <input type="number" id="sq_footage" name="sq_footage" placeholder="2400" min="0" value="{{ space.squareFootage if space and space.squareFootage else '' }}">
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label for="term_months">Term (months)</label>
+        <input type="number" id="term_months" name="term_months" placeholder="12" min="1">
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-top:10px;margin-bottom:0">
+      <label for="term_note">Term Note</label>
+      <input type="text" id="term_note" name="term_note" placeholder="e.g. Flexible on term, prefers 12+ months">
+    </div>
+  </div>
+
+  <!-- ── Pricing ──────────────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Pricing</div>
+
+    <div class="form-row">
+      <div class="form-group" style="margin-bottom:0">
+        <label for="price_per_desk">$/desk/mo</label>
+        <input type="number" id="price_per_desk" name="price_per_desk" placeholder="800" min="0" value="{{ space.minPricePerDesk if space and space.minPricePerDesk else '' }}">
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label for="total_price">Total $/mo</label>
+        <input type="number" id="total_price" name="total_price" placeholder="8000" min="0" value="{{ space.minTotalPricePerMonth if space and space.minTotalPricePerMonth else '' }}">
+      </div>
+    </div>
+
+    <div class="form-row" style="margin-top:10px">
+      <div class="form-group" style="margin-bottom:0">
+        <label for="min_desks">Min desks</label>
+        <input type="number" id="min_desks" name="min_desks" placeholder="5" min="1" value="{{ space.minNumberOfDesks if space and space.minNumberOfDesks else '' }}">
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label for="max_desks">Max desks</label>
+        <input type="number" id="max_desks" name="max_desks" placeholder="20" min="1" value="{{ space.maxNumberOfDesks if space and space.maxNumberOfDesks else '' }}">
+      </div>
+    </div>
+
+    <div class="form-group" style="margin-top:10px;margin-bottom:0">
+      <label for="price_note">Price Note</label>
+      <input type="text" id="price_note" name="price_note" placeholder="e.g. All-in, includes utilities and parking">
+    </div>
+  </div>
+
+  <!-- ── Listing Status ──────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Listing Page Status</div>
+    <div class="radio-group">
+      <div>
+        <input type="radio" name="listing_status" id="status-draft" value="DRAFT" onchange="updateSearchableVisibility()">
+        <label for="status-draft">Draft</label>
+      </div>
+      <div>
+        <input type="radio" name="listing_status" id="status-review" value="IN_REVIEW" onchange="updateSearchableVisibility()">
+        <label for="status-review">In Review</label>
+      </div>
+      <div>
+        <input type="radio" name="listing_status" id="status-published" value="PUBLISHED" onchange="updateSearchableVisibility()">
+        <label for="status-published">Published</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Searchable (shown only when Published) ──── -->
+  <div class="card" id="searchable-card" style="margin-bottom:12px;display:none">
+    <div class="section-label">Make Searchable?</div>
+    <div class="radio-group">
+      <div>
+        <input type="radio" name="should_publish" id="publish-yes" value="yes">
+        <label for="publish-yes">Yes ✅</label>
+      </div>
+      <div>
+        <input type="radio" name="should_publish" id="publish-no" value="no">
+        <label for="publish-no">Not yet ❌</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Contacts ──────────────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Contacts to Add</div>
+    <div id="contacts-container"></div>
+    <button type="button" class="btn btn-add" onclick="addContact()">+ Add Contact</button>
+  </div>
+
+  <!-- ── Notes ──────────────────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Notes</div>
+    <textarea name="notes" placeholder="Anything else Clarisse should know – condition of space, broker notes, follow-up needed…" rows="4"></textarea>
+  </div>
+
+  <!-- ── Photos ──────────────────────────────────────── -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="section-label">Photos</div>
+    <div class="photo-upload">
+      <div class="photo-upload-inner">
+        <input type="file" name="photos" accept="image/*" multiple onchange="updatePhotoLabel(this)">
+        <div class="photo-upload-icon">📸</div>
+        <div class="photo-upload-text" id="photo-label">Tap to add photos</div>
+        <div class="photo-upload-hint">Opens camera or photo library</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Flyers ──────────────────────────────────────── -->
+  <div class="card" style="margin-bottom:80px">
+    <div class="section-label">Flyers</div>
+    <div class="photo-upload">
+      <div class="photo-upload-inner">
+        <input type="file" name="flyers" accept=".pdf,.doc,.docx,.ppt,.pptx" multiple onchange="updateFlyerLabel(this)">
+        <div class="photo-upload-icon">📄</div>
+        <div class="photo-upload-text" id="flyer-label">Tap to attach flyers</div>
+        <div class="photo-upload-hint">PDF, Word, or PowerPoint · max 4 MB per file</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fab-bar">
+    {% if space %}
+    <a href="/building?address={{ address | urlencode }}" class="btn btn-secondary" style="margin-bottom:8px">See other units in this building</a>
+    {% endif %}
+    <button type="submit" class="btn btn-primary">Send to Clarisse →</button>
+  </div>
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+let contactCount = 0;
+
+function addContact() {
+  contactCount++;
+  const container = document.getElementById('contacts-container');
+  const row = document.createElement('div');
+  row.className = 'contact-row';
+  row.id = 'contact-' + contactCount;
+  row.innerHTML = `
+    <div class="contact-row-header">
+      <span class="contact-row-label">Contact ${contactCount}</span>
+      <button type="button" class="remove-contact" onclick="removeContact(${contactCount})">×</button>
+    </div>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="contact_name" placeholder="Full name">
+    </div>
+    <div class="form-row">
+      <div class="form-group" style="margin-bottom:0">
+        <label>Email</label>
+        <input type="email" name="contact_email" placeholder="name@co.com">
+      </div>
+      <div class="form-group" style="margin-bottom:0">
+        <label>Phone</label>
+        <input type="tel" name="contact_phone" placeholder="415-555-0000">
+      </div>
+    </div>
+    <div class="form-group" style="margin-top:10px;margin-bottom:0">
+      <label>Role</label>
+      <select name="contact_role">
+        <option value="">Select role…</option>
+        <option value="Broker">Broker</option>
+        <option value="Landlord">Landlord</option>
+        <option value="Property Manager">Property Manager</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+  `;
+  container.appendChild(row);
+}
+
+function removeContact(id) {
+  const el = document.getElementById('contact-' + id);
+  if (el) el.remove();
+}
+
+function toggleListing() {
+  const section = document.getElementById('listing-link-section');
+  if (!section) return;
+  const isUpdate = document.getElementById('intent-update').checked;
+  section.style.display = isUpdate ? 'flex' : 'none';
+}
+
+function updatePhotoLabel(input) {
+  const label = document.getElementById('photo-label');
+  if (input.files && input.files.length > 0) {
+    label.textContent = input.files.length + ' photo' + (input.files.length > 1 ? 's' : '') + ' selected';
+  } else {
+    label.textContent = 'Tap to add photos';
+  }
+}
+
+function updateFlyerLabel(input) {
+  const label = document.getElementById('flyer-label');
+  if (input.files && input.files.length > 0) {
+    label.textContent = input.files.length + ' file' + (input.files.length > 1 ? 's' : '') + ' selected';
+  } else {
+    label.textContent = 'Tap to attach flyers';
+  }
+}
+
+function updateSearchableVisibility() {
+  const published = document.getElementById('status-published').checked;
+  document.getElementById('searchable-card').style.display = published ? 'block' : 'none';
+}
+
+// Compress a single image file using canvas.
+// Vercel serverless functions have a hard 4.5MB request body limit; phone
+// camera photos are often 4–10MB each, so we resize to ≤1600px before upload.
+async function compressImage(file) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const MAX = 1200;
+      let { width, height } = img;
+      if (width > MAX || height > MAX) {
+        const scale = MAX / Math.max(width, height);
+        width = Math.round(width * scale);
+        height = Math.round(height * scale);
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      canvas.toBlob((blob) => resolve(blob), 'image/jpeg', 0.65);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); resolve(file); };
+    img.src = url;
+  });
+}
+
+document.querySelector('form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('[type=submit]');
+  btn.disabled = true;
+
+  // Validate flyer sizes before uploading
+  const flyerInput = form.querySelector('input[name="flyers"]');
+  if (flyerInput && flyerInput.files.length > 0) {
+    for (const file of flyerInput.files) {
+      if (file.size > 4 * 1024 * 1024) {
+        alert(`"${file.name}" is ${(file.size / 1024 / 1024).toFixed(1)} MB — flyers must be under 4 MB. Please compress or send it separately.`);
+        btn.disabled = false;
+        btn.textContent = 'Send to Clarisse →';
+        return;
+      }
+    }
+  }
+
+  const fd = new FormData(form);
+  const photoInput = form.querySelector('input[name="photos"]');
+
+  if (photoInput && photoInput.files.length > 0) {
+    fd.delete('photos');
+    const files = Array.from(photoInput.files);
+    for (let i = 0; i < files.length; i++) {
+      btn.textContent = `Compressing photo ${i + 1} of ${files.length}…`;
+      const file = files[i];
+      const blob = file.type.startsWith('image/') ? await compressImage(file) : file;
+      fd.append('photos', blob, file.name.replace(/\.[^.]+$/, '.jpg'));
+    }
+  }
+
+  btn.textContent = 'Sending…';
+  try {
+    const resp = await fetch('/submit', { method: 'POST', body: fd });
+    const html = await resp.text();
+    document.open();
+    document.write(html);
+    document.close();
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = 'Send to Clarisse →';
+    alert('Network error — please try again.');
+  }
+});
+</script>
+{% endblock %}

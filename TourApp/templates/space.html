@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block title %}{{ space.addressLine2 or space.addressLine1 }} — Tandem Field App{% endblock %}
+
+{% block content %}
+<a href="/building?address={{ space.addressLine1 | urlencode }}" class="back-link">← {{ space.addressLine1 }}</a>
+
+<div class="card">
+  <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:16px">
+    <div>
+      <h1>{{ space.addressLine2 or 'Space' }}</h1>
+      <p style="font-size:0.875rem;color:var(--gray-600)">{{ space.addressLine1 }}, {{ space.city }}, {{ space.state }}</p>
+    </div>
+    {% set lbl = space_status_label(space) %}
+    {% if lbl == 'live' %}<span class="badge badge-live">Live</span>
+    {% elif lbl == 'unlisted' %}<span class="badge badge-unlisted">Unlisted</span>
+    {% elif lbl == 'review' %}<span class="badge badge-review">In Review</span>
+    {% else %}<span class="badge badge-draft">Draft</span>
+    {% endif %}
+  </div>
+
+  <div class="section-label">Space Details</div>
+  <ul class="detail-list">
+    <li>
+      <span class="dl-label">Size</span>
+      <span class="dl-value">
+        {% if space.squareFootage %}{{ "{:,}".format(space.squareFootage) }} sq ft{% else %}—{% endif %}
+      </span>
+    </li>
+    <li>
+      <span class="dl-label">Desks</span>
+      <span class="dl-value">
+        {% if space.minNumberOfDesks or space.maxNumberOfDesks %}
+          {% if space.minNumberOfDesks and space.maxNumberOfDesks %}
+            {{ space.minNumberOfDesks }}–{{ space.maxNumberOfDesks }}
+          {% elif space.minNumberOfDesks %}
+            {{ space.minNumberOfDesks }}+
+          {% else %}
+            Up to {{ space.maxNumberOfDesks }}
+          {% endif %}
+        {% else %}—{% endif %}
+      </span>
+    </li>
+    <li>
+      <span class="dl-label">Price/desk</span>
+      <span class="dl-value">
+        {% if space.minPricePerDesk %}
+          ${{ "{:,}".format(space.minPricePerDesk) }}{% if space.maxPricePerDesk and space.maxPricePerDesk != space.minPricePerDesk %}–${{ "{:,}".format(space.maxPricePerDesk) }}{% endif %}/mo
+        {% else %}—{% endif %}
+      </span>
+    </li>
+    <li>
+      <span class="dl-label">Total/mo</span>
+      <span class="dl-value">
+        {% if space.minTotalPricePerMonth %}
+          ${{ "{:,}".format(space.minTotalPricePerMonth) }}{% if space.maxTotalPricePerMonth and space.maxTotalPricePerMonth != space.minTotalPricePerMonth %}–${{ "{:,}".format(space.maxTotalPricePerMonth) }}{% endif %}
+        {% else %}—{% endif %}
+      </span>
+    </li>
+  </ul>
+
+  <div class="divider"></div>
+
+  <div class="section-label">Contacts on File</div>
+  {% if contacts %}
+    {% for c in contacts %}
+    <div class="contact-item">
+      <div class="contact-name">{{ c.name }}</div>
+      <div class="contact-meta">
+        {{ c.title or '' }}{% if c.title and c.company_name %} · {% endif %}{{ c.company_name or '' }}
+        {% if c.type %}<span class="badge" style="margin-left:6px;font-size:0.625rem;{% if c.type == 'BROKER' %}background:var(--blue-light);color:var(--blue){% else %}background:var(--amber-light);color:var(--amber){% endif %}">{{ c.type }}</span>{% endif %}
+      </div>
+      <div class="contact-actions">
+        {% if c.email %}<a href="mailto:{{ c.email }}" class="contact-action">Email</a>{% endif %}
+        {% if c.phone_number %}<a href="tel:{{ c.phone_number }}" class="contact-action">Call</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p style="font-size:0.875rem;color:var(--gray-400)">No contacts on file for this space.</p>
+  {% endif %}
+
+  <div class="divider"></div>
+
+  <div class="listing-link" style="margin-bottom:0">
+    <span>🔗</span>
+    <a href="https://tandem.space/office/{{ space.id }}" target="_blank">View current listing on Tandem</a>
+  </div>
+</div>
+
+<div class="fab-bar">
+  <a href="/request/{{ space.id }}" class="btn btn-primary">Request Update</a>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Sign In – Tandem Field App{% endblock %}
+{% block page_class %}page--center{% endblock %}
+
+{% block content %}
+<div class="logo-wrap">
+  <img src="/static/tandem_logo.png" alt="Tandem">
+</div>
+
+{% if google_oauth_enabled %}
+<div class="card" style="max-width:360px">
+  <h1>Sign in</h1>
+  <p class="subtitle">Use your @tandem.space Google account</p>
+
+  {% if error == 'unauthorized' %}
+  <div style="background:var(--red-light);color:var(--red);border-radius:var(--radius);padding:12px 14px;font-size:0.875rem;margin-bottom:16px">
+    This app is for Tandem team members only.
+  </div>
+  {% elif error %}
+  <div style="background:var(--red-light);color:var(--red);border-radius:var(--radius);padding:12px 14px;font-size:0.875rem;margin-bottom:16px">
+    Sign-in failed. Please try again.
+  </div>
+  {% endif %}
+
+  <a href="/auth/google" class="btn btn-primary">Sign in with Google</a>
+</div>
+
+{% else %}
+<div class="card" style="max-width:360px">
+  <h1>Who are you?</h1>
+  <p class="subtitle">Select your name to get started</p>
+
+  <form method="POST" action="/identity" id="identity-form">
+    <div class="form-group">
+      <label for="user-select">Your name</label>
+      <select id="user-select" name="user_display" onchange="updateHiddenFields(this)" required>
+        <option value="" disabled selected>Select your name…</option>
+        {% for u in users %}
+        <option value="{{ u.id }}|{{ u.name }}">{{ u.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <input type="hidden" name="user_id" id="hidden-user-id">
+    <input type="hidden" name="user_name" id="hidden-user-name">
+    <button type="submit" class="btn btn-primary" style="margin-top:8px">Continue →</button>
+  </form>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if not google_oauth_enabled %}
+<script>
+function updateHiddenFields(sel) {
+  const parts = sel.value.split('|');
+  document.getElementById('hidden-user-id').value = parts[0] || '';
+  document.getElementById('hidden-user-name').value = parts[1] || '';
+}
+
+document.getElementById('identity-form').addEventListener('submit', function(e) {
+  if (!document.getElementById('hidden-user-name').value) {
+    e.preventDefault();
+    document.getElementById('user-select').focus();
+  }
+});
+</script>
+{% endif %}
+{% endblock %}

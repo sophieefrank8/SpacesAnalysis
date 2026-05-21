@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Request Sent — Tandem Field App{% endblock %}
+
+{% block content %}
+<div class="card" style="text-align:center">
+  {% if slack_error %}
+  <div class="error-icon">⚠️</div>
+  <h1>Slack not configured</h1>
+  <p class="subtitle" style="margin-bottom:16px">The request was submitted but couldn't be sent to Slack. Make sure <code>SLACK_WEBHOOK_URL</code> is set in your environment.</p>
+  {% else %}
+  <div class="success-icon">✓</div>
+  <h1>Request sent!</h1>
+  <p class="subtitle" style="margin-bottom:16px">Clarisse has been notified via Slack — both in #supply-requests and by DM.</p>
+  {% endif %}
+
+  <div style="text-align:left;margin-bottom:20px">
+    <div class="section-label">What you submitted</div>
+    <ul class="detail-list">
+      <li>
+        <span class="dl-label">Type</span>
+        <span class="dl-value">{% if data.intent == 'UPDATE' %}✏️ Update listing{% else %}🆕 New listing{% endif %}</span>
+      </li>
+      <li>
+        <span class="dl-label">Address</span>
+        <span class="dl-value">{{ data.address }}{% if data.unit %} — {{ data.unit }}{% endif %}</span>
+      </li>
+      {% if data.sq_footage %}
+      <li><span class="dl-label">Sq ft</span><span class="dl-value">{{ "{:,}".format(data.sq_footage | int) }}</span></li>
+      {% endif %}
+      {% if data.price_per_desk %}
+      <li><span class="dl-label">Price/desk</span><span class="dl-value">${{ data.price_per_desk }}/mo</span></li>
+      {% endif %}
+      {% if data.should_publish %}
+      <li><span class="dl-label">Publish</span><span class="dl-value">{{ 'Yes ✅' if data.should_publish == 'yes' else 'No ❌' }}</span></li>
+      {% endif %}
+      {% if data.contacts %}
+      <li>
+        <span class="dl-label">Contacts</span>
+        <span class="dl-value">{{ data.contacts | length }} added</span>
+      </li>
+      {% endif %}
+      <li><span class="dl-label">From</span><span class="dl-value">{{ data.user_name }}</span></li>
+    </ul>
+  </div>
+
+  <div class="divider" style="margin-bottom:16px"></div>
+
+  <a href="/building?address={{ data.address | urlencode }}" class="btn btn-secondary" style="margin-bottom:10px">← Back to {{ data.address }}</a>
+  <a href="/search" class="btn btn-outline">Search another address</a>
+</div>
+{% endblock %}

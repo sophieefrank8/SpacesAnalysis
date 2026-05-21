@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}{{ address }} – Tandem Field App{% endblock %}
+
+{% macro status_badge(space) %}
+  {% set lbl = space_status_label(space) %}
+  {% if lbl == 'live' %}<span class="badge badge-live">Live</span>
+  {% elif lbl == 'unlisted' %}<span class="badge badge-unlisted">Unlisted</span>
+  {% elif lbl == 'review' %}<span class="badge badge-review">In Review</span>
+  {% else %}<span class="badge badge-draft">Draft</span>
+  {% endif %}
+{% endmacro %}
+
+{% block content %}
+<a href="/search" class="back-link">← Search</a>
+
+<div class="address-header">
+  <p class="subtitle" style="margin-bottom:4px;color:var(--gray-400)">Results for "{{ address }}"</p>
+  {% if spaces %}
+  <p style="font-size:0.8125rem;color:var(--gray-400);margin-bottom:20px">{{ spaces|length }} space{% if spaces|length != 1 %}s{% endif %} on file</p>
+  {% endif %}
+</div>
+
+{% if spaces %}
+  {% for addr, addr_spaces in spaces | groupby('addressLine1') %}
+  <h2 style="color:var(--white);margin-bottom:12px{% if not loop.first %};margin-top:28px{% endif %}">{{ addr }}</h2>
+  {% for space in addr_spaces %}
+  <div class="card">
+    <a href="/space/{{ space.id }}" class="space-card">
+      <div class="space-card-top">
+        <div>
+          <div class="space-card-title">
+            {{ space.addressLine2 or ('Unit ' ~ loop.index) }}
+          </div>
+          <div style="margin-top:6px">{{ status_badge(space) }}</div>
+        </div>
+        <span class="space-card-link" style="white-space:nowrap">Details →</span>
+      </div>
+
+      <div class="space-card-meta">
+        {% if space.squareFootage %}
+        <span>{{ "{:,}".format(space.squareFootage) }} sq ft</span>
+        {% endif %}
+
+        {% if space.minNumberOfDesks or space.maxNumberOfDesks %}
+        <span>
+          {% if space.minNumberOfDesks and space.maxNumberOfDesks %}
+            {{ space.minNumberOfDesks }}–{{ space.maxNumberOfDesks }} desks
+          {% elif space.minNumberOfDesks %}
+            {{ space.minNumberOfDesks }}+ desks
+          {% else %}
+            Up to {{ space.maxNumberOfDesks }} desks
+          {% endif %}
+        </span>
+        {% endif %}
+
+        {% if space.minPricePerDesk %}
+        <span>
+          ${{ "{:,}".format(space.minPricePerDesk) }}{% if space.maxPricePerDesk and space.maxPricePerDesk != space.minPricePerDesk %}–${{ "{:,}".format(space.maxPricePerDesk) }}{% endif %}/desk
+        </span>
+        {% endif %}
+      </div>
+
+      {% if not space.squareFootage and not space.minNumberOfDesks and not space.minPricePerDesk %}
+      <p style="font-size:0.8125rem;color:var(--gray-400)">No pricing data yet</p>
+      {% endif %}
+    </a>
+  </div>
+  {% endfor %}
+  {% endfor %}
+
+{% else %}
+<div class="empty-state">
+  <div class="empty-state-icon">🏢</div>
+  <div class="empty-state-text">No spaces found for this address.<br>You can still submit a new listing request.</div>
+</div>
+{% endif %}
+
+<div class="fab-bar">
+  <a href="/request/new?address={{ address | urlencode }}{% if not spaces %}&new_building=1{% endif %}" class="btn btn-primary">+ New Listing Request</a>
+</div>
+{% endblock %}

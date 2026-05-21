@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Search — Tandem Field App{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1>Find a building</h1>
+  <p class="subtitle">Enter an address to see all spaces</p>
+
+  <form method="POST" action="/search" class="search-form" style="margin-top:4px">
+    <input
+      type="text"
+      name="query"
+      placeholder="e.g. 989 Market St"
+      autocomplete="street-address"
+      autocorrect="off"
+      spellcheck="false"
+      autofocus
+      required
+    >
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+{% endblock %}

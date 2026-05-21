@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>{% block title %}Tandem Field App{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+{% if user %}
+<div class="top-bar">
+  <span class="top-bar__logo">Tandem</span>
+  <div>
+    <span class="top-bar__user">{{ user.name }}</span>
+    <a href="/logout" class="top-bar__change">Change</a>
+  </div>
+</div>
+{% endif %}
+<div class="page {% block page_class %}{% endblock %}">
+  {% block content %}{% endblock %}
+</div>
+{% block scripts %}{% endblock %}
+</body>
+</html>
