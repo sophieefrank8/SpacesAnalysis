@@ -226,21 +226,6 @@ def request_update(request: Request, space_id: str):
     })
 
 
-def _geocode_address(address: str) -> str | None:
-    try:
-        resp = requests.get(
-            "https://nominatim.openstreetmap.org/search",
-            params={"q": address, "format": "json", "addressdetails": "1", "limit": "1"},
-            headers={"User-Agent": "TandemFieldApp/1.0"},
-            timeout=5,
-        )
-        results = resp.json()
-        if results:
-            return results[0].get("display_name", "")
-    except Exception as e:
-        print(f"[geocode] error: {e}")
-    return None
-
 
 @app.post("/submit", response_class=HTMLResponse)
 async def submit_request(
@@ -261,6 +246,7 @@ async def submit_request(
     price_note: str = Form(""),
     notes: str = Form(""),
     is_new_building: str = Form(""),
+    full_address: str = Form(""),
     contact_name: List[str] = Form(default=[]),
     contact_email: List[str] = Form(default=[]),
     contact_phone: List[str] = Form(default=[]),
@@ -282,11 +268,6 @@ async def submit_request(
                 "role": contact_role[i] if i < len(contact_role) else "",
             })
 
-    full_address = None
-    if is_new_building == "yes":
-        query = f"{address} {unit}".strip() if unit else address
-        full_address = _geocode_address(query)
-
     data = {
         "intent": intent,
         "space_id": space_id,
@@ -306,7 +287,7 @@ async def submit_request(
         "contacts": contacts,
         "user_name": user["name"],
         "is_new_building": is_new_building == "yes",
-        "full_address": full_address or "",
+        "full_address": full_address.strip(),
     }
 
     photo_files = []

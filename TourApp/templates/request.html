@@ -190,6 +190,21 @@
     <button type="submit" class="btn btn-primary">Send to Clarisse →</button>
   </div>
 </form>
+
+<!-- ── Address confirmation modal (new buildings only) ── -->
+<div id="address-modal" class="addr-modal-overlay" style="display:none" role="dialog" aria-modal="true">
+  <div class="addr-modal">
+    <div class="addr-modal-title">📌 Confirm Address</div>
+    <p class="addr-modal-label">You entered:</p>
+    <div class="addr-modal-input" id="addr-entered"></div>
+    <p class="addr-modal-label" id="addr-verified-label" style="margin-top:12px">Verified by Google Maps:</p>
+    <div class="addr-modal-verified" id="addr-verified"></div>
+    <div class="addr-modal-actions">
+      <button type="button" class="btn btn-secondary" onclick="cancelAddressModal()">← Edit address</button>
+      <button type="button" class="btn btn-primary" id="addr-confirm-btn" onclick="confirmAddress()">Looks right — Submit</button>
+    </div>
+  </div>
+</div>
 {% endblock %}
 
 {% block scripts %}
@@ -297,11 +312,64 @@ async function compressImage(file) {
   });
 }
 
+const IS_NEW_BUILDING = document.querySelector('input[name="is_new_building"]')?.value === 'yes';
+let _submitBtn = null;
+
+async function geocodeAddress(address) {
+  try {
+    const resp = await fetch(
+      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json&addressdetails=1&limit=1`,
+      { headers: { 'Accept-Language': 'en' } }
+    );
+    const results = await resp.json();
+    return results.length ? results[0].display_name : null;
+  } catch { return null; }
+}
+
+function showAddressModal(entered, verified) {
+  document.getElementById('addr-entered').textContent = entered;
+  const verifiedEl = document.getElementById('addr-verified');
+  const verifiedLabel = document.getElementById('addr-verified-label');
+  if (verified) {
+    verifiedEl.textContent = verified;
+    verifiedEl.style.color = '';
+    verifiedLabel.style.display = '';
+    // Store verified address so the server can use it
+    let hiddenFull = document.querySelector('input[name="full_address"]');
+    if (!hiddenFull) {
+      hiddenFull = document.createElement('input');
+      hiddenFull.type = 'hidden';
+      hiddenFull.name = 'full_address';
+      document.querySelector('form').appendChild(hiddenFull);
+    }
+    hiddenFull.value = verified;
+  } else {
+    verifiedEl.textContent = 'Could not verify — double-check the address before submitting.';
+    verifiedEl.style.color = '#b45309';
+    verifiedLabel.style.display = 'none';
+  }
+  document.getElementById('address-modal').style.display = 'flex';
+}
+
+function cancelAddressModal() {
+  document.getElementById('address-modal').style.display = 'none';
+  if (_submitBtn) {
+    _submitBtn.disabled = false;
+    _submitBtn.textContent = 'Send to Clarisse →';
+  }
+}
+
+async function confirmAddress() {
+  document.getElementById('address-modal').style.display = 'none';
+  await doSubmit();
+}
+
 document.querySelector('form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const form = e.target;
   const btn = form.querySelector('[type=submit]');
   btn.disabled = true;
+  _submitBtn = btn;
 
   // Validate flyer sizes before uploading
   const flyerInput = form.querySelector('input[name="flyers"]');
@@ -315,6 +383,25 @@ document.querySelector('form').addEventListener('submit', async (e) => {
       }
     }
   }
+
+  // For new buildings, geocode first and show confirmation modal
+  if (IS_NEW_BUILDING) {
+    btn.textContent = 'Verifying address…';
+    const address = document.querySelector('input[name="address"]').value;
+    const unit = document.querySelector('input[name="unit"]')?.value || '';
+    const query = unit ? `${address} ${unit}` : address;
+    const verified = await geocodeAddress(query);
+    showAddressModal(query, verified);
+    return; // doSubmit() will be called after user confirms
+  }
+
+  await doSubmit();
+});
+
+async function doSubmit() {
+  const form = document.querySelector('form');
+  const btn = form.querySelector('[type=submit]');
+  btn.disabled = true;
 
   const fd = new FormData(form);
   const photoInput = form.querySelector('input[name="photos"]');
@@ -342,6 +429,6 @@ document.querySelector('form').addEventListener('submit', async (e) => {
     btn.textContent = 'Send to Clarisse →';
     alert('Network error — please try again.');
   }
-});
+}
 </script>
 {% endblock %}
