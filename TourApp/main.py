@@ -194,7 +194,7 @@ def space_detail(request: Request, space_id: str):
 
 
 @app.get("/request/new", response_class=HTMLResponse)
-def request_new(request: Request, address: str = "", new_building: str = ""):
+def request_new(request: Request, address: str = "", new_building: str = "", full_address: str = ""):
     user = _user(request)
     if not user:
         return RedirectResponse("/")
@@ -205,6 +205,7 @@ def request_new(request: Request, address: str = "", new_building: str = ""):
         "address": address,
         "intent": "NEW",
         "new_building": bool(new_building),
+        "full_address": full_address,
     })
 
 
@@ -223,6 +224,7 @@ def request_update(request: Request, space_id: str):
         "address": space["addressLine1"],
         "intent": "UPDATE",
         "new_building": False,
+        "full_address": "",
     })
 
 

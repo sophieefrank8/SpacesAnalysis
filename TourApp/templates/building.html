@@ -69,13 +69,84 @@
   {% endfor %}
 
 {% else %}
-<div class="empty-state">
-  <div class="empty-state-icon">🏢</div>
-  <div class="empty-state-text">No spaces found for this address.<br>You can still submit a new listing request.</div>
+<div class="card" style="margin-bottom:24px">
+  <div class="nbf-header">
+    <span class="nbf-icon">🏗️</span>
+    <div>
+      <div class="nbf-title">Not found on Tandem</div>
+      <div class="nbf-query">"{{ address }}"</div>
+    </div>
+  </div>
+
+  <div class="nbf-divider"></div>
+
+  <div class="nbf-verify-label">Verify full address</div>
+
+  <div id="geocode-loading" class="nbf-geocode-row nbf-loading">
+    <span class="nbf-spinner"></span> Looking up address…
+  </div>
+  <div id="geocode-result" class="nbf-geocode-row nbf-result" style="display:none">
+    <span>📍</span>
+    <span id="geocode-text"></span>
+  </div>
+  <div id="geocode-error" class="nbf-geocode-row nbf-error" style="display:none">
+    ⚠️ Couldn't verify — double-check before continuing.
+  </div>
+
+  <a id="new-listing-btn" href="#" class="btn btn-primary" style="margin-top:20px;display:block;opacity:0.35;pointer-events:none">
+    Start new listing →
+  </a>
 </div>
 {% endif %}
 
+{% if spaces %}
 <div class="fab-bar">
-  <a href="/request/new?address={{ address | urlencode }}{% if not spaces %}&new_building=1{% endif %}" class="btn btn-primary">+ New Listing Request</a>
+  <a href="/request/new?address={{ address | urlencode }}" class="btn btn-primary">+ New Listing Request</a>
 </div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% if not spaces %}
+<script>
+(async function () {
+  const address = {{ address | tojson }};
+  const loading = document.getElementById('geocode-loading');
+  const result  = document.getElementById('geocode-result');
+  const error   = document.getElementById('geocode-error');
+  const btn     = document.getElementById('new-listing-btn');
+
+  function enableBtn(fullAddress) {
+    const params = new URLSearchParams({ address, new_building: '1' });
+    if (fullAddress) params.set('full_address', fullAddress);
+    btn.href = '/request/new?' + params.toString();
+    btn.style.opacity = '';
+    btn.style.pointerEvents = '';
+  }
+
+  try {
+    const resp = await fetch(
+      'https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=1&q=' + encodeURIComponent(address),
+      { headers: { 'Accept-Language': 'en' } }
+    );
+    const data = await resp.json();
+    loading.style.display = 'none';
+
+    if (data.length) {
+      const verified = data[0].display_name;
+      document.getElementById('geocode-text').textContent = verified;
+      result.style.display = 'flex';
+      enableBtn(verified);
+    } else {
+      error.style.display = 'flex';
+      enableBtn('');
+    }
+  } catch {
+    loading.style.display = 'none';
+    error.style.display = 'flex';
+    enableBtn('');
+  }
+})();
+</script>
+{% endif %}
 {% endblock %}

@@ -114,69 +114,86 @@ body {
   margin-bottom: 16px;
 }
 
-/* ── Address confirmation modal ────────────────────── */
+/* ── New building verification card (building page) ── */
 
-.addr-modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 100;
+.nbf-header {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 0 env(safe-area-inset-bottom);
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
-.addr-modal {
-  background: var(--white);
-  border-radius: var(--radius) var(--radius) 0 0;
-  padding: 24px 20px 32px;
-  width: 100%;
-  max-width: 480px;
+.nbf-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
-.addr-modal-title {
+.nbf-title {
   font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 16px;
   color: var(--gray-900);
 }
 
-.addr-modal-label {
+.nbf-query {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-top: 2px;
+}
+
+.nbf-divider {
+  height: 1px;
+  background: var(--gray-200);
+  margin: 0 0 16px;
+}
+
+.nbf-verify-label {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--gray-400);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-.addr-modal-input {
+.nbf-geocode-row {
   font-size: 0.9375rem;
-  color: var(--gray-600);
-  padding: 10px 12px;
-  background: var(--gray-100);
   border-radius: 6px;
-}
-
-.addr-modal-verified {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: var(--green);
   padding: 10px 12px;
-  background: var(--green-light);
-  border-radius: 6px;
-}
-
-.addr-modal-actions {
   display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.addr-modal-actions .btn {
-  flex: 1;
+.nbf-loading {
+  color: var(--gray-600);
+  background: var(--gray-100);
 }
+
+.nbf-result {
+  color: var(--green);
+  background: var(--green-light);
+  font-weight: 500;
+}
+
+.nbf-error {
+  color: var(--amber);
+  background: var(--amber-light);
+}
+
+.nbf-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--gray-400);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* ── Logo (identity screen only) ───────────────────── */
 
