@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sign In — Tandem Coworking{% endblock %}
+{% block content %}
+<div style="max-width:400px; margin:80px auto; text-align:center;">
+  <div style="font-size:28px; font-weight:800; margin-bottom:8px;">Tandem <span style="color:#4f46e5;">Coworking</span></div>
+  <div style="color:#6b7280; font-size:14px; margin-bottom:32px;">Internal availability tracker</div>
+
+  {% if error %}
+  <div class="error-msg">
+    {% if error == "unauthorized" %}Only @tandem.space accounts can access this tool.
+    {% elif error == "cancelled" %}Sign in was cancelled.
+    {% elif error == "token_failed" %}Authentication failed. Please try again.
+    {% else %}Sign in error. Please try again.{% endif %}
+  </div>
+  {% endif %}
+
+  {% if google_enabled %}
+  <a href="/auth/google?next={{ next }}" class="btn btn-primary" style="width:100%; display:block; padding:12px;">
+    Sign in with Google
+  </a>
+  <div style="font-size:12px; color:#9ca3af; margin-top:12px;">@tandem.space accounts only</div>
+  {% else %}
+  <div class="error-msg">Google OAuth not configured. Set GOOGLE_CLIENT_ID env var.</div>
+  {% endif %}
+</div>
+{% endblock %}

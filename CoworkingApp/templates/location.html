@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}{{ fm.location_name }} — {{ fm.operator }} {{ fm.market }}{% endblock %}
+{% block content %}
+
+<div style="display:flex; align-items:center; gap:12px; margin-bottom:4px;">
+  <h1>{{ fm.location_name }}</h1>
+  {% if badge == 'green' %}
+  <span class="badge badge-green">Availability up to date</span>
+  {% elif badge == 'yellow' %}
+  <span class="badge badge-yellow">Availability aging</span>
+  {% else %}
+  <span class="badge badge-red">No availability data</span>
+  {% endif %}
+</div>
+<p class="subtitle">{{ fm.operator }} · {{ fm.market }} · {{ fm.address }}</p>
+
+<div style="display:flex; gap:10px; margin-bottom:24px;">
+  <a href="/locations" class="btn btn-secondary" style="font-size:13px; padding:6px 12px;">← All locations</a>
+  <a href="/update?filename={{ filename }}" class="btn btn-primary" style="font-size:13px; padding:6px 12px;">Update availability</a>
+  {% if fm.website %}
+  <a href="{{ fm.website }}" target="_blank" class="btn btn-secondary" style="font-size:13px; padding:6px 12px;">View on operator site ↗</a>
+  {% endif %}
+  {% if fm.tandem_listing %}
+  <a href="{{ fm.tandem_listing }}" target="_blank" class="btn btn-secondary" style="font-size:13px; padding:6px 12px;">Tandem listing ↗</a>
+  {% endif %}
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:24px;">
+  <div class="card">
+    <div class="card-title" style="font-size:14px; font-weight:700; color:#6b7280; text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px;">Building Info</div>
+    <table style="box-shadow:none; border-radius:0;">
+      <tr><td style="color:#6b7280; width:130px; font-size:13px; border:none;">Operator</td><td style="font-size:14px; border:none;">{{ fm.operator }}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Market</td><td style="font-size:14px; border:none;">{{ fm.market }}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Address</td><td style="font-size:14px; border:none;">{{ fm.address }}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Starting Price</td><td style="font-size:14px; border:none;">{% if fm.monthly_price_from %}From ${{ fm.monthly_price_from }}/mo{% else %}Contact for pricing{% endif %}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Last Updated</td><td style="font-size:14px; border:none;">{{ fm.last_updated or "—" }}</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="card-title" style="font-size:14px; font-weight:700; color:#6b7280; text-transform:uppercase; letter-spacing:.5px; margin-bottom:12px;">Point of Contact</div>
+    <table style="box-shadow:none; border-radius:0;">
+      <tr><td style="color:#6b7280; width:80px; font-size:13px; border:none;">Name</td><td style="font-size:14px; border:none;">{{ fm.contact_name or "—" }}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Title</td><td style="font-size:14px; border:none;">{{ fm.contact_title or "—" }}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Email</td><td style="font-size:14px; border:none;">{% if fm.contact_email %}<a href="mailto:{{ fm.contact_email }}">{{ fm.contact_email }}</a>{% else %}—{% endif %}</td></tr>
+      <tr><td style="color:#6b7280; font-size:13px; border:none;">Phone</td><td style="font-size:14px; border:none;">{{ fm.contact_phone or "—" }}</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="md-body">
+  {{ body_html | safe }}
+</div>
+
+{% endblock %}

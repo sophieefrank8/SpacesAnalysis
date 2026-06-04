@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}Preview Update — {{ location_name }}{% endblock %}
+{% block content %}
+
+<h1>Preview Update</h1>
+<p class="subtitle">{{ operator }} — {{ location_name }} — {{ market }}</p>
+
+{% if error %}
+<div class="error-msg">Gemini parse error: {{ error }}</div>
+{% endif %}
+
+{% if summary %}
+<div class="info-msg">
+  <strong>What will change:</strong> {{ summary }}
+</div>
+{% endif %}
+
+<h2>Availability diff</h2>
+<div class="diff-grid">
+  <div>
+    <div class="diff-label">Current</div>
+    <div class="diff-box diff-old">{{ current_avail }}</div>
+  </div>
+  <div>
+    <div class="diff-label">New</div>
+    <div class="diff-box diff-new">{{ new_avail }}</div>
+  </div>
+</div>
+
+{% if suites %}
+<h2>Parsed suites</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Office Type</th>
+      <th>Team Size</th>
+      <th>Price/mo</th>
+      <th>Notes</th>
+      <th>Touring Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for s in suites %}
+    <tr>
+      <td>{{ s.office_type or "—" }}</td>
+      <td>{{ s.team_size or "—" }}</td>
+      <td>{% if s.monthly_price %}${{ "{:,}".format(s.monthly_price) }}{% if s.price_note %} ({{ s.price_note }}){% endif %}{% else %}—{% endif %}</td>
+      <td>{{ s.notes or "—" }}</td>
+      <td>{% if s.touring_link %}<a href="{{ s.touring_link }}" target="_blank">Book a tour ↗</a>{% else %}—{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<div style="margin-top:24px; display:flex; gap:10px;">
+  <form method="post" action="/update/confirm">
+    <button type="submit" class="btn btn-primary">Confirm and save</button>
+  </form>
+  <a href="/update?filename={{ filename }}" class="btn btn-secondary">← Go back and re-paste</a>
+  <a href="/locations" class="btn btn-secondary">Cancel</a>
+</div>
+
+<div style="font-size:12px; color:#9ca3af; margin-top:12px;">
+  Confirming will update the MD file on GitHub and add a row to the outreach history. The website will reflect the change within a few minutes.
+</div>
+{% endblock %}

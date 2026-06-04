@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Tandem Coworking{% endblock %}</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.5; }
+    a { color: #4f46e5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: #1a1a2e; color: #fff; padding: 0 24px; display: flex; align-items: center; gap: 24px; height: 52px; }
+    nav .brand { font-weight: 700; font-size: 16px; color: #fff; letter-spacing: -0.3px; }
+    nav .brand span { color: #818cf8; }
+    nav a.nav-link { color: #a5b4fc; font-size: 14px; }
+    nav a.nav-link:hover { color: #fff; text-decoration: none; }
+    nav .spacer { flex: 1; }
+    nav .user { font-size: 13px; color: #6b7280; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px 24px; }
+    h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+    h2 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; }
+    .subtitle { color: #6b7280; font-size: 14px; margin-bottom: 24px; }
+
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+    .badge-green  { background: #dcfce7; color: #166534; }
+    .badge-yellow { background: #fef9c3; color: #854d0e; }
+    .badge-red    { background: #fee2e2; color: #991b1b; }
+
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+    th { background: #1a1a2e; color: #fff; padding: 10px 14px; text-align: left; font-size: 13px; font-weight: 600; }
+    td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #f8f7ff; }
+
+    .btn { display: inline-block; padding: 8px 18px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; transition: opacity .15s; }
+    .btn-primary { background: #4f46e5; color: #fff; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn:hover { opacity: .88; text-decoration: none; }
+
+    .filters { display: flex; gap: 10px; margin-bottom: 18px; flex-wrap: wrap; align-items: center; }
+    .filters select, .filters input { padding: 7px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; background: #fff; }
+    .filters label { font-size: 13px; color: #6b7280; }
+
+    .card { background: #fff; border-radius: 10px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-bottom: 18px; }
+    .card-title { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+
+    .error-msg { background: #fee2e2; color: #991b1b; padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; }
+    .info-msg  { background: #eff6ff; color: #1e40af; padding: 10px 14px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; }
+
+    .diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+    .diff-box { padding: 14px; border-radius: 8px; font-size: 13px; white-space: pre-wrap; word-break: break-word; }
+    .diff-old { background: #fff1f2; border: 1px solid #fecdd3; }
+    .diff-new { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .diff-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; color: #6b7280; }
+
+    textarea { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; font-family: inherit; resize: vertical; }
+
+    /* markdown content */
+    .md-body table { margin: 12px 0; }
+    .md-body p { margin: 8px 0; }
+    .md-body em { color: #6b7280; }
+  </style>
+</head>
+<body>
+<nav>
+  <span class="brand">Tandem <span>Coworking</span></span>
+  <a href="/locations" class="nav-link">Locations</a>
+  <a href="/update" class="nav-link">Update Availability</a>
+  <div class="spacer"></div>
+  {% if user %}
+  <span class="user">{{ user.name }}</span>
+  <a href="/logout" class="nav-link" style="font-size:13px;">Sign out</a>
+  {% endif %}
+</nav>
+<div class="container">
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>

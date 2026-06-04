@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Update Availability — Tandem Coworking{% endblock %}
+{% block content %}
+
+<h1>Update Availability</h1>
+<p class="subtitle">Paste an operator's email response and we'll parse it automatically.</p>
+
+{% if request.query_params.get('error') %}
+<div class="error-msg">
+  {% set err = request.query_params.get('error') %}
+  {% if err == 'github_failed' %}Could not save to GitHub. Check that GITHUB_TOKEN is set and has write access.
+  {% elif err == 'session_expired' %}Your session expired. Please try again.
+  {% else %}An error occurred. Please try again.{% endif %}
+</div>
+{% endif %}
+
+<div class="card" style="max-width:680px;">
+  <form method="post" action="/update/preview">
+    <div style="margin-bottom:16px;">
+      <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Location</label>
+      <select name="filename" required style="width:100%; padding:9px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:14px;">
+        <option value="">Select a location…</option>
+        {% set current_market = "" %}
+        {% for loc in locations %}
+          {% if loc.market != current_market %}
+            {% if current_market %}</optgroup>{% endif %}
+            <optgroup label="{{ loc.market }}">
+            {% set current_market = loc.market %}
+          {% endif %}
+          <option value="{{ loc.filename }}" {% if selected == loc.filename %}selected{% endif %}>{{ loc.label }}</option>
+        {% endfor %}
+        {% if locations %}</optgroup>{% endif %}
+      </select>
+    </div>
+
+    <div style="margin-bottom:20px;">
+      <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Operator email response</label>
+      <textarea name="email_text" rows="10" placeholder="Paste the full email from the operator here…" required></textarea>
+      <div style="font-size:12px; color:#9ca3af; margin-top:4px;">Gemini will extract available suites, pricing, touring links, and any notes.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Parse email →</button>
+    <a href="/locations" class="btn btn-secondary" style="margin-left:8px;">Cancel</a>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Locations — Tandem Coworking{% endblock %}
+{% block content %}
+<h1>Coworking Locations</h1>
+<p class="subtitle">{{ total }} location{{ 's' if total != 1 else '' }} across SF, NYC, and Boston</p>
+
+<form method="get" class="filters">
+  <label>Operator
+    <select name="operator" onchange="this.form.submit()">
+      <option value="">All operators</option>
+      {% for op in all_operators %}
+      <option value="{{ op }}" {% if filter_operator == op %}selected{% endif %}>{{ op }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <label>Market
+    <select name="market" onchange="this.form.submit()">
+      <option value="">All markets</option>
+      {% for m in all_markets %}
+      <option value="{{ m }}" {% if filter_market == m %}selected{% endif %}>{{ m }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <label>Availability
+    <select name="availability" onchange="this.form.submit()">
+      <option value="">All</option>
+      <option value="has_data" {% if filter_avail == 'has_data' %}selected{% endif %}>Has availability data</option>
+      <option value="no_data"  {% if filter_avail == 'no_data'  %}selected{% endif %}>No data yet</option>
+    </select>
+  </label>
+  {% if filter_operator or filter_market or filter_avail %}
+  <a href="/locations" class="btn btn-secondary" style="font-size:13px; padding:7px 12px;">Clear filters</a>
+  {% endif %}
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Market</th>
+      <th>Location</th>
+      <th>Address</th>
+      <th>Availability</th>
+      <th>Last Updated</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for loc in locations %}
+    <tr>
+      <td>{{ loc.operator }}</td>
+      <td>{{ loc.market }}</td>
+      <td><a href="/location/{{ loc.filename }}">{{ loc.location_name }}</a></td>
+      <td style="color:#6b7280; font-size:13px;">{{ loc.address }}</td>
+      <td>
+        {% if loc.badge == 'green' %}
+        <span class="badge badge-green">Up to date</span>
+        {% elif loc.badge == 'yellow' %}
+        <span class="badge badge-yellow">Aging</span>
+        {% else %}
+        <span class="badge badge-red">No data</span>
+        {% endif %}
+      </td>
+      <td style="font-size:13px; color:#6b7280;">{{ loc.last_updated or "—" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<div style="margin-top:16px; text-align:right;">
+  <a href="/update" class="btn btn-primary">Update Availability</a>
+</div>
+{% endblock %}
