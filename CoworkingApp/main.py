@@ -69,17 +69,18 @@ _github_cache: dict = {}   # filename -> (content_str, sha, fetched_at)
 CACHE_TTL = 300            # 5 minutes
 
 
-def _github_headers():
-    return {
-        "Authorization": f"token {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github.v3+json",
-    }
+def _github_headers(write=False):
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    # Only add auth token if present; reads work on public repos without it
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"token {GITHUB_TOKEN}"
+    elif write:
+        raise ValueError("GITHUB_TOKEN is required for write operations")
+    return headers
 
 
 def github_list_files() -> tuple[list[dict], str]:
     """Return (files, error_msg). files is list of {name, path, sha} for all MD files."""
-    if not GITHUB_TOKEN:
-        return [], "GITHUB_TOKEN env var is not set. Add it in Vercel Settings → Environment Variables."
     if not GITHUB_REPO:
         return [], "GITHUB_REPO env var is not set."
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_MD_PATH}?ref={GITHUB_BRANCH}"
@@ -131,7 +132,7 @@ def github_put_file(filename: str, content: str, sha: str, message: str) -> bool
         "sha": sha,
         "branch": GITHUB_BRANCH,
     }
-    r = requests.put(url, headers=_github_headers(), json=payload, timeout=15)
+    r = requests.put(url, headers=_github_headers(write=True), json=payload, timeout=15)
     if r.status_code in (200, 201):
         # Invalidate cache
         _github_cache.pop(filename, None)
