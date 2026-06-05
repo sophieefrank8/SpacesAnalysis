@@ -271,6 +271,7 @@ Inventory source is operator correspondence per the agreed cadence recorded belo
 | IWG / Spaces | All markets | TBD | Sara Parker -- mia.king.offices@gmail.com -- (972) 764-8882 | Covers SF, NYC, Boston; use Gmail despite it being personal |
 | Mindspace | All markets | TBD | Chris Chamoun -- chris.c@mindspace.me -- (202) 802-5246 | US Lead, Enterprise Sales and Broker Partnerships |
 | Tishman Speyer Studio | SF | TBD | Josh Barton -- jbarton@tishmanspeyer.com -- (847) 702-6166 | Head of Sales |
+| Tishman Speyer Studio | SF | TBD | Alex Snyder -- aSnyder@tishmanspeyer.com | Day-to-day contact; provided 6/4/26 availability update |
 | Expansive | SF | TBD | Carly Erickson -- carly@expansive.com -- (623) 253-7191 | Director of Sales, West |
 
 ---
