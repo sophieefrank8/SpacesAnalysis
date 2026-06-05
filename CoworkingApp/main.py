@@ -76,13 +76,30 @@ def _github_headers():
     }
 
 
-def github_list_files() -> list[dict]:
-    """Return list of {name, path, sha} for all MD files in the locations folder."""
+def github_list_files() -> tuple[list[dict], str]:
+    """Return (files, error_msg). files is list of {name, path, sha} for all MD files."""
+    if not GITHUB_TOKEN:
+        return [], "GITHUB_TOKEN env var is not set. Add it in Vercel Settings → Environment Variables."
+    if not GITHUB_REPO:
+        return [], "GITHUB_REPO env var is not set."
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_MD_PATH}?ref={GITHUB_BRANCH}"
-    r = requests.get(url, headers=_github_headers(), timeout=15)
+    try:
+        r = requests.get(url, headers=_github_headers(), timeout=15)
+    except Exception as e:
+        return [], f"GitHub API request failed: {e}"
+    if r.status_code == 401:
+        return [], "GitHub token is invalid or expired. Regenerate it in GitHub → Settings → Developer settings → Personal access tokens."
+    if r.status_code == 404:
+        return [], f"GitHub path not found: {GITHUB_REPO}/{GITHUB_MD_PATH}. Check GITHUB_REPO and GITHUB_MD_PATH env vars."
     if r.status_code != 200:
-        return []
-    return [f for f in r.json() if isinstance(f, dict) and f.get("name", "").endswith(".md")]
+        return [], f"GitHub API returned {r.status_code}: {r.text[:200]}"
+    files = [f for f in r.json() if isinstance(f, dict) and f.get("name", "").endswith(".md")]
+    return files, ""
+
+
+def github_file_url(filename: str) -> str:
+    """Return the GitHub web UI link for a file."""
+    return f"https://github.com/{GITHUB_REPO}/blob/{GITHUB_BRANCH}/{GITHUB_MD_PATH}/{filename}"
 
 
 def github_get_file(filename: str) -> tuple[str, str]:
@@ -372,7 +389,7 @@ def locations_list(
     if redirect:
         return redirect
 
-    files = github_list_files()
+    files, github_error = github_list_files()
 
     locations = []
     for f in files:
@@ -385,8 +402,10 @@ def locations_list(
             "market":        fm.get("market", ""),
             "location_name": fm.get("location_name", f["name"]),
             "address":       fm.get("address", ""),
+            "tandem_listing":fm.get("tandem_listing", "") or "",
             "last_updated":  str(fm.get("last_updated", "")),
             "badge":         badge,
+            "github_url":    github_file_url(f["name"]),
         })
 
     # Apply filters
@@ -405,15 +424,16 @@ def locations_list(
     all_markets   = sorted({l["market"] for l in locations} | {"SF", "NYC", "Boston"})
 
     return templates.TemplateResponse("index.html", {
-        "request":       request,
-        "user":          current_user(request),
-        "locations":     locations,
+        "request":        request,
+        "user":           current_user(request),
+        "locations":      locations,
         "filter_operator": operator,
         "filter_market":   market,
         "filter_avail":    availability,
-        "all_operators": all_operators,
-        "all_markets":   all_markets,
-        "total":         len(locations),
+        "all_operators":  all_operators,
+        "all_markets":    all_markets,
+        "total":          len(locations),
+        "github_error":   github_error,
     })
 
 
