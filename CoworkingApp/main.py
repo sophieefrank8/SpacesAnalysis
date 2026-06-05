@@ -369,6 +369,33 @@ def auth_google_callback(request: Request, code: str = "", state: str = "", erro
     return RedirectResponse(next_url, status_code=303)
 
 
+@app.get("/debug", response_class=HTMLResponse)
+def debug(request: Request):
+    """Temporary debug route -- shows env var status and GitHub API test."""
+    token_set = bool(GITHUB_TOKEN)
+    token_preview = (GITHUB_TOKEN[:6] + "..." + GITHUB_TOKEN[-4:]) if len(GITHUB_TOKEN) > 10 else ("(empty)" if not GITHUB_TOKEN else "(short)")
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_MD_PATH}?ref={GITHUB_BRANCH}"
+    try:
+        r = requests.get(url, headers=_github_headers(), timeout=10)
+        api_status = r.status_code
+        api_body = r.text[:300]
+    except Exception as e:
+        api_status = "error"
+        api_body = str(e)
+    html = f"""<pre>
+GITHUB_REPO:    '{GITHUB_REPO}'
+GITHUB_BRANCH:  '{GITHUB_BRANCH}'
+GITHUB_MD_PATH: '{GITHUB_MD_PATH}'
+GITHUB_TOKEN:   {'SET: ' + token_preview if token_set else 'NOT SET'}
+
+API URL: {url}
+API status: {api_status}
+API response (first 300 chars):
+{api_body}
+</pre>"""
+    return HTMLResponse(html)
+
+
 @app.get("/logout", response_class=RedirectResponse)
 def logout(request: Request):
     request.session.clear()
