@@ -474,15 +474,17 @@ def update_form(request: Request, filename: str = ""):
     if redirect:
         return redirect
 
-    files = github_list_files()
+    files, _ = github_list_files()
     location_options = []
     for f in files:
         content, _ = github_get_file(f["name"])
         fm, _ = parse_md(content)
+        addr = (fm.get("address", "") or "").split(",")[0].strip()
+        label = f"{fm.get('operator','')} | {fm.get('location_name', '')} — {addr} ({fm.get('market','')})"
         location_options.append({
-            "filename":      f["name"],
-            "label":         f"{fm.get('operator','')} — {fm.get('location_name', f['name'])} ({fm.get('market','')})",
-            "market":        fm.get("market", ""),
+            "filename": f["name"],
+            "label":    label,
+            "market":   fm.get("market", ""),
         })
     location_options.sort(key=lambda x: (x["market"], x["label"]))
 
