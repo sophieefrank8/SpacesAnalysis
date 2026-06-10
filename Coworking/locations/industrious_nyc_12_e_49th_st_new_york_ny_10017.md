@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Tower 49® by Industrious
-address: "12 E 49th St., New York, NY 10017"
-website: "https://www.industriousoffice.com/locations/tower-49-by-industrious"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 12 E 49th St., New York, NY 10017
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: '2026-06-10'
+location_name: Tower 49® by Industrious
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: ''
+website: https://www.industriousoffice.com/locations/tower-49-by-industrious
 ---
+
 # Industrious — Tower 49® by Industrious — NYC
 
 ## Overview
@@ -40,10 +41,13 @@ needs_review: False
 Private offices for teams of 1 to 20+, all move-in ready and fully furnished. Shared amenities include conference rooms, wellness rooms, phone booths, daily breakfast and snacks, unlimited printing, and dedicated on-site staff.
 
 ## Current Availability
+*Last updated: 2026-06-10*
 
-*Last updated: 2026-06-04 — No availability on file. Contact operator for current options.*
+| Office Type | Team Size | Price/mo | Notes | Touring Link |
+|-------------|-----------|----------|-------|--------------|
+| Window Office | 8 | $8,143 (12-month term, pricing expires in 5 days) | Designation: Office 421. 8 Seats Max Capacity | Includes 10 Memberships (with 24/7 access). Size: 290 sq ft. Meeting Room Allowance: 13 hours / mo. Included Amenities: Access to communal Space, daily breakfast, coffee, and snacks. Marked as 'Option 1' / 'Recommended'. | — |
 
 ## Outreach History
-
 | Date | Direction | Notes |
 |------|-----------|-------|
+| 2026-06-10 | Inbound | Office 421 was added to the availability list with a monthly rate of $8,143 for a 12-month term. |
