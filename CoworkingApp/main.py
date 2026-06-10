@@ -178,8 +178,7 @@ def replace_section(body: str, section: str, new_content: str) -> str:
 def availability_badge(fm: dict) -> str:
     """Return 'green', 'yellow', or 'red' based on last_updated."""
     last = str(fm.get("last_updated", ""))
-    if not last or last == str(date.today()):
-        # No updates yet -- check if it's the initial generation date
+    if not last:
         return "red"
     try:
         from datetime import datetime
@@ -217,15 +216,20 @@ def parse_email_with_gemini(email_text: str, current_availability: str) -> dict:
     if not client:
         return {"error": "GEMINI_API_KEY not set", "summary": "Could not parse email."}
 
-    prompt = f"""You are parsing an email response from a coworking operator about available office space.
+    prompt = f"""You are updating a coworking availability record based on a new email from the operator.
 
 Current availability on file:
 {current_availability or "No availability on file."}
 
-Email content:
+New email content:
 {email_text}
 
-Extract the following as JSON:
+Return the COMPLETE updated availability list as JSON. Rules:
+- Keep all suites currently on file UNLESS this email explicitly says a suite is no longer available, has been leased, or is removed.
+- Add any new suites mentioned in the email.
+- Update pricing or notes for any suite that is mentioned in the email.
+- If a suite is marked unavailable (leased, removed, etc.), set "available": false.
+
 {{
   "available_suites": [
     {{
@@ -246,7 +250,6 @@ Extract the following as JSON:
   "summary": "1-2 sentence plain English summary of what changed"
 }}
 
-If no suites are mentioned, return an empty available_suites array.
 Return valid JSON only, no explanation, no markdown fences."""
 
     try:
@@ -270,14 +273,19 @@ def parse_photo_with_gemini(image_bytes: bytes, mime_type: str, current_availabi
 
     from google.genai import types as genai_types
 
-    prompt = f"""You are analysing a photo of coworking office space availability information.
+    prompt = f"""You are updating a coworking availability record based on a photo of availability information.
 The photo may show an availability board, pricing sheet, floor plan, signage, or any image
 that contains details about available offices.
 
 Current availability on file:
 {current_availability or "No availability on file."}
 
-Extract the following as JSON:
+Return the COMPLETE updated availability list as JSON. Rules:
+- Keep all suites currently on file UNLESS the photo explicitly shows a suite is no longer available or has been leased.
+- Add any new suites visible in the photo.
+- Update pricing or notes for any suite visible in the photo.
+- If a suite is marked unavailable, set "available": false.
+
 {{
   "available_suites": [
     {{
