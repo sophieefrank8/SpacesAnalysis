@@ -320,6 +320,69 @@ Return valid JSON only, no explanation, no markdown fences."""
         return {"error": str(e), "summary": "Failed to analyse photo.", "available_suites": []}
 
 
+def parse_doc_with_gemini(doc_bytes: bytes, mime_type: str, location_name: str, address: str, current_availability: str) -> dict:
+    """
+    Call Gemini to extract availability from a PDF or PPTX proposal.
+    Returns same shape as parse_email_with_gemini.
+    """
+    client = gemini_client()
+    if not client:
+        return {"error": "GEMINI_API_KEY not set", "summary": "Could not analyse document."}
+
+    from google.genai import types as genai_types
+
+    prompt = f"""You are extracting coworking office availability from a proposal document.
+
+The location we are updating is: {location_name} ({address})
+
+Current availability on file for this location:
+{current_availability or "No availability on file."}
+
+The document may contain multiple locations. Focus ONLY on the location matching "{location_name}" / "{address}".
+
+Return the COMPLETE updated availability list as JSON. Rules:
+- Keep all suites currently on file UNLESS the document explicitly shows a suite is no longer available.
+- Add any new suites found in the document for this location.
+- Include deal premise/office number, desk count, monthly fee, term, and any notes.
+- If a suite is marked unavailable or leased, set "available": false.
+
+{{
+  "available_suites": [
+    {{
+      "office_type": "string (e.g. Private Office 5-105, 4 desks)",
+      "team_size": "string (e.g. '4')",
+      "monthly_price": "integer or null",
+      "price_note": "string or null (e.g. '12-month term, 3.5% annual escalation')",
+      "touring_link": null,
+      "available": true,
+      "notes": "string or null (include setup fee, retainer, floor, office number)"
+    }}
+  ],
+  "general_notes": "string or null",
+  "contact_update": {{
+    "name": "string or null",
+    "email": "string or null"
+  }},
+  "summary": "1-2 sentence plain English summary of what was found for this location"
+}}
+
+If no information is found for this location, return an empty available_suites array.
+Return valid JSON only, no explanation, no markdown fences."""
+
+    try:
+        doc_part = genai_types.Part.from_bytes(data=doc_bytes, mime_type=mime_type)
+        resp = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=[prompt, doc_part],
+        )
+        text = resp.text.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1].rsplit("```", 1)[0]
+        return json.loads(text)
+    except Exception as e:
+        return {"error": str(e), "summary": "Failed to analyse document.", "available_suites": []}
+
+
 def build_availability_markdown(parsed: dict) -> str:
     """Convert Gemini-parsed result into a markdown availability section."""
     today = date.today().isoformat()
@@ -644,6 +707,59 @@ async def update_photo_preview(
         "user":          current_user(request),
         "filename":      filename,
         "location_name": fm.get("location_name", filename),
+        "market":        fm.get("market", ""),
+        "operator":      fm.get("operator", ""),
+        "summary":       parsed.get("summary", ""),
+        "current_avail": current_avail or "*No availability on file.*",
+        "new_avail":     new_avail_md,
+        "suites":        parsed.get("available_suites", []),
+        "error":         parsed.get("error", ""),
+    })
+
+
+@app.post("/update/doc-preview", response_class=HTMLResponse)
+async def update_doc_preview(
+    request: Request,
+    filename: str = Form(...),
+    doc: UploadFile = File(...),
+):
+    redirect = require_auth(request)
+    if redirect:
+        return redirect
+
+    if not filename:
+        return RedirectResponse("/update?error=no_input", status_code=303)
+
+    content, sha = github_get_file(filename)
+    if not content:
+        return HTMLResponse("<h1>File not found</h1>", status_code=404)
+
+    fm, body = parse_md(content)
+    current_avail = extract_section(body, "Current Availability")
+
+    doc_bytes = await doc.read()
+    mime_type = doc.content_type or "application/pdf"
+
+    location_name = fm.get("location_name", filename)
+    address = fm.get("address", "")
+
+    parsed = parse_doc_with_gemini(doc_bytes, mime_type, location_name, address, current_avail)
+    new_avail_md = build_availability_markdown(parsed)
+
+    request.session["pending_update"] = {
+        "filename":      filename,
+        "sha":           sha,
+        "parsed":        parsed,
+        "new_avail_md":  new_avail_md,
+        "current_avail": current_avail,
+        "email_snippet": f"[Document upload: {doc.filename}]",
+    }
+
+    return templates.TemplateResponse("preview.html", {
+        "request":       request,
+        "user":          current_user(request),
+        "filename":      filename,
+        "location_name": location_name,
         "market":        fm.get("market", ""),
         "operator":      fm.get("operator", ""),
         "summary":       parsed.get("summary", ""),

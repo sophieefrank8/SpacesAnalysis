@@ -27,6 +27,10 @@
       style="padding:8px 20px; font-size:14px; font-weight:600; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; color:#6b7280;">
       Upload Photo
     </button>
+    <button id="tab-doc" onclick="switchTab('doc')"
+      style="padding:8px 20px; font-size:14px; font-weight:600; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; color:#6b7280;">
+      Upload PDF / PPT
+    </button>
   </div>
 
   <!-- Location selector (shared) -->
@@ -76,36 +80,50 @@
     </form>
   </div>
 
+  <!-- Doc tab -->
+  <div id="pane-doc" style="display:none;">
+    <form method="post" action="/update/doc-preview" enctype="multipart/form-data" id="form-doc">
+      <input type="hidden" name="filename" id="doc-filename">
+      <div style="margin-bottom:20px;">
+        <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Proposal PDF or PPT</label>
+        <input type="file" name="doc" accept=".pdf,.ppt,.pptx,application/pdf,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation" required
+          style="width:100%; padding:9px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:14px; background:#fff;">
+        <div style="font-size:12px; color:#9ca3af; margin-top:4px;">Upload a WeWork/Industrious/Spaces proposal PDF or PPT. Gemini will extract availability for the selected location.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Extract from doc →</button>
+      <a href="/locations" class="btn btn-secondary" style="margin-left:8px;">Cancel</a>
+    </form>
+  </div>
+
 </div>
 
 <script>
+const TABS = ['email', 'photo', 'doc'];
 function switchTab(tab) {
-  document.getElementById('pane-email').style.display = tab === 'email' ? '' : 'none';
-  document.getElementById('pane-photo').style.display = tab === 'photo' ? '' : 'none';
-  document.getElementById('tab-email').style.color = tab === 'email' ? '#F05A28' : '#6b7280';
-  document.getElementById('tab-photo').style.color = tab === 'photo' ? '#F05A28' : '#6b7280';
-  document.getElementById('tab-email').style.borderBottomColor = tab === 'email' ? '#F05A28' : 'transparent';
-  document.getElementById('tab-photo').style.borderBottomColor = tab === 'photo' ? '#F05A28' : 'transparent';
+  TABS.forEach(t => {
+    document.getElementById('pane-' + t).style.display = t === tab ? '' : 'none';
+    document.getElementById('tab-' + t).style.color = t === tab ? '#F05A28' : '#6b7280';
+    document.getElementById('tab-' + t).style.borderBottomColor = t === tab ? '#F05A28' : 'transparent';
+  });
 }
 
-// Sync location dropdown to both hidden inputs before submit
-document.getElementById('location-select').addEventListener('change', function() {
-  document.getElementById('email-filename').value = this.value;
-  document.getElementById('photo-filename').value = this.value;
+function syncFilenames() {
+  const val = document.getElementById('location-select').value;
+  TABS.forEach(t => {
+    const el = document.getElementById(t + '-filename');
+    if (el) el.value = val;
+  });
+}
+
+document.getElementById('location-select').addEventListener('change', syncFilenames);
+syncFilenames();
+
+['form-email', 'form-photo', 'form-doc'].forEach(id => {
+  document.getElementById(id).addEventListener('submit', syncFilenames);
 });
 
-// Set initial value
-document.getElementById('email-filename').value = document.getElementById('location-select').value;
-document.getElementById('photo-filename').value = document.getElementById('location-select').value;
-
-// Override email form submit to sync filename
-document.getElementById('form-email').addEventListener('submit', function() {
-  document.getElementById('email-filename').value = document.getElementById('location-select').value;
-});
-document.getElementById('form-photo').addEventListener('submit', function() {
-  document.getElementById('photo-filename').value = document.getElementById('location-select').value;
-});
-
-{% if request.query_params.get('tab') == 'photo' %}switchTab('photo');{% endif %}
+{% if request.query_params.get('tab') == 'photo' %}switchTab('photo');
+{% elif request.query_params.get('tab') == 'doc' %}switchTab('doc');
+{% endif %}
 </script>
 {% endblock %}
