@@ -4,7 +4,7 @@ contact_email: jcajigas@industriousoffice.com
 contact_name: Julissa Cajigas
 contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-last_updated: 2026-06-04
+last_updated: '2026-06-10'
 location_name: Brooklyn - 594 Dean
 market: NYC
 monthly_price_from: ''
@@ -41,10 +41,13 @@ website: https://www.industriousoffice.com/locations/brooklyn-594-dean
 *No amenity information on file.*
 
 ## Current Availability
+*Last updated: 2026-06-10*
 
-*Last updated: 2026-06-04 — No availability on file. Contact operator for current options.*
+| Office Type | Team Size | Price/mo | Notes | Touring Link |
+|-------------|-----------|----------|-------|--------------|
+| Window Office, 4 seats | 4 | $6,024 (12-Month Term; Pricing expires in 5 days; Security deposit required) | Office 39. Located at 594 Dean Street, Brooklyn, NY 11238 (Brooklyn - 594 Dean). Size: 192 sq ft. Includes 6 memberships (with 24/7 access) and 9 hours/mo meeting room allowance. Key amenities: Dog-Friendly, Outdoor Space. Marked as "Recommended". Popular location — Few offices remaining; this is the Last 4-person window office here. | — |
 
 ## Outreach History
-
 | Date | Direction | Notes |
 |------|-----------|-------|
+| 2026-06-10 | Inbound | Previously, there was no availability on file. Now, a 4-person window office (Office 39) at Brooklyn - 594 Dean is available for $6,024/month, though pricing expires in 5 days. |
