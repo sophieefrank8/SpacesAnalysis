@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: SF
-location_name: Embarcadero
-address: "1700 Montgomery St., San Francisco, CA 94111"
-website: "https://www.industriousoffice.com/locations/embarcadero"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1700 Montgomery St., San Francisco, CA 94111
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: '2026-06-10'
+location_name: Embarcadero
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: ''
+website: https://www.industriousoffice.com/locations/embarcadero
 ---
+
 # Industrious — Embarcadero — SF
 
 ## Overview
@@ -40,10 +41,13 @@ needs_review: False
 I am sorry, but the provided page content consists entirely of cookie consent details and does not contain any information about the amenities, office types, or building features for the Industrious at Embarcadero location.
 
 ## Current Availability
+*Last updated: 2026-06-10*
 
-*Last updated: 2026-06-04 — No availability on file. Contact operator for current options.*
+| Office Type | Team Size | Price/mo | Notes | Touring Link |
+|-------------|-----------|----------|-------|--------------|
+| Office 9 | 4 | $2,897 (Pricing expires in 5 days (+ Security deposit)) | Standard pipeline tracking option. Includes 6 Memberships (with 24/7 access). Meeting Room Allowance: 9 hours / mo. Key Location Amenities: Dog-Friendly, 24/7 Security. Size: 193 sq ft. | — |
 
 ## Outreach History
-
 | Date | Direction | Notes |
 |------|-----------|-------|
+| 2026-06-10 | Inbound | The coworking operator has updated their availability to include one new office suite, Office 9, which accommodates up to 4 seats. |
