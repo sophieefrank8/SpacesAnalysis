@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Bryant Park on Broadway
-address: "1411 Broadway, New York, NY 10018"
-website: "https://www.industriousoffice.com/locations/bryant-park-on-broadway"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1411 Broadway, New York, NY 10018
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Bryant Park on Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/5395dec0-33c4-4857-bccb-8be43e7fb8c2
+website: https://www.industriousoffice.com/locations/bryant-park-on-broadway
 ---
+
 # Industrious — Bryant Park on Broadway — NYC
 
 ## Overview

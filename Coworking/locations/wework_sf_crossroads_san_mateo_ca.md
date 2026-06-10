@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: Crossroads
-address: "Crossroads, San Mateo, CA"
-website: "https://www.wework.com/buildings/crossroads--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: Crossroads, San Mateo, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: Crossroads
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/005703cf-9dac-42bf-bf03-54991fe7a1e0
+website: https://www.wework.com/buildings/crossroads--sf-bay-area--CA
 ---
+
 # WeWork — Crossroads — SF
 
 ## Overview

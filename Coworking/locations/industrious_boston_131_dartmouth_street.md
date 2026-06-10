@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Copley
-address: "131 Dartmouth Street, Boston, MA 02116"
-website: "https://www.industriousoffice.com/locations/copley"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 131 Dartmouth Street, Boston, MA 02116
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Copley
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/556fa897-a64a-4859-9a8c-18be4d9edfd0
+website: https://www.industriousoffice.com/locations/copley
 ---
+
 # Industrious — Copley — Boston
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: 200 Portland St
-address: "200 Portland St, Boston, MA"
-website: "https://www.wework.com/buildings/200-portland-st--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: 200 Portland St, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: 200 Portland St
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/018957e7-7ffd-4271-b7df-625e4a246641
+website: https://www.wework.com/buildings/200-portland-st--boston--MA
 ---
+
 # WeWork — 200 Portland St — Boston
 
 ## Overview

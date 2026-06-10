@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 245 5th Ave.
-address: "245 5th Ave., New York, NY"
-website: "https://www.wework.com/buildings/10-york-rd--london"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 245 5th Ave., New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 245 5th Ave.
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/a6f782a8-8c46-456a-8aa6-7205a2994395
+website: https://www.wework.com/buildings/10-york-rd--london
 ---
+
 # WeWork — 245 5th Ave. — NYC
 
 ## Overview

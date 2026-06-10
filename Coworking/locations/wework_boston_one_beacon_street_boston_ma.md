@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: One Beacon Street
-address: "One Beacon Street, Boston, MA"
-website: "https://www.wework.com/buildings/one-beacon-street--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: One Beacon Street, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: One Beacon Street
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/61eb7272-9106-4d93-b64b-3c5fa13fb86f
+website: https://www.wework.com/buildings/one-beacon-street--boston--MA
 ---
+
 # WeWork — One Beacon Street — Boston
 
 ## Overview

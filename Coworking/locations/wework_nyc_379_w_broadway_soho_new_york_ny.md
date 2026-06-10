@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 379 W Broadway
-address: "379 W Broadway, SoHo, New York, NY"
-website: "https://www.wework.com/buildings/1450-broadway--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 379 W Broadway, SoHo, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 379 W Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/bf3c2143-8d00-458a-bce6-07a7280235ef
+website: https://www.wework.com/buildings/1450-broadway--new-york-city--NY
 ---
+
 # WeWork — 379 W Broadway — NYC
 
 ## Overview

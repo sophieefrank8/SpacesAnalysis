@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 100 Park Avenue
-address: "100 Park Avenue 16th Floor, New York City, NY, 10017, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 100 Park Avenue 16th Floor, New York City, NY, 10017, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 100 Park Avenue
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/4b2e0548-65d2-476a-9572-8343db23def5
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 100 Park Avenue — NYC
 
 ## Overview

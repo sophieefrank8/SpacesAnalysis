@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 186 Lincoln Street
-address: "186 Lincoln Street 1st floor, Boston, MA, 02111-2403, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 186 Lincoln Street 1st floor, Boston, MA, 02111-2403, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 186 Lincoln Street
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/4df0137f-9422-408a-a659-48d73aa9e7b8
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 186 Lincoln Street — Boston
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 8 W 126th St
-address: "8 W 126th St, Harlem, New York, NY"
-website: "https://www.wework.com/buildings/10-york-rd--london"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 8 W 126th St, Harlem, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 8 W 126th St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/42066694-720a-4d55-b0be-efbcbb062f3a
+website: https://www.wework.com/buildings/10-york-rd--london
 ---
+
 # WeWork — 8 W 126th St — NYC
 
 ## Overview

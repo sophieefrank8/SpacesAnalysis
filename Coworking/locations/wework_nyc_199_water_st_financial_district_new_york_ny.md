@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 199 Water St
-address: "199 Water St, Financial District, New York, NY"
-website: "https://www.wework.com/buildings/199-water-st--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 199 Water St, Financial District, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 199 Water St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/e0b89683-0224-45ce-abe5-50c3edc95a34
+website: https://www.wework.com/buildings/199-water-st--new-york-city--NY
 ---
+
 # WeWork — 199 Water St — NYC
 
 ## Overview

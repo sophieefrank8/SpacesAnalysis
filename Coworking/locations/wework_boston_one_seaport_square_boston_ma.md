@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: One Seaport Square
-address: "One Seaport Square, Boston, MA"
-website: "https://www.wework.com/buildings/one-seaport-square--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: One Seaport Square, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: One Seaport Square
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/company/53d01740-a2a0-47f4-bfd8-3e1afe76ea59/space/4662184c-f329-48b3-a27a-bca446f94edb
+website: https://www.wework.com/buildings/one-seaport-square--boston--MA
 ---
+
 # WeWork — One Seaport Square — Boston
 
 ## Overview

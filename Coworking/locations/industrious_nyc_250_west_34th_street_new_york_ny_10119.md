@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: WorkLife Office Suites by Industrious
-address: "250 West 34th Street, New York, NY 10119"
-website: "https://www.industriousoffice.com/locations/worklife-office-suites-by-industrious"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 250 West 34th Street, New York, NY 10119
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: WorkLife Office Suites by Industrious
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/479727cb-d3c1-4419-8325-68659cfde427
+website: https://www.industriousoffice.com/locations/worklife-office-suites-by-industrious
 ---
+
 # Industrious — WorkLife Office Suites by Industrious — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 148 Lafayette St
-address: "148 Lafayette St, SoHo, New York, NY"
-website: "https://www.wework.com/buildings/148-lafayette-st--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 148 Lafayette St, SoHo, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 148 Lafayette St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/ea07b7de-22c5-4e24-b086-1cf9907c562e
+website: https://www.wework.com/buildings/148-lafayette-st--new-york-city--NY
 ---
+
 # WeWork — 148 Lafayette St — NYC
 
 ## Overview

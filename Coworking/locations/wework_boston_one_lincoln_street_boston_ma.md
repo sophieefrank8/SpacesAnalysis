@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: One Lincoln Street
-address: "One Lincoln Street, Boston, MA"
-website: "https://www.wework.com/buildings/one-lincoln-street--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: One Lincoln Street, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: One Lincoln Street
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/80ab7a9c-51a0-4ecf-8651-8a4a54c02761
+website: https://www.wework.com/buildings/one-lincoln-street--boston--MA
 ---
+
 # WeWork — One Lincoln Street — Boston
 
 ## Overview

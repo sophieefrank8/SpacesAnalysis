@@ -1,18 +1,20 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 1325 Avenue of the Americas
-address: "1325 Avenue of the Americas 27th and 28th Floors, New York City, NY, 10019, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 1325 Avenue of the Americas 27th and 28th Floors, New York City, NY, 10019,
+  USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 1325 Avenue of the Americas
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/ef28cce6-9ff2-4f3d-9f54-8eee8a4514f7
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 1325 Avenue of the Americas — NYC
 
 ## Overview

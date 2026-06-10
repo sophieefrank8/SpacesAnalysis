@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Equinox Hudson Yards
-address: "31 Hudson Yards, New York, NY 10001"
-website: "https://www.industriousoffice.com/locations/equinox-hudson-yards"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 31 Hudson Yards, New York, NY 10001
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Equinox Hudson Yards
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/a4b5bc67-fb27-4f4a-9e86-506392e6dc4c
+website: https://www.industriousoffice.com/locations/equinox-hudson-yards
 ---
+
 # Industrious — Equinox Hudson Yards — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 2120 University Ave
-address: "2120 University Ave, Berkeley, CA"
-website: "https://www.wework.com/buildings/2120-university-ave--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 2120 University Ave, Berkeley, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 2120 University Ave
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/84ca53e9-cec9-4df9-9f57-d4ad04d629a7
+website: https://www.wework.com/buildings/2120-university-ave--sf-bay-area--CA
 ---
+
 # WeWork — 2120 University Ave — SF
 
 ## Overview

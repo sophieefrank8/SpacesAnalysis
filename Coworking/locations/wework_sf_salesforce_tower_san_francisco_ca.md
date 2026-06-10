@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: Salesforce Tower
-address: "Salesforce Tower, San Francisco, CA"
-website: "https://www.wework.com/buildings/salesforce-tower--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: Salesforce Tower, San Francisco, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: Salesforce Tower
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/ca3df5a6-ca5e-4005-be6e-1c76160e8cc3
+website: https://www.wework.com/buildings/salesforce-tower--sf-bay-area--CA
 ---
+
 # WeWork — Salesforce Tower — SF
 
 ## Overview

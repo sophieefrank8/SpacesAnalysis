@@ -10,7 +10,7 @@ market: SF
 monthly_price_from: ''
 needs_review: false
 operator: Industrious
-tandem_listing: ''
+tandem_listing: https://tandemspace.com/office/afdc0a03-78bd-4cd6-a0fe-3744fe8e823a
 website: https://www.industriousoffice.com/locations/embarcadero
 ---
 

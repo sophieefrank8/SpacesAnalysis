@@ -3,44 +3,109 @@
 {% block content %}
 
 <h1>Update Availability</h1>
-<p class="subtitle">Paste an operator's email response and we'll parse it automatically.</p>
+<p class="subtitle">Paste an email response or upload a photo — we'll parse it automatically.</p>
 
 {% if request.query_params.get('error') %}
 <div class="error-msg">
   {% set err = request.query_params.get('error') %}
   {% if err == 'github_failed' %}Could not save to GitHub. Check that GITHUB_TOKEN is set and has write access.
   {% elif err == 'session_expired' %}Your session expired. Please try again.
+  {% elif err == 'no_input' %}Please paste an email or upload a photo.
   {% else %}An error occurred. Please try again.{% endif %}
 </div>
 {% endif %}
 
 <div class="card" style="max-width:680px;">
-  <form method="post" action="/update/preview">
-    <div style="margin-bottom:16px;">
-      <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Location</label>
-      <select name="filename" required style="width:100%; padding:9px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:14px;">
-        <option value="">Select a location…</option>
-        {% set current_market = "" %}
-        {% for loc in locations %}
-          {% if loc.market != current_market %}
-            {% if current_market %}</optgroup>{% endif %}
-            <optgroup label="{{ loc.market }}">
-            {% set current_market = loc.market %}
-          {% endif %}
-          <option value="{{ loc.filename }}" {% if selected == loc.filename %}selected{% endif %}>{{ loc.label }}</option>
-        {% endfor %}
-        {% if locations %}</optgroup>{% endif %}
-      </select>
-    </div>
 
-    <div style="margin-bottom:20px;">
-      <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Operator email response</label>
-      <textarea name="email_text" rows="10" placeholder="Paste the full email from the operator here…" required></textarea>
-      <div style="font-size:12px; color:#9ca3af; margin-top:4px;">Gemini will extract available suites, pricing, touring links, and any notes.</div>
-    </div>
+  <!-- Tab switcher -->
+  <div style="display:flex; gap:0; margin-bottom:20px; border-bottom:2px solid #e5e7eb;">
+    <button id="tab-email" onclick="switchTab('email')"
+      style="padding:8px 20px; font-size:14px; font-weight:600; border:none; background:none; cursor:pointer; border-bottom:2px solid #F05A28; margin-bottom:-2px; color:#F05A28;">
+      Paste Email
+    </button>
+    <button id="tab-photo" onclick="switchTab('photo')"
+      style="padding:8px 20px; font-size:14px; font-weight:600; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-2px; color:#6b7280;">
+      Upload Photo
+    </button>
+  </div>
 
-    <button type="submit" class="btn btn-primary">Parse email →</button>
-    <a href="/locations" class="btn btn-secondary" style="margin-left:8px;">Cancel</a>
-  </form>
+  <!-- Location selector (shared) -->
+  <div style="margin-bottom:16px;">
+    <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Location</label>
+    <select id="location-select" name="filename" required style="width:100%; padding:9px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:14px;">
+      <option value="">Select a location…</option>
+      {% set current_market = "" %}
+      {% for loc in locations %}
+        {% if loc.market != current_market %}
+          {% if current_market %}</optgroup>{% endif %}
+          <optgroup label="{{ loc.market }}">
+          {% set current_market = loc.market %}
+        {% endif %}
+        <option value="{{ loc.filename }}" {% if selected == loc.filename %}selected{% endif %}>{{ loc.label }}</option>
+      {% endfor %}
+      {% if locations %}</optgroup>{% endif %}
+    </select>
+  </div>
+
+  <!-- Email tab -->
+  <div id="pane-email">
+    <form method="post" action="/update/preview" id="form-email">
+      <input type="hidden" name="filename" id="email-filename">
+      <div style="margin-bottom:20px;">
+        <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Operator email response</label>
+        <textarea name="email_text" rows="10" placeholder="Paste the full email from the operator here…" required></textarea>
+        <div style="font-size:12px; color:#9ca3af; margin-top:4px;">Gemini will extract available suites, pricing, touring links, and any notes.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Parse email →</button>
+      <a href="/locations" class="btn btn-secondary" style="margin-left:8px;">Cancel</a>
+    </form>
+  </div>
+
+  <!-- Photo tab -->
+  <div id="pane-photo" style="display:none;">
+    <form method="post" action="/update/photo-preview" enctype="multipart/form-data" id="form-photo">
+      <input type="hidden" name="filename" id="photo-filename">
+      <div style="margin-bottom:20px;">
+        <label style="font-size:14px; font-weight:600; display:block; margin-bottom:6px;">Photo of availability info</label>
+        <input type="file" name="photo" accept="image/*" required
+          style="width:100%; padding:9px 12px; border:1px solid #d1d5db; border-radius:6px; font-size:14px; background:#fff;">
+        <div style="font-size:12px; color:#9ca3af; margin-top:4px;">Upload a photo of an availability board, pricing sheet, or any image showing suite info. Gemini will extract the details.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Analyse photo →</button>
+      <a href="/locations" class="btn btn-secondary" style="margin-left:8px;">Cancel</a>
+    </form>
+  </div>
+
 </div>
+
+<script>
+function switchTab(tab) {
+  document.getElementById('pane-email').style.display = tab === 'email' ? '' : 'none';
+  document.getElementById('pane-photo').style.display = tab === 'photo' ? '' : 'none';
+  document.getElementById('tab-email').style.color = tab === 'email' ? '#F05A28' : '#6b7280';
+  document.getElementById('tab-photo').style.color = tab === 'photo' ? '#F05A28' : '#6b7280';
+  document.getElementById('tab-email').style.borderBottomColor = tab === 'email' ? '#F05A28' : 'transparent';
+  document.getElementById('tab-photo').style.borderBottomColor = tab === 'photo' ? '#F05A28' : 'transparent';
+}
+
+// Sync location dropdown to both hidden inputs before submit
+document.getElementById('location-select').addEventListener('change', function() {
+  document.getElementById('email-filename').value = this.value;
+  document.getElementById('photo-filename').value = this.value;
+});
+
+// Set initial value
+document.getElementById('email-filename').value = document.getElementById('location-select').value;
+document.getElementById('photo-filename').value = document.getElementById('location-select').value;
+
+// Override email form submit to sync filename
+document.getElementById('form-email').addEventListener('submit', function() {
+  document.getElementById('email-filename').value = document.getElementById('location-select').value;
+});
+document.getElementById('form-photo').addEventListener('submit', function() {
+  document.getElementById('photo-filename').value = document.getElementById('location-select').value;
+});
+
+{% if request.query_params.get('tab') == 'photo' %}switchTab('photo');{% endif %}
+</script>
 {% endblock %}

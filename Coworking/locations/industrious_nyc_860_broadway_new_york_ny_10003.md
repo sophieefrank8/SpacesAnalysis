@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Union Square on Broadway
-address: "860 Broadway, New York, NY 10003"
-website: "https://www.industriousoffice.com/locations/union-square-on-broadway"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 860 Broadway, New York, NY 10003
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Union Square on Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/6cf6a3b2-23a1-418b-a2b7-9b89af16a644
+website: https://www.industriousoffice.com/locations/union-square-on-broadway
 ---
+
 # Industrious — Union Square on Broadway — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Seaport
-address: "22 Boston Wharf Road, Boston, MA 02210"
-website: "https://www.industriousoffice.com/locations/seaport"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 22 Boston Wharf Road, Boston, MA 02210
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Seaport
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/ca2fae1e-99b6-4530-8ada-9824db090fd0
+website: https://www.industriousoffice.com/locations/seaport
 ---
+
 # Industrious — Seaport — Boston
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 1177 Avenue of the Americas
-address: "1177 6th Avenue Tower, 5th Floor, New York City, NY, 10036, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 1177 6th Avenue Tower, 5th Floor, New York City, NY, 10036, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 1177 Avenue of the Americas
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/b1961051-3f61-484c-a6bc-dd17eac81aad
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 1177 Avenue of the Americas — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 195 Montague St
-address: "195 Montague St, Dumbo, Brooklyn, NY"
-website: "https://www.wework.com/buildings/195-montague-st--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 195 Montague St, Dumbo, Brooklyn, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 195 Montague St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/308e019b-a661-4c15-a66a-897693643ca3
+website: https://www.wework.com/buildings/195-montague-st--new-york-city--NY
 ---
+
 # WeWork — 195 Montague St — NYC
 
 ## Overview

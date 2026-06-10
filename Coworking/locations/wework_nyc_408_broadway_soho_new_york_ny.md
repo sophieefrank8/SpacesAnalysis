@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 408 Broadway
-address: "408 Broadway, SoHo, New York, NY"
-website: "https://www.wework.com/buildings/1450-broadway--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 408 Broadway, SoHo, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 408 Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/89245294-71df-4c2b-be83-92fc68b0174a
+website: https://www.wework.com/buildings/1450-broadway--new-york-city--NY
 ---
+
 # WeWork — 408 Broadway — NYC
 
 ## Overview

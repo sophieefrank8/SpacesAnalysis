@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: West 30th
-address: "251 West 30th Street, New York, NY 10001"
-website: "https://www.industriousoffice.com/locations/west-30th"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 251 West 30th Street, New York, NY 10001
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: West 30th
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/3e30467a-e71b-481a-90a7-aee7d1d3be9a
+website: https://www.industriousoffice.com/locations/west-30th
 ---
+
 # Industrious — West 30th — NYC
 
 ## Overview

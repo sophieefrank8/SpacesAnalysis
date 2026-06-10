@@ -33,7 +33,7 @@ import markdown
 import requests
 import yaml
 from dotenv import load_dotenv
-from fastapi import FastAPI, Form, Request
+from fastapi import FastAPI, File, Form, Request, UploadFile
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -257,6 +257,59 @@ Return valid JSON only, no explanation, no markdown fences."""
         return json.loads(text)
     except Exception as e:
         return {"error": str(e), "summary": "Failed to parse email.", "available_suites": []}
+
+
+def parse_photo_with_gemini(image_bytes: bytes, mime_type: str, current_availability: str) -> dict:
+    """
+    Call Gemini Vision to extract availability info from an uploaded photo.
+    Returns same shape as parse_email_with_gemini.
+    """
+    client = gemini_client()
+    if not client:
+        return {"error": "GEMINI_API_KEY not set", "summary": "Could not analyse photo."}
+
+    from google.genai import types as genai_types
+
+    prompt = f"""You are analysing a photo of coworking office space availability information.
+The photo may show an availability board, pricing sheet, floor plan, signage, or any image
+that contains details about available offices.
+
+Current availability on file:
+{current_availability or "No availability on file."}
+
+Extract the following as JSON:
+{{
+  "available_suites": [
+    {{
+      "office_type": "string (e.g. Interior Office, 4 seats)",
+      "team_size": "string (e.g. '4' or '3-5')",
+      "monthly_price": "integer or null",
+      "price_note": "string or null",
+      "touring_link": null,
+      "available": true,
+      "notes": "string or null"
+    }}
+  ],
+  "general_notes": "string or null (any written content visible in the photo relevant to availability)",
+  "contact_update": {{"name": null, "email": null}},
+  "summary": "1-2 sentence plain English summary of what the photo shows"
+}}
+
+If the photo contains no availability information, return an empty available_suites array and describe what you see in summary.
+Return valid JSON only, no explanation, no markdown fences."""
+
+    try:
+        image_part = genai_types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
+        resp = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=[prompt, image_part],
+        )
+        text = resp.text.strip()
+        if text.startswith("```"):
+            text = text.split("\n", 1)[1].rsplit("```", 1)[0]
+        return json.loads(text)
+    except Exception as e:
+        return {"error": str(e), "summary": "Failed to analyse photo.", "available_suites": []}
 
 
 def build_availability_markdown(parsed: dict) -> str:
@@ -526,6 +579,56 @@ def update_preview(
         "new_avail_md":    new_avail_md,
         "current_avail":   current_avail,
         "email_snippet":   email_text[:300],
+    }
+
+    return templates.TemplateResponse("preview.html", {
+        "request":       request,
+        "user":          current_user(request),
+        "filename":      filename,
+        "location_name": fm.get("location_name", filename),
+        "market":        fm.get("market", ""),
+        "operator":      fm.get("operator", ""),
+        "summary":       parsed.get("summary", ""),
+        "current_avail": current_avail or "*No availability on file.*",
+        "new_avail":     new_avail_md,
+        "suites":        parsed.get("available_suites", []),
+        "error":         parsed.get("error", ""),
+    })
+
+
+@app.post("/update/photo-preview", response_class=HTMLResponse)
+async def update_photo_preview(
+    request: Request,
+    filename: str = Form(...),
+    photo: UploadFile = File(...),
+):
+    redirect = require_auth(request)
+    if redirect:
+        return redirect
+
+    if not filename:
+        return RedirectResponse("/update?error=no_input", status_code=303)
+
+    content, sha = github_get_file(filename)
+    if not content:
+        return HTMLResponse("<h1>File not found</h1>", status_code=404)
+
+    fm, body = parse_md(content)
+    current_avail = extract_section(body, "Current Availability")
+
+    image_bytes = await photo.read()
+    mime_type = photo.content_type or "image/jpeg"
+
+    parsed = parse_photo_with_gemini(image_bytes, mime_type, current_avail)
+    new_avail_md = build_availability_markdown(parsed)
+
+    request.session["pending_update"] = {
+        "filename":      filename,
+        "sha":           sha,
+        "parsed":        parsed,
+        "new_avail_md":  new_avail_md,
+        "current_avail": current_avail,
+        "email_snippet": f"[Photo upload: {photo.filename}]",
     }
 
     return templates.TemplateResponse("preview.html", {

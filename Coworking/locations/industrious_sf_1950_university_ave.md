@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: SF
-location_name: University Place East Palo Alto
-address: "1950 University Ave, East Palo Alto, CA 94303"
-website: "https://www.industriousoffice.com/locations/university-place-east-palo-alto"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1950 University Ave, East Palo Alto, CA 94303
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: University Place East Palo Alto
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/f94192eb-682a-4c7b-a316-58c0987a74ab
+website: https://www.industriousoffice.com/locations/university-place-east-palo-alto
 ---
+
 # Industrious — University Place East Palo Alto — SF
 
 ## Overview

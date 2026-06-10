@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: SF
-location_name: 1390 Market Street
-address: "1390 Market Street Civic Center, Suite 200, San Francisco, CA, 94102, USA"
-website: "https://www.spacesworks.com/en/us/california/san-francisco/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 1390 Market Street Civic Center, Suite 200, San Francisco, CA, 94102, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 1390 Market Street
+market: SF
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/4ce609e8-f5b6-4f3d-800b-aa2bdef0ab87
+website: https://www.spacesworks.com/en/us/california/san-francisco/coworking
 ---
+
 # Spaces — 1390 Market Street — SF
 
 ## Overview

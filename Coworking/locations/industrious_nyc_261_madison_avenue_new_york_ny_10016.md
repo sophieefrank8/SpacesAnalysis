@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: 261 Madison Ave
-address: "261 Madison Avenue, New York, NY 10016"
-website: "https://www.industriousoffice.com/locations/261-madison-ave"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 261 Madison Avenue, New York, NY 10016
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: 261 Madison Ave
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/5c56570b-c44e-4cfa-b780-b99651e5a55e
+website: https://www.industriousoffice.com/locations/261-madison-ave
 ---
+
 # Industrious — 261 Madison Ave — NYC
 
 ## Overview

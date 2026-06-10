@@ -10,7 +10,7 @@ market: SF
 monthly_price_from: ''
 needs_review: false
 operator: Industrious
-tandem_listing: ''
+tandem_listing: https://tandemspace.com/office/0ff6a099-15ce-4853-9e9c-8b063d32669d
 website: https://www.industriousoffice.com/locations/san-francisco-financial-district
 ---
 

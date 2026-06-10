@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 250 Broadway
-address: "250 Broadway, New York, NY"
-website: "https://www.wework.com/buildings/1450-broadway--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 250 Broadway, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 250 Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/370a0636-cebc-4836-b0d5-225ebc51c67b
+website: https://www.wework.com/buildings/1450-broadway--new-york-city--NY
 ---
+
 # WeWork — 250 Broadway — NYC
 
 ## Overview

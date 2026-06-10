@@ -1,18 +1,20 @@
 ---
-operator: Spaces
-market: SF
-location_name: 580 California Street
-address: "580 California Street Financial District, 12th and 16th Floor, San Francisco, CA, 94104, USA"
-website: "https://www.spacesworks.com/en/us/california/san-francisco/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 580 California Street Financial District, 12th and 16th Floor, San Francisco,
+  CA, 94104, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 580 California Street
+market: SF
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/fe30ecdb-1368-4d60-8891-1c1779fc317b
+website: https://www.spacesworks.com/en/us/california/san-francisco/coworking
 ---
+
 # Spaces — 580 California Street — SF
 
 ## Overview

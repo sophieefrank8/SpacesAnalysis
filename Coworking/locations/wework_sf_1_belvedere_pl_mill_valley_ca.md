@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 1 Belvedere Pl
-address: "1 Belvedere Pl, Mill Valley, CA"
-website: "https://www.wework.com/buildings/1-belvedere-pl--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 1 Belvedere Pl, Mill Valley, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 1 Belvedere Pl
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/1e66473a-6fd8-4e6b-b445-55504d026e57
+website: https://www.wework.com/buildings/1-belvedere-pl--sf-bay-area--CA
 ---
+
 # WeWork — 1 Belvedere Pl — SF
 
 ## Overview

@@ -10,7 +10,7 @@ market: SF
 monthly_price_from: ''
 needs_review: false
 operator: Industrious
-tandem_listing: ''
+tandem_listing: https://tandemspace.com/office/ca86b88f-bb86-47d8-9854-395eb64056e0
 website: https://www.industriousoffice.com/locations/indy-by-industrious-california-street
 ---
 

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 511 5th Ave
-address: "511 5th Ave, New York, NY"
-website: "https://www.wework.com/buildings/10-york-rd--london"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 511 5th Ave, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 511 5th Ave
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/ce0cb6fc-f009-4c06-9bfa-04d87a4ec689
+website: https://www.wework.com/buildings/10-york-rd--london
 ---
+
 # WeWork — 511 5th Ave — NYC
 
 ## Overview

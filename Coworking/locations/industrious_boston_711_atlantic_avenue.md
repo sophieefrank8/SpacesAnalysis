@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: South Station
-address: "711 Atlantic Avenue, Boston, MA 02111"
-website: "https://www.industriousoffice.com/locations/south-station"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 711 Atlantic Avenue, Boston, MA 02111
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: South Station
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/18ae1c3e-0d70-458b-a1d8-13127963f279
+website: https://www.industriousoffice.com/locations/south-station
 ---
+
 # Industrious — South Station — Boston
 
 ## Overview

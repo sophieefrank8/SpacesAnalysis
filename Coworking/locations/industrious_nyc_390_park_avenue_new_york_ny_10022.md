@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Lever House
-address: "390 Park Avenue, New York, NY 10022"
-website: "https://www.industriousoffice.com/locations/lever-house"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 390 Park Avenue, New York, NY 10022
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Lever House
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/c8ef01ac-87ae-4f19-bcf9-d55fea7bf754
+website: https://www.industriousoffice.com/locations/lever-house
 ---
+
 # Industrious — Lever House — NYC
 
 ## Overview

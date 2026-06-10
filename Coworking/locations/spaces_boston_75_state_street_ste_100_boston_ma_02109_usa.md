@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 75 State Street
-address: "75 State Street Ste 100, Boston, MA, 02109, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 75 State Street Ste 100, Boston, MA, 02109, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 75 State Street
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/ca7b29e2-d393-47fc-a270-32e00d313914
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 75 State Street — Boston
 
 ## Overview

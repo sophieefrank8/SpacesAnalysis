@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Fenway
-address: "126 Brookline Avenue, Boston, MA 02215"
-website: "https://www.industriousoffice.com/locations/fenway"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 126 Brookline Avenue, Boston, MA 02215
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Fenway
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/7e22acf3-0d41-42e6-9bd3-817d243c6f99
+website: https://www.industriousoffice.com/locations/fenway
 ---
+
 # Industrious — Fenway — Boston
 
 ## Overview

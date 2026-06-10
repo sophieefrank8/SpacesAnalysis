@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 135 Madison Ave
-address: "135 Madison Ave, NoMad, New York, NY"
-website: "https://www.wework.com/buildings/135-madison-ave--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 135 Madison Ave, NoMad, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 135 Madison Ave
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/6309de2b-66f9-4092-9ed2-69b2d1fe6490
+website: https://www.wework.com/buildings/135-madison-ave--new-york-city--NY
 ---
+
 # WeWork — 135 Madison Ave — NYC
 
 ## Overview

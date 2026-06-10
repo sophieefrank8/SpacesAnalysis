@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 10 Post Office Square
-address: "10 Post Office Square 6th and 8th floor, Boston, MA, 02109, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 10 Post Office Square 6th and 8th floor, Boston, MA, 02109, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 10 Post Office Square
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/4b45208d-a1b9-47fe-84fe-f38eb8e1c837
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 10 Post Office Square — Boston
 
 ## Overview

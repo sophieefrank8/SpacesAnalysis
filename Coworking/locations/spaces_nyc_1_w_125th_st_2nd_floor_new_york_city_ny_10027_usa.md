@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 1 W 125th St
-address: "1 W 125th St 2nd Floor, New York City, NY, 10027, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 1 W 125th St 2nd Floor, New York City, NY, 10027, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 1 W 125th St
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/495cbf3f-648a-4bf6-835f-b0c42cc46bac
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 1 W 125th St — NYC
 
 ## Overview

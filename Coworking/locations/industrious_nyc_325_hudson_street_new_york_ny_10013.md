@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: SoHo West
-address: "325 Hudson Street, New York, NY 10013"
-website: "https://www.industriousoffice.com/locations/soho-west"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 325 Hudson Street, New York, NY 10013
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: SoHo West
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/3222cab1-830e-4bb2-b9ae-2572b7d8f5ea
+website: https://www.industriousoffice.com/locations/soho-west
 ---
+
 # Industrious — SoHo West — NYC
 
 ## Overview

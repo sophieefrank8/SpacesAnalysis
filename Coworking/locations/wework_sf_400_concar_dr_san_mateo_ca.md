@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 400 Concar Dr
-address: "400 Concar Dr, San Mateo, CA"
-website: "https://www.wework.com/buildings/400-concar-dr--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 400 Concar Dr, San Mateo, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 400 Concar Dr
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/5016c746-abd3-4ae9-993c-76c1758895ca
+website: https://www.wework.com/buildings/400-concar-dr--sf-bay-area--CA
 ---
+
 # WeWork — 400 Concar Dr — SF
 
 ## Overview

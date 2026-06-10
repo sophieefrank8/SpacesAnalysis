@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 445 Park Avenue
-address: "445 Park Avenue Midtown Manhattan, Manhattan, NY, 10022, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 445 Park Avenue Midtown Manhattan, Manhattan, NY, 10022, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 445 Park Avenue
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/06649c38-f703-4a26-93d3-f71cbdfb19aa
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 445 Park Avenue — NYC
 
 ## Overview

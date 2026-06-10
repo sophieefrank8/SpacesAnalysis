@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Indy by Industrious 5 Columbus Circle
-address: "5 Columbus Circle, New York, NY 10019"
-website: "https://www.industriousoffice.com/locations/indy-by-industrious-5-columbus-circle"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 5 Columbus Circle, New York, NY 10019
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Indy by Industrious 5 Columbus Circle
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/49e8c418-114c-4761-afa2-88a1e913fda1
+website: https://www.industriousoffice.com/locations/indy-by-industrious-5-columbus-circle
 ---
+
 # Industrious — Indy by Industrious 5 Columbus Circle — NYC
 
 ## Overview

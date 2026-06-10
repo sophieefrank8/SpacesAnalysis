@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: 625 Massachusetts Ave
-address: "625 Massachusetts Ave, Cambridge, MA"
-website: "https://www.wework.com/buildings/625-massachusetts-ave--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: 625 Massachusetts Ave, Cambridge, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: 625 Massachusetts Ave
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/03478a47-b94c-47ba-b0c2-6ee31f42afc4
+website: https://www.wework.com/buildings/625-massachusetts-ave--boston--MA
 ---
+
 # WeWork — 625 Massachusetts Ave — Boston
 
 ## Overview

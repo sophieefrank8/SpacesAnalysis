@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Wall Street
-address: "25 Broadway, New York, NY 10004"
-website: "https://www.industriousoffice.com/locations/wall-street"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 25 Broadway, New York, NY 10004
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Wall Street
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/e94858a8-3c97-42bf-bce9-d1e7c01f561d
+website: https://www.industriousoffice.com/locations/wall-street
 ---
+
 # Industrious — Wall Street — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 3101 Park Blvd
-address: "3101 Park Blvd, Palo Alto, CA"
-website: "https://www.wework.com/buildings/3101-park-blvd--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 3101 Park Blvd, Palo Alto, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 3101 Park Blvd
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/6470d28a-ab94-4f38-9072-d74efa5ef43b
+website: https://www.wework.com/buildings/3101-park-blvd--sf-bay-area--CA
 ---
+
 # WeWork — 3101 Park Blvd — SF
 
 ## Overview

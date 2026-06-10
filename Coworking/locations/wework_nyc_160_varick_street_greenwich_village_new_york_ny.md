@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 160 Varick Street
-address: "160 Varick Street, Greenwich Village, New York, NY"
-website: "https://www.wework.com/buildings/160-varick-street--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 160 Varick Street, Greenwich Village, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 160 Varick Street
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/e710ead4-7d05-4f60-9487-5fff564fd9f2
+website: https://www.wework.com/buildings/160-varick-street--new-york-city--NY
 ---
+
 # WeWork — 160 Varick Street — NYC
 
 ## Overview

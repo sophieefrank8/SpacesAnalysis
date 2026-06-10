@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 245 First Street
-address: "245 First Street Kendalll Square, 18th Floor, Cambridge, MA, 02142, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 245 First Street Kendalll Square, 18th Floor, Cambridge, MA, 02142, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 245 First Street
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/3fe6b2d5-ad4b-43e6-87b0-9d70c9f1761e
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 245 First Street — Boston
 
 ## Overview

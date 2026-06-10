@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 450 Park Ave S
-address: "450 Park Ave S, NoMad, New York, NY"
-website: "https://www.wework.com/buildings/430-park-avenue--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 450 Park Ave S, NoMad, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 450 Park Ave S
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/cbd21027-0c6d-42f3-871a-04ab31be4bda
+website: https://www.wework.com/buildings/430-park-avenue--new-york-city--NY
 ---
+
 # WeWork — 450 Park Ave S — NYC
 
 ## Overview

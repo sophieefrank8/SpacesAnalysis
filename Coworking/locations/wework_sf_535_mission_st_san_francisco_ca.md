@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 535 Mission St
-address: "535 Mission St, San Francisco, CA"
-website: "https://www.wework.com/buildings/535-mission-st--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 535 Mission St, San Francisco, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 535 Mission St
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/c2f22d1e-58bf-4b41-b6ec-7beced8f9f61
+website: https://www.wework.com/buildings/535-mission-st--sf-bay-area--CA
 ---
+
 # WeWork — 535 Mission St — SF
 
 ## Overview

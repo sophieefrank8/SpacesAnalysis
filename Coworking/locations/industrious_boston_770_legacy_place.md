@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Boston - Legacy Place
-address: "770 Legacy Place, Dedham, MA 02026"
-website: "https://www.industriousoffice.com/locations/boston-legacy-place"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 770 Legacy Place, Dedham, MA 02026
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Boston - Legacy Place
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/48273c52-b759-4feb-9c69-5fb52a957363
+website: https://www.industriousoffice.com/locations/boston-legacy-place
 ---
+
 # Industrious — Boston - Legacy Place — Boston
 
 ## Overview

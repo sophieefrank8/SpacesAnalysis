@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 134 N 4th St
-address: "134 N 4th St, Williamsburg, Brooklyn, NY"
-website: "https://www.wework.com/buildings/dock-72-at-the-brooklyn-navy-yard--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 134 N 4th St, Williamsburg, Brooklyn, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 134 N 4th St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/be168266-3019-47dd-bddb-78bebd5ad401
+website: https://www.wework.com/buildings/dock-72-at-the-brooklyn-navy-yard--new-york-city--NY
 ---
+
 # WeWork — 134 N 4th St — NYC
 
 ## Overview

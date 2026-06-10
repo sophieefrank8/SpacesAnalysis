@@ -1,18 +1,20 @@
 ---
-operator: Spaces
-market: NYC
-location_name: Chrysler Building 26F
-address: "405 Lexington Avenue Chrysler Building, 26th Floor, Manhattan, NY, 10174, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 405 Lexington Avenue Chrysler Building, 26th Floor, Manhattan, NY, 10174,
+  USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: Chrysler Building 26F
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/ce274863-f0ca-4910-9cab-95effd6fe2eb
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — Chrysler Building 26F — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: 33 Arch St
-address: "33 Arch St, Boston, MA"
-website: "https://www.wework.com/buildings/33-arch-st--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: 33 Arch St, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: 33 Arch St
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/40e2518c-2a2a-4360-b8aa-15a527106102
+website: https://www.wework.com/buildings/33-arch-st--boston--MA
 ---
+
 # WeWork — 33 Arch St — Boston
 
 ## Overview

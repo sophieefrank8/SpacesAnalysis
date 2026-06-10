@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: 875 3rd Ave
-address: "875 3rd Avenue, New York, NY 10022"
-website: "https://www.industriousoffice.com/locations/875-3rd-ave"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 875 3rd Avenue, New York, NY 10022
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: 875 3rd Ave
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/70cd5aed-0ad3-4c9c-bbef-494c9712bc92
+website: https://www.industriousoffice.com/locations/875-3rd-ave
 ---
+
 # Industrious — 875 3rd Ave — NYC
 
 ## Overview

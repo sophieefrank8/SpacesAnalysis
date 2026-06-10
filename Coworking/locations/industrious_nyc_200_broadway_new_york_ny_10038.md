@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Fulton Center
-address: "200 Broadway, New York, NY 10038"
-website: "https://www.industriousoffice.com/locations/fulton-center"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 200 Broadway, New York, NY 10038
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Fulton Center
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/fbce9185-ca37-4b4d-b8f6-110a47c2051e
+website: https://www.industriousoffice.com/locations/fulton-center
 ---
+
 # Industrious — Fulton Center — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: SF
-location_name: 720 Market St
-address: "720 Market St 2nd Floor, San Francisco, CA, 94102, USA"
-website: "https://www.spacesworks.com/en/us/california/san-francisco/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 720 Market St 2nd Floor, San Francisco, CA, 94102, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 720 Market St
+market: SF
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/ce252c29-9dba-478d-8275-907e0a33ae9e
+website: https://www.spacesworks.com/en/us/california/san-francisco/coworking
 ---
+
 # Spaces — 720 Market St — SF
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 44 Montgomery
-address: "44 Montgomery, San Francisco, CA"
-website: "https://www.wework.com/buildings/44-montgomery--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 44 Montgomery, San Francisco, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 44 Montgomery
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/07468ca6-3e00-4072-8578-076a8f63db11
+website: https://www.wework.com/buildings/44-montgomery--sf-bay-area--CA
 ---
+
 # WeWork — 44 Montgomery — SF
 
 ## Overview

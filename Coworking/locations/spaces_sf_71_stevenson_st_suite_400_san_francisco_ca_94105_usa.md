@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: SF
-location_name: 71 Stevenson St
-address: "71 Stevenson St Suite 400, San Francisco, CA, 94105, USA"
-website: "https://www.spacesworks.com/en/us/california/san-francisco/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 71 Stevenson St Suite 400, San Francisco, CA, 94105, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 71 Stevenson St
+market: SF
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/a4334698-df24-4f5b-aeb1-28bb6dd27eab
+website: https://www.spacesworks.com/en/us/california/san-francisco/coworking
 ---
+
 # Spaces — 71 Stevenson St — SF
 
 ## Overview

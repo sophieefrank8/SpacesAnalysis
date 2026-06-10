@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: Riverpark Tower
-address: "Riverpark Tower, San Jose, CA"
-website: "https://www.wework.com/buildings/riverpark-tower--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: Riverpark Tower, San Jose, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: Riverpark Tower
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/6d74cb1b-6717-4e29-87c2-ff6174cf47c8
+website: https://www.wework.com/buildings/riverpark-tower--sf-bay-area--CA
 ---
+
 # WeWork — Riverpark Tower — SF
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 524 Broadway
-address: "524 Broadway, SoHo, New York, NY"
-website: "https://www.wework.com/buildings/1450-broadway--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 524 Broadway, SoHo, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 524 Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/e9362196-3aca-4865-a61d-94cc43f56f40
+website: https://www.wework.com/buildings/1450-broadway--new-york-city--NY
 ---
+
 # WeWork — 524 Broadway — NYC
 
 ## Overview

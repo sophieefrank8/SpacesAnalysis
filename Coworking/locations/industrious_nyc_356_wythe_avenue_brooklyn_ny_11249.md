@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Williamsburg
-address: "356 Wythe Avenue, Brooklyn, NY 11249"
-website: "https://www.industriousoffice.com/locations/williamsburg"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 356 Wythe Avenue, Brooklyn, NY 11249
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Williamsburg
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/7fb86b11-5fe0-4deb-9078-50e890a53846
+website: https://www.industriousoffice.com/locations/williamsburg
 ---
+
 # Industrious — Williamsburg — NYC
 
 ## Overview

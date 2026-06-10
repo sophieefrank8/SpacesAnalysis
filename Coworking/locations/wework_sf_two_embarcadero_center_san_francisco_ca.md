@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: Two Embarcadero Center
-address: "Two Embarcadero Center, San Francisco, CA"
-website: "https://www.wework.com/buildings/two-embarcadero-center--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: Two Embarcadero Center, San Francisco, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: Two Embarcadero Center
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/3e4a7317-fc63-4616-8d5f-2fe4fafc19f3
+website: https://www.wework.com/buildings/two-embarcadero-center--sf-bay-area--CA
 ---
+
 # WeWork — Two Embarcadero Center — SF
 
 ## Overview

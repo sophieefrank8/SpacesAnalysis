@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Club 135
-address: "135 W. 50th St., New York, NY 10020"
-website: "https://www.industriousoffice.com/locations/club-135"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 135 W. 50th St., New York, NY 10020
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Club 135
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/af79594d-5b8c-4314-8dc1-6fd687503a18
+website: https://www.industriousoffice.com/locations/club-135
 ---
+
 # Industrious — Club 135 — NYC
 
 ## Overview

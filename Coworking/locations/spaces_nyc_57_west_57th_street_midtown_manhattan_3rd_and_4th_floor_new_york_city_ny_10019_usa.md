@@ -1,18 +1,20 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 57 West 57th Street
-address: "57 West 57th Street Midtown Manhattan, 3rd and 4th Floor, New York City, NY, 10019, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 57 West 57th Street Midtown Manhattan, 3rd and 4th Floor, New York City,
+  NY, 10019, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 57 West 57th Street
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/3eee8bd0-f7b6-45e3-9585-99beb0b9dec1
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 57 West 57th Street — NYC
 
 ## Overview

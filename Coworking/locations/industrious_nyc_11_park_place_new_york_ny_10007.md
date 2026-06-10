@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: City Hall
-address: "11 Park Place, New York, NY 10007"
-website: "https://www.industriousoffice.com/locations/city-hall"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 11 Park Place, New York, NY 10007
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: City Hall
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/1b8efa59-7f68-4548-80ce-c6dc69b8e287
+website: https://www.industriousoffice.com/locations/city-hall
 ---
+
 # Industrious — City Hall — NYC
 
 ## Overview

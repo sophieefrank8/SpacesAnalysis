@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 1309 Beacon Street
-address: "1309 Beacon Street Coolidge Corner, Suite 300, Brookline, MA, 02446, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 1309 Beacon Street Coolidge Corner, Suite 300, Brookline, MA, 02446, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 1309 Beacon Street
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/a5fe8593-e168-411d-8f7a-e8214036759f
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 1309 Beacon Street — Boston
 
 ## Overview

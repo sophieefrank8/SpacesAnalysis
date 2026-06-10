@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Post Office Square
-address: "225 Franklin Street, Boston, MA 02110"
-website: "https://www.industriousoffice.com/locations/post-office-square"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 225 Franklin Street, Boston, MA 02110
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Post Office Square
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/50ee15a0-08e2-4019-800a-ab9d65023567
+website: https://www.industriousoffice.com/locations/post-office-square
 ---
+
 # Industrious — Post Office Square — Boston
 
 ## Overview

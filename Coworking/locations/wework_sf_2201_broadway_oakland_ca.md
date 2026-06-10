@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 2201 Broadway
-address: "2201 Broadway, Oakland, CA"
-website: "https://www.wework.com/buildings/1111-broadway--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 2201 Broadway, Oakland, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 2201 Broadway
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/32eb5d8f-07f3-48a0-8605-9f100be5bf0d
+website: https://www.wework.com/buildings/1111-broadway--sf-bay-area--CA
 ---
+
 # WeWork — 2201 Broadway — SF
 
 ## Overview

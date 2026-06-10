@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 310 Lenox Ave
-address: "310 Lenox Ave Suite 300, New York City, NY, 10027, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 310 Lenox Ave Suite 300, New York City, NY, 10027, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 310 Lenox Ave
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/7ac28bef-b75e-4cca-8eb3-3a7d9e3bc0a5
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 310 Lenox Ave — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: SF
-location_name: Palo Alto Page Mill
-address: "1881 Page Mill Road, Palo Alto, CA 94304"
-website: "https://www.industriousoffice.com/locations/palo-alto-page-mill"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1881 Page Mill Road, Palo Alto, CA 94304
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Palo Alto Page Mill
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/00edb7d8-5ef0-42e4-aa99-2c33cc33c902
+website: https://www.industriousoffice.com/locations/palo-alto-page-mill
 ---
+
 # Industrious — Palo Alto Page Mill — SF
 
 ## Overview

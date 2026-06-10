@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: 386 Park Ave S
-address: "386 Park Avenue South, New York, NY 10016"
-website: "https://www.industriousoffice.com/locations/386-park-ave-s"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 386 Park Avenue South, New York, NY 10016
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: 386 Park Ave S
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/22be0f25-9e2c-4c28-b618-2fd1d85352db
+website: https://www.industriousoffice.com/locations/386-park-ave-s
 ---
+
 # Industrious — 386 Park Ave S — NYC
 
 ## Overview

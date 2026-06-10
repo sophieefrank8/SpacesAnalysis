@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 33 Irving Pl
-address: "33 Irving Pl, Gramercy, New York, NY"
-website: "https://www.wework.com/buildings/33-irving-pl--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 33 Irving Pl, Gramercy, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 33 Irving Pl
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/4613a833-dc3f-4cac-9d69-763c02ae9e06
+website: https://www.wework.com/buildings/33-irving-pl--new-york-city--NY
 ---
+
 # WeWork — 33 Irving Pl — NYC
 
 ## Overview

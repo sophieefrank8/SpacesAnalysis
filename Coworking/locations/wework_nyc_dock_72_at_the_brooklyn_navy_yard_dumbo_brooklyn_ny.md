@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: Dock 72 at the Brooklyn Navy Yard
-address: "Dock 72 at the Brooklyn Navy Yard, Dumbo, Brooklyn, NY"
-website: "https://www.wework.com/buildings/dock-72-at-the-brooklyn-navy-yard--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: Dock 72 at the Brooklyn Navy Yard, Dumbo, Brooklyn, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: Dock 72 at the Brooklyn Navy Yard
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/ecb20036-1d3f-4c42-9ca1-e2ad0e70f587
+website: https://www.wework.com/buildings/dock-72-at-the-brooklyn-navy-yard--new-york-city--NY
 ---
+
 # WeWork — Dock 72 at the Brooklyn Navy Yard — NYC
 
 ## Overview

@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: Helmsley Building
-address: "230 Park Avenue 3rd and 4th Floor, New York City, NY, 10169, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 230 Park Avenue 3rd and 4th Floor, New York City, NY, 10169, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: Helmsley Building
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/8a6dd79c-94b6-4e68-9411-bc3d68855bfd
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — Helmsley Building — NYC
 
 ## Overview

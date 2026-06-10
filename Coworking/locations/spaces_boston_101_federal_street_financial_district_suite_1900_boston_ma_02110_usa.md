@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: Boston
-location_name: 101 Federal Street
-address: "101 Federal Street Financial District, Suite 1900, Boston, MA, 02110, USA"
-website: "https://www.spacesworks.com/en/us/massachusetts/boston/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 101 Federal Street Financial District, Suite 1900, Boston, MA, 02110, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 101 Federal Street
+market: Boston
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/49ba8357-664d-42f1-837b-c774f14fa56c
+website: https://www.spacesworks.com/en/us/massachusetts/boston/coworking
 ---
+
 # Spaces — 101 Federal Street — Boston
 
 ## Overview

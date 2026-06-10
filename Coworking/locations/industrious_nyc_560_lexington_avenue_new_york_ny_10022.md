@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Lex & E 50th St
-address: "560 Lexington Avenue, New York, NY 10022"
-website: "https://www.industriousoffice.com/locations/lex-e-50th-st"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 560 Lexington Avenue, New York, NY 10022
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Lex & E 50th St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/277d7e00-c0b8-48bb-8c20-8601c070d891
+website: https://www.industriousoffice.com/locations/lex-e-50th-st
 ---
+
 # Industrious — Lex & E 50th St — NYC
 
 ## Overview

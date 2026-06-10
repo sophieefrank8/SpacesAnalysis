@@ -10,7 +10,7 @@ market: SF
 monthly_price_from: ''
 needs_review: false
 operator: Industrious
-tandem_listing: ''
+tandem_listing: https://tandemspace.com/office/b605d687-a2ad-4c10-8e97-23a1a4114bd6
 website: https://www.industriousoffice.com/locations/hejworkshop-with-industrious
 ---
 

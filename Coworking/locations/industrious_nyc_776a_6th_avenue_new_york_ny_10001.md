@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: NoMad
-address: "776A 6th Avenue, New York, NY 10001"
-website: "https://www.industriousoffice.com/locations/nomad"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 776A 6th Avenue, New York, NY 10001
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: NoMad
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/96eb4fc6-5d1d-4de8-a03f-dda5f13b19fc
+website: https://www.industriousoffice.com/locations/nomad
 ---
+
 # Industrious — NoMad — NYC
 
 ## Overview

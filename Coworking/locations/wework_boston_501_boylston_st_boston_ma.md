@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: Boston
-location_name: 501 Boylston St
-address: "501 Boylston St, Boston, MA"
-website: "https://www.wework.com/buildings/501-boylston-st--boston--MA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Garrett McCready
+address: 501 Boylston St, Boston, MA
 contact_email: garrett.mccready@wework.com
-contact_phone: "(617) 633-4568"
+contact_name: Garrett McCready
+contact_phone: (617) 633-4568
 contact_title: Leasing Director
-needs_review: False
+last_updated: 2026-06-04
+location_name: 501 Boylston St
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/c0744a1f-4c3c-4041-8309-e23e90983e79
+website: https://www.wework.com/buildings/501-boylston-st--boston--MA
 ---
+
 # WeWork — 501 Boylston St — Boston
 
 ## Overview

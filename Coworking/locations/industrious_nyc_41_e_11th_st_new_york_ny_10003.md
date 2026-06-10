@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: University Place
-address: "41 E 11th St, New York, NY 10003"
-website: "https://www.industriousoffice.com/locations/university-place"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 41 E 11th St, New York, NY 10003
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: University Place
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/b5d95ce9-aad1-4d04-bd2c-bdb6fba7fe14
+website: https://www.industriousoffice.com/locations/university-place
 ---
+
 # Industrious — University Place — NYC
 
 ## Overview

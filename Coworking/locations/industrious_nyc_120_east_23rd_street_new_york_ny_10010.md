@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Indy by Industrious Gramercy Park
-address: "120 East 23rd Street, New York, NY 10010"
-website: "https://www.industriousoffice.com/locations/indy-by-industrious-gramercy-park"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 120 East 23rd Street, New York, NY 10010
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Indy by Industrious Gramercy Park
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/ab38b4df-e24b-4c4d-a256-ed763af4bb8c
+website: https://www.industriousoffice.com/locations/indy-by-industrious-gramercy-park
 ---
+
 # Industrious — Indy by Industrious Gramercy Park — NYC
 
 ## Overview

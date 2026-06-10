@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 1460 Broadway
-address: "1460 Broadway, Midtown West, New York, NY"
-website: "https://www.wework.com/buildings/1450-broadway--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 1460 Broadway, Midtown West, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 1460 Broadway
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/80ef82ae-f5d2-4bda-8719-bc949c9d35fc
+website: https://www.wework.com/buildings/1450-broadway--new-york-city--NY
 ---
+
 # WeWork — 1460 Broadway — NYC
 
 ## Overview

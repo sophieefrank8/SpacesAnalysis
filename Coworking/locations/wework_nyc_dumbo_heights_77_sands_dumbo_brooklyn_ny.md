@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: Dumbo Heights (77 Sands)
-address: "Dumbo Heights (77 Sands), Dumbo, Brooklyn, NY"
-website: "https://www.wework.com/buildings/dumbo-heights-77-sands--new-york-city--NY"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: Dumbo Heights (77 Sands), Dumbo, Brooklyn, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: Dumbo Heights (77 Sands)
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/09b69fca-4b77-46a6-895b-f74c7d17253b
+website: https://www.wework.com/buildings/dumbo-heights-77-sands--new-york-city--NY
 ---
+
 # WeWork — Dumbo Heights (77 Sands) — NYC
 
 ## Overview

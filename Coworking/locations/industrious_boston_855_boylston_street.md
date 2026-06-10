@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: Boston
-location_name: Back Bay
-address: "855 Boylston Street, Boston, MA 02116"
-website: "https://www.industriousoffice.com/locations/back-bay"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 855 Boylston Street, Boston, MA 02116
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Back Bay
+market: Boston
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/ecff8c46-4095-49b3-99ce-412bd8a5a20e
+website: https://www.industriousoffice.com/locations/back-bay
 ---
+
 # Industrious — Back Bay — Boston
 
 ## Overview

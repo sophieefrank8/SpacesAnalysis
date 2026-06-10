@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Upper West Side
-address: "1900 Broadway, New York, NY 10023"
-website: "https://www.industriousoffice.com/locations/upper-west-side"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1900 Broadway, New York, NY 10023
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Upper West Side
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/d1dad40e-aa0c-409a-a4fb-289eab852980
+website: https://www.industriousoffice.com/locations/upper-west-side
 ---
+
 # Industrious — Upper West Side — NYC
 
 ## Overview

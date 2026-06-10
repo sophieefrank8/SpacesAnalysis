@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: SF
-location_name: 650 California St
-address: "650 California St, San Francisco, CA"
-website: "https://www.wework.com/buildings/600-california-st--sf-bay-area--CA"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Jack Ortlieb
+address: 650 California St, San Francisco, CA
 contact_email: jack.ortlieb@wework.com
-contact_phone: "(949) 903-9991"
+contact_name: Jack Ortlieb
+contact_phone: (949) 903-9991
 contact_title: Market Director, Broker Partnerships
-needs_review: False
+last_updated: 2026-06-04
+location_name: 650 California St
+market: SF
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/c0bcd19e-70db-4054-a864-80664b0537be
+website: https://www.wework.com/buildings/600-california-st--sf-bay-area--CA
 ---
+
 # WeWork — 650 California St — SF
 
 ## Overview

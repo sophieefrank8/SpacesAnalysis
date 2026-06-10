@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: 3 World Trade Center
-address: "175 Greenwich Street, New York, NY 10007"
-website: "https://www.industriousoffice.com/locations/3-world-trade-center"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 175 Greenwich Street, New York, NY 10007
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: 3 World Trade Center
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/427d0802-51b7-4cce-b1fb-74461a51414c
+website: https://www.industriousoffice.com/locations/3-world-trade-center
 ---
+
 # Industrious — 3 World Trade Center — NYC
 
 ## Overview

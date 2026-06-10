@@ -1,18 +1,19 @@
 ---
-operator: Industrious
-market: NYC
-location_name: Brooklyn - 1000 Dean
-address: "1002 Dean St, Brooklyn, NY 11238"
-website: "https://www.industriousoffice.com/locations/brooklyn-1000-dean"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Julissa Cajigas
+address: 1002 Dean St, Brooklyn, NY 11238
 contact_email: jcajigas@industriousoffice.com
-contact_phone: "(917) 789-8731"
+contact_name: Julissa Cajigas
+contact_phone: (917) 789-8731
 contact_title: Broker Sales Lead
-needs_review: False
+last_updated: 2026-06-04
+location_name: Brooklyn - 1000 Dean
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: Industrious
+tandem_listing: https://tandemspace.com/office/3817904f-cc88-4df7-aab4-66928af6add0
+website: https://www.industriousoffice.com/locations/brooklyn-1000-dean
 ---
+
 # Industrious — Brooklyn - 1000 Dean — NYC
 
 ## Overview

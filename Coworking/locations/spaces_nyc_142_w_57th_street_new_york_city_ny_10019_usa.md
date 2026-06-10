@@ -1,18 +1,19 @@
 ---
-operator: Spaces
-market: NYC
-location_name: 142 W 57th Street
-address: "142 W 57th Street, New York City, NY, 10019, USA"
-website: "https://www.spacesworks.com/en/us/new-york/manhattan/coworking"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Sara Parker
+address: 142 W 57th Street, New York City, NY, 10019, USA
 contact_email: mia.king.offices@gmail.com
-contact_phone: "(972) 764-8882"
+contact_name: Sara Parker
+contact_phone: (972) 764-8882
 contact_title: Marketing
-needs_review: True
+last_updated: 2026-06-04
+location_name: 142 W 57th Street
+market: NYC
+monthly_price_from: ''
+needs_review: true
+operator: Spaces
+tandem_listing: https://tandemspace.com/office/865112e5-263d-4d7b-b50d-ec8af4da432c
+website: https://www.spacesworks.com/en/us/new-york/manhattan/coworking
 ---
+
 # Spaces — 142 W 57th Street — NYC
 
 ## Overview

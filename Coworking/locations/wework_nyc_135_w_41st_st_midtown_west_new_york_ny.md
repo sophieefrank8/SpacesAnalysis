@@ -1,18 +1,19 @@
 ---
-operator: WeWork
-market: NYC
-location_name: 135 W 41st St
-address: "135 W 41st St, Midtown West, New York, NY"
-website: "https://www.wework.com/buildings/10-york-rd--london"
-tandem_listing: ""
-monthly_price_from: ""
-last_updated: 2026-06-04
-contact_name: Conor Golden
+address: 135 W 41st St, Midtown West, New York, NY
 contact_email: conor.golden@wework.com
-contact_phone: "(516) 592-1616"
+contact_name: Conor Golden
+contact_phone: (516) 592-1616
 contact_title: Senior Leasing Director, Tri-State
-needs_review: False
+last_updated: 2026-06-04
+location_name: 135 W 41st St
+market: NYC
+monthly_price_from: ''
+needs_review: false
+operator: WeWork
+tandem_listing: https://tandemspace.com/office/9da74cd1-613e-49fb-8fb8-db80caf59b2c
+website: https://www.wework.com/buildings/10-york-rd--london
 ---
+
 # WeWork — 135 W 41st St — NYC
 
 ## Overview
