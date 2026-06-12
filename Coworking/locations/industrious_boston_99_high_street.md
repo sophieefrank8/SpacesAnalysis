@@ -4,7 +4,7 @@ market: Boston
 location_name: Nuveen- 99 High Street
 address: "99 High Street, BOSTON, MA 2110"
 website: "https://www.industriousoffice.com/locations/nuveen-99-high-street"
-tandem_listing: ""
+tandem_listing: "https://tandemspace.com/office/c2941c55-c234-4e7c-9689-2379b63e81ae"
 monthly_price_from: ""
 last_updated: 2026-06-04
 contact_name: Julissa Cajigas
@@ -23,7 +23,7 @@ needs_review: False
 | Market | Boston |
 | Address | 99 High Street, BOSTON, MA 2110 |
 | Website | [https://www.industriousoffice.com/locations/nuveen-99-high-street](https://www.industriousoffice.com/locations/nuveen-99-high-street) |
-| Tandem Listing | *Not yet listed on Tandem* |
+| Tandem Listing | [View on Tandem](https://tandemspace.com/office/c2941c55-c234-4e7c-9689-2379b63e81ae) |
 | Starting Price | Contact operator for pricing |
 
 ## Points of Contact
