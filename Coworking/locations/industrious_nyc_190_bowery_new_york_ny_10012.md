@@ -4,7 +4,7 @@ market: NYC
 location_name: Bowery
 address: "190 Bowery, New York, NY 10012"
 website: "https://www.industriousoffice.com/locations/bowery"
-tandem_listing: ""
+tandem_listing: "https://tandemspace.com/office/f3adef05-5a74-4bce-960e-db3950b6eb71"
 monthly_price_from: ""
 last_updated: 2026-06-04
 contact_name: Julissa Cajigas
@@ -23,7 +23,7 @@ needs_review: False
 | Market | NYC |
 | Address | 190 Bowery, New York, NY 10012 |
 | Website | [https://www.industriousoffice.com/locations/bowery](https://www.industriousoffice.com/locations/bowery) |
-| Tandem Listing | *Not yet listed on Tandem* |
+| Tandem Listing | [View on Tandem](https://tandemspace.com/office/f3adef05-5a74-4bce-960e-db3950b6eb71) |
 | Starting Price | Contact operator for pricing |
 
 ## Points of Contact

@@ -12,6 +12,7 @@ contact_email: jcajigas@industriousoffice.com
 contact_phone: "(917) 789-8731"
 contact_title: Broker Sales Lead
 needs_review: False
+notes: "Meeting rooms only on site — no private offices available"
 ---
 # Industrious — Nuveen- 33 Arch Street — Boston
 
@@ -25,6 +26,7 @@ needs_review: False
 | Website | [https://www.industriousoffice.com/locations/nuveen-33-arch-street](https://www.industriousoffice.com/locations/nuveen-33-arch-street) |
 | Tandem Listing | *Not yet listed on Tandem* |
 | Starting Price | Contact operator for pricing |
+| Notes | ⚠️ Meeting rooms only on site — no private offices available |
 
 ## Points of Contact
 
